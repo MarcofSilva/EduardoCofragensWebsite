@@ -1,3 +1,89 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "./"
+languageCode = "pt-pt"
+title = "Cofragem Silva"
+theme = "hugo-now-ui"
+relativeURLs = "true"
+uglyURLs = "false"
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    pre = "<i class='now-ui-icons business_bank'></i>"
+    weight = 1
+[[menu.main]]
+    name = "Sobre"
+    url = "/sobre/"
+    pre = "<i class='now-ui-icons business_badge'></i>"
+    weight = 2
+
+#[[menu.main]]
+#    name = "Serviços"
+#    url = "/servicos/"
+#    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+#    weight = 3
+
+[[menu.main]]
+    name = "Serviços"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "#"
+    weight = 4
+    identifier = "dropdown"
+[[menu.main]]
+    name = "Todos"
+    url = "/servicos/"
+    weight = 1
+    parent = "dropdown"
+[[menu.main]]
+    name = "Cofragem"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/#cofragem"
+    weight = 2
+    parent = "dropdown"
+[[menu.main]]
+    name = "Armação de Ferro"
+    pre = "<i class='now-ui-icons text_align-center'></i>"
+    url = "/servicos/#ferro"
+    weight = 3
+    parent = "dropdown"
+[[menu.main]]
+    name = "Aluguer de Material"
+    pre = "<i class='now-ui-icons shopping_tag-content'></i>"
+    url = "/servicos/#aluguer"
+    weight = 4
+    parent = "dropdown"
+    
+[[menu.main]]
+    name = "Portefólio"
+    url = "/portefolio/"
+    pre = "<i class='now-ui-icons media-1_album'></i>"
+    weight = 5
+[[menu.main]]
+    name = "Contactos"
+    pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
+    url = "/contactos/"
+    weight = 6
+
+
+[[menu.footer]]
+    identifier = "copyright"
+    name = "Copyright © 2019 CofragemSilva"
+    weight = 2
+
+
+[params]
+    # orange, red, yellow, blue, green
+    tint = "orange"
+    custom_css = ["css/highlight.min.css"]
+    custom_js = []
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
