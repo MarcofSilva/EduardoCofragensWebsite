@@ -7,11 +7,10 @@
     {{ partial "nav" . }}
     
     <div class="{{ .Params.wrapper | default "wrapper" }}">
-      
         <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}" filter-color="{{ .Param "tint" | default "orange" }}">
-            <div data-parallax="true" style="background-image: url('{{ (.Param "background")  | (default "/img/headers/headerObra.jpg" | absURL) }}');">
-                <video width="100%" autoplay loop>
-                    <source src="/video/homepageVideo.mp4" type="video/mp4">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background")  | (default "/img/headers/headerObra.jpg" | absURL) }}');">
+                <video style="height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
+                  <source src="/video/homepageVideo.mp4" type="video/mp4">
                 </video>
             </div>
             

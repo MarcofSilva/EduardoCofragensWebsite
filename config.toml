@@ -76,7 +76,8 @@ uglyURLs = "false"
 
 [params]
     # orange, red, yellow, blue, green
-    tint = "orange"
+    #TODO which one to use
+    tint = "red"
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
