@@ -16,47 +16,48 @@ uglyURLs = "false"
     weight = 1
 [[menu.main]]
     name = "Sobre"
-    url = "/sobre/"
+    url = "/#about"
     pre = "<i class='now-ui-icons business_badge'></i>"
     weight = 2
 
-#[[menu.main]]
-#    name = "Serviços"
-#    url = "/servicos/"
-#    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-#    weight = 3
-
 [[menu.main]]
     name = "Serviços"
-    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
-    url = "#"
-    weight = 4
-    identifier = "dropdown"
-[[menu.main]]
-    name = "Todos"
-    url = "/servicos/"
-    weight = 1
-    parent = "dropdown"
-[[menu.main]]
-    name = "Cofragem"
+    url = "/#services"
     pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-    url = "/servicos/#cofragem"
-    weight = 2
-    parent = "dropdown"
-[[menu.main]]
-    name = "Armação de Ferro"
-    pre = "<i class='now-ui-icons text_align-center'></i>"
-    url = "/servicos/#ferro"
     weight = 3
-    parent = "dropdown"
-[[menu.main]]
-    name = "Aluguer de Material"
-    pre = "<i class='now-ui-icons shopping_tag-content'></i>"
-    url = "/servicos/#aluguer"
-    weight = 4
-    parent = "dropdown"
+
+#[[menu.main]]
+#    name = "Serviços"
+#    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+#    url = "#"
+#    weight = 4
+#    identifier = "dropdown"
+#[[menu.main]]
+#    name = "Todos"
+#    url = "/servicos/"
+#    weight = 1
+#    parent = "dropdown"
+#[[menu.main]]
+#    name = "Cofragem"
+#    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+#    url = "/servicos/#cofragem"
+#    weight = 2
+#    parent = "dropdown"
+#[[menu.main]]
+#    name = "Armação de Ferro"
+#    pre = "<i class='now-ui-icons text_align-center'></i>"
+#    url = "/servicos/#ferro"
+#    weight = 3
+#    parent = "dropdown"
+#[[menu.main]]
+#    name = "Aluguer de Material"
+#    pre = "<i class='now-ui-icons shopping_tag-content'></i>"
+#    url = "/servicos/#aluguer"
+#    weight = 4
+#    parent = "dropdown"
     
 [[menu.main]]
+    identifier = "menuHighlight"
     name = "Portefólio"
     url = "/portefolio/"
     pre = "<i class='now-ui-icons media-1_album'></i>"
@@ -64,15 +65,29 @@ uglyURLs = "false"
 [[menu.main]]
     name = "Contactos"
     pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
-    url = "/contactos/"
+    url = "/#contacts"
     weight = 6
 
 
 [[menu.footer]]
     identifier = "copyright"
     name = "Copyright © 2019 CofragemSilva"
-    weight = 2
+    weight = 1
+    url = "/#footer"
 
+[[menu.footer]]
+    identifier = "phone_number"
+    pre = "<i class='now-ui-icons tech_mobile'></i>"
+    name = "962757100"
+    weight = 2
+    url = "/#footer"
+
+[[menu.footer]]
+    identifier = "email"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    name = "cofragemsilva@hotmail.com"
+    weight = 3
+    url = "/#footer"
 
 [params]
     # orange, red, yellow, blue, green

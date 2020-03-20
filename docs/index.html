@@ -15,7 +15,7 @@
     
     
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./sass/now-ui-kit.min.462163d09307b38dd030a71f94a3f6e082464a9f51422870d16ff8ed0ba2b8b0.css" rel="stylesheet">
+    <link href="./sass/now-ui-kit.min.7cbf8c158282328a714bc0cad713f069406292ff6ff1c1c632de0daf856d16cd.css" rel="stylesheet">
     <link href="./css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="css/highlight.min.css">
@@ -41,69 +41,61 @@
       
         
         <li class="nav-item">
-          <a class="nav-link" href="./." data-target="./">
-            <i class='now-ui-icons business_bank'></i>
-            <span>Home</span>
-          </a>
+          
+          
+            <a class="nav-link btn btn-link btn-neutral" href="./." data-target="./">
+              <i class='now-ui-icons business_bank'></i>
+              <span>Home</span>
+            </a>
+          
         </li>
         
       
         
         <li class="nav-item">
-          <a class="nav-link" href="./sobre/" data-target="sobre/">
-            <i class='now-ui-icons business_badge'></i>
-            <span>Sobre</span>
-          </a>
-        </li>
-        
-      
-        
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown">
-            <i class='now-ui-icons ui-1_settings-gear-63'></i> <span>Serviços</span>
-            <span class="caret"></span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            
-            <a class="dropdown-item" href="./servicos/" data-target="servicos/">
-                
-                <span>Todos</span>
-              </a>
-            
-            <a class="dropdown-item" href="./servicos/#cofragem" data-target="servicos/#cofragem">
-                <i class='now-ui-icons ui-2_settings-90'></i>
-                <span>Cofragem</span>
-              </a>
-            
-            <a class="dropdown-item" href="./servicos/#ferro" data-target="servicos/#ferro">
-                <i class='now-ui-icons text_align-center'></i>
-                <span>Armação de Ferro</span>
-              </a>
-            
-            <a class="dropdown-item" href="./servicos/#aluguer" data-target="servicos/#aluguer">
-                <i class='now-ui-icons shopping_tag-content'></i>
-                <span>Aluguer de Material</span>
-              </a>
-            
-          </div>
+          
+          
+            <a class="nav-link btn btn-link btn-neutral" href="./#about" data-target="#about">
+              <i class='now-ui-icons business_badge'></i>
+              <span>Sobre</span>
+            </a>
+          
         </li>
         
       
         
         <li class="nav-item">
-          <a class="nav-link" href="./portefolio/" data-target="portefolio/">
-            <i class='now-ui-icons media-1_album'></i>
-            <span>Portefólio</span>
-          </a>
+          
+          
+            <a class="nav-link btn btn-link btn-neutral" href="./#services" data-target="#services">
+              <i class='now-ui-icons ui-2_settings-90'></i>
+              <span>Serviços</span>
+            </a>
+          
         </li>
         
       
         
         <li class="nav-item">
-          <a class="nav-link" href="./contactos/" data-target="contactos/">
-            <i class='now-ui-icons ui-2_chat-round'></i>
-            <span>Contactos</span>
-          </a>
+          
+          
+            <a class="nav-link btn btn-neutral" href="./portefolio/" data-target="portefolio/">
+              <i class='now-ui-icons media-1_album'></i>
+              <span>Portefólio</span>
+            </a>
+          
+        </li>
+        
+      
+        
+        <li class="nav-item">
+          
+          
+            <a class="nav-link btn btn-link btn-neutral" href="./#contacts" data-target="#contacts">
+              <i class='now-ui-icons ui-2_chat-round'></i>
+              <span>Contactos</span>
+            </a>
+          
         </li>
         
       
@@ -116,9 +108,25 @@
     <div class="wrapper">
         <div class="page-header page-header-small"> 
             <div class="page-header-image" data-parallax="true" style="background-image: url('/img/headers/headerObra.jpg');">
-                <video style="height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
-                  <source src="./video/homepageVideo.mp4" type="video/mp4">
-                </video>
+              <div id="header-filter" style="z-index: 2; height: 100%; width:100%; position:absolute; object-fit:cover; background-color: rgba(0,0,0,.65);"></div>
+              <video style="z-index: 1; height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
+                <source src="./video/homepageVideo.mp4" type="video/mp4">
+              </video>
+              
+              <div style="z-index: 3; position: absolute; text-align: center; left: 0; right: 0; bottom: 10%; text-shadow: 0 0 50px #000000;">
+                <h1 class="title text-center" style="color:white; font-size: 80px;;">Cofragem Silva</h1>
+                <h5 style="font-size: 20px; color: white; margin-left: 15%; margin-right: 15%;">Se quisermos escrever uma frase aqui nesta parte. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!
+                </h5>
+                <div class="space-50"></div>
+                <div class="space-50"></div>
+                <br>
+                <a class="btn btn-primary btn-round" type="" href="#" style="font-size: 20px;">
+                  <i class="now-ui-icons arrows-1_minimal-down"></i>
+                  Desça e Explore
+                </a>
+                
+              </div>
             </div>
             
             
@@ -143,12 +151,12 @@
    
   <div class="article-style" itemprop="articleBody">
 <!--Sobre Nós-->
-<div class="section">
+<div class="section" id="about">
     <div class="container">
         <h2 class="title text-center">Quem somos?</h2>
         <h5 class="description">
             Blah blah blah, resumindo o sobre nós yaya se quiserem saber mais sobre quem somos sigam o botão que leva à secção Sobre Nós...
-            <a href="./sobre/">Saber Mais</a>
+            <!--<a href="./sobre/">Saber Mais</a>-->
         </h5>
     </div>
 </div>
@@ -156,9 +164,10 @@
 
 <!--Serviços-->
 <!--TODO it should be possible to click the services and be redirected to de correspondent section e serviços page-->
-<div class="section">
+<div class="section" id="services">
     <div class="container">
         <h2 class="title text-center">Serviços</h2>
+        <br>
         <div class="text-center">
             <div class="row">
                 <div class="col-md-4">
@@ -167,6 +176,7 @@
                     <p class="category text-primary">Se Necessário</p>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                         <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                        <br>
                 </div>
                 <div class="col-md-4">
                     <img src="./img/ferro.jpg" alt="Thumbnail Image" class="rounded img-fluid img-raised">
@@ -174,6 +184,7 @@
                     <p class="category text-primary">Se Necessário</p>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                         <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                        <br>
                 </div>
                 <div class="col-md-4">
                     <img src="./img/aluguer.jpg" alt="Thumbnail Image" class="rounded img-fluid img-raised">
@@ -181,10 +192,10 @@
                     <p class="category text-primary">Se Necessário</p>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                         <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                        <br>
                 </div>
             </div>
-            <br>
-            <a class="btn btn-primary btn-round" type="" href="./servicos/">Saber Mais</a>
+            <!--<a class="btn btn-primary btn-round" type="" href="./servicos/">Saber Mais</a>-->
         </div>
     </div>
 </div>
@@ -237,7 +248,9 @@
                     </a>
                 </div>
                 <br>
-                <p class="category">Obra 1, Ferragudo</p>
+                <p class="category">Obra 1 - Ferragudo</p>
+                <br>
+                <br>
             </div>
             <div class="col-md-4">
                 <!--Obra 2 Carousel-->
@@ -275,7 +288,9 @@
                     </a>
                 </div>
                 <br>
-                <p class="category">Obra 2, Ferragudo</p>
+                <p class="category">Obra 2 - Ferragudo</p>
+                <br>
+                <br>
             </div>
             <div class="col-md-4">
                 <!--Obra 3 Carousel-->
@@ -313,7 +328,31 @@
                     </a>
                 </div>
                 <br>
-                <p class="category">Obra 3, Ferragudo</p>
+                <p class="category">Obra 3 - Ferragudo</p>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--Sobre Nós-->
+<div class="section" id="contacts">
+    <div class="container">
+        <h2 class="title text-center">Contactos?</h2>
+        <div class="space-50"></div>
+        <div class="row">
+            <!--Contact info section-->
+            <div class="col">
+                <h3>
+                    Telefone - <b>962757100</b>
+                </h3>
+            </div>
+            <div class="co">
+                <h3>
+                    Email - <b>cofragemsilva@hotmail.com</b>
+                </h3>
             </div>
         </div>
     </div>
@@ -339,7 +378,15 @@
 	    <ul>
 	    
         <li>
-          <a href="././"> Copyright © 2019 CofragemSilva</a>
+          <a href="./#footer"> Copyright © 2019 CofragemSilva</a>
+        </li>
+      
+        <li>
+          <a href="./#footer"><i class='now-ui-icons tech_mobile'></i> 962757100</a>
+        </li>
+      
+        <li>
+          <a href="./#footer"><i class='now-ui-icons ui-1_email-85'></i> cofragemsilva@hotmail.com</a>
         </li>
       
       </ul>
