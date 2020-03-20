@@ -57,9 +57,8 @@ uglyURLs = "false"
 #    parent = "dropdown"
     
 [[menu.main]]
-    identifier = "menuHighlight"
     name = "Portefólio"
-    url = "/portefolio/"
+    url = "/#carousel"
     pre = "<i class='now-ui-icons media-1_album'></i>"
     weight = 5
 [[menu.main]]
@@ -68,29 +67,33 @@ uglyURLs = "false"
     url = "/#contacts"
     weight = 6
 
-
+[[menu.footer]]
+    identifier = "footerHomeButton"
+    pre = "<i class='now-ui-icons arrows-1_minimal-up'></i>"
+    weight = 1
+    url = "/"
+# TODO perceber bem o que fazer devido a licensa
 [[menu.footer]]
     identifier = "copyright"
-    name = "Copyright © 2019 CofragemSilva"
-    weight = 1
+    name = "Copyright © 2020 CofragemSilva"
+    weight = 2
+
+[[menu.footer]]
+    identifier = "alvara"
+    name = "Alvará bla 12345"
+    weight = 3
 
 [[menu.footer]]
     identifier = "phone_number"
     pre = "<i class='now-ui-icons tech_mobile'></i>"
     name = "962757100"
-    weight = 2
+    weight = 4
 
 [[menu.footer]]
     identifier = "email"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     name = "cofragemsilva@hotmail.com"
-    weight = 3
-
-[[menu.footer]]
-    identifier = "footerHomeButton"
-    pre = "<i class='now-ui-icons arrows-1_minimal-up'></i>"
-    weight = 4
-    url = "/"
+    weight = 5
 
 [params]
     # orange, red, yellow, blue, green

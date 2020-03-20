@@ -1,10 +1,11 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;"> 
   <head>
 	<meta name="generator" content="Hugo 0.56.1" />
     <meta charset="utf-8" />
     
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Cofragem Silva</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -15,10 +16,40 @@
     
     
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./sass/now-ui-kit.min.7cbf8c158282328a714bc0cad713f069406292ff6ff1c1c632de0daf856d16cd.css" rel="stylesheet">
+    <link href="./sass/now-ui-kit.min.0ee832af165b9947b3f9a26f440bb67c8fb257d215a9c699fbc9458f1b1a8009.css" rel="stylesheet">
     <link href="./css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="css/highlight.min.css">
+
+  
+  <style>
+    @media screen and (max-width: 979px) {
+      .homepage-header-title {
+        font-size: 40px;
+      }
+      .homepage-header-description {
+        font-size: 12px;
+      }
+    }
+    
+    @media screen and (min-width: 991px) and (max-width: 1650px) {
+      .homepage-header-title {
+        font-size: 70px;
+      }
+      .homepage-header-description {
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (min-width: 1651px) {
+      .homepage-header-title {
+        font-size: 90px;
+      }
+      .homepage-header-description {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 
   
@@ -27,7 +58,7 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="./." rel="tooltip" title="" data-placement="bottom" target="_self"> 
+                <a style="font-family:Verdana, Geneva, Tahoma, sans-serif; font;" class="navbar-brand" href="./." rel="tooltip" title="" data-placement="bottom" target="_self"> 
                     Cofragem Silva
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +110,7 @@
         <li class="nav-item">
           
           
-            <a class="nav-link btn btn-neutral" href="./portefolio/" data-target="portefolio/">
+            <a class="nav-link btn btn-link btn-neutral" href="./#carousel" data-target="#carousel">
               <i class='now-ui-icons media-1_album'></i>
               <span>Portefólio</span>
             </a>
@@ -104,36 +135,35 @@
         </div>
     </nav>
     
-    
     <div class="wrapper">
         <div class="page-header page-header-small"> 
-            <div class="page-header-image" data-parallax="true" style="background-image: url('/img/headers/headerObra.jpg');">
-              <div id="header-filter" style="z-index: 2; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,.65);"></div>
-              <video style="z-index: 1; height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
+            <div class="page-header-image" data-parallax="true" style="background-image: url('/img/headers/headerObra.jpg');"> 
+              <div id="header-filter" style="z-index: 1; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,.65);"></div>
+              <video style="z-index: 0; height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
                 <source src="./video/homepageVideo.mp4" type="video/mp4">
               </video>
-              
-              <div style="z-index: 3; position: absolute; text-align: center; left: 0; right: 0; bottom: 10%; text-shadow: 0 0 50px #000000;">
-                <h1 class="title text-center" style="color:white; font-size: 80px;;">Cofragem Silva</h1>
-                <h5 style="font-size: 20px; color: white; margin-left: 15%; margin-right: 15%;">Se quisermos escrever uma frase aqui nesta parte. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!
-                </h5>
-                <div class="space-50"></div>
-                <div class="space-50"></div>
-                <br>
-                <a class="btn btn-primary btn-round" type="" href="#" style="font-size: 20px;">
-                  <i class="now-ui-icons arrows-1_minimal-down"></i>
-                  Desça e Explore
-                </a>
-                
-              </div>
             </div>
+            <div style="z-index: 2; position: absolute; text-align: center; left: 0; right: 0; bottom: 10%; text-shadow: 0 0 50px #000000;">
+              <h1 class="title text-center homepage-header-title" style="color:white;">Cofragem Silva</h1>
+              <h5 class="homepage-header-description" style="color: white; margin-left: 15%; margin-right: 15%;">Se quisermos escrever uma frase aqui nesta parte. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!
+              </h5>
+              <div class="space-50"></div>
+              <div class="space-50"></div>
+              <a class="btn btn-primary btn-round homepage-header-description" type="" href="./#homepageBody">
+                Explora
+                <i class="now-ui-icons arrows-1_minimal-down"></i>
+                
+              </a>
+              </span>
+            </div>
+           
             
             
             
             
         </div>
-        <div class="section">
+        <div id="homepageBody" class="section">
             <div class="container">
               
             
@@ -147,9 +177,9 @@
 
 
   
-  <h1>Eduardo Silva</h1>
+  <h1>Eduardo Silva <small class="description">Alvará bla 12345</small></h1>
    
-  <div class="article-style" itemprop="articleBody">
+  <div class="article-style" itemprop="articleBody"><hr>
 <!--Sobre Nós-->
 <div class="section" id="about">
     <div class="container">
@@ -380,7 +410,21 @@
         <li>
           
           
-            <a> Copyright © 2019 CofragemSilva</a>
+            <a href="./."><i class='now-ui-icons arrows-1_minimal-up'></i> </a>
+          
+        </li>
+      
+        <li>
+          
+          
+            <a> Copyright © 2020 CofragemSilva</a>
+          
+        </li>
+      
+        <li>
+          
+          
+            <a> Alvará bla 12345</a>
           
         </li>
       
@@ -395,13 +439,6 @@
           
           
             <a><i class='now-ui-icons ui-1_email-85'></i> cofragemsilva@hotmail.com</a>
-          
-        </li>
-      
-        <li>
-          
-          
-            <a href="./."><i class='now-ui-icons arrows-1_minimal-up'></i> </a>
           
         </li>
       
