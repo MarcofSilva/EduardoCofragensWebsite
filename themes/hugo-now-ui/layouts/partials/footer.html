@@ -4,7 +4,12 @@
 	    <ul>
 	    {{ range .Site.Menus.footer }}
         <li>
-          <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+          <!--Marco edit-->
+          {{ if eq .KeyName "footerHomeButton"}}
+            <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+          {{ else }}
+            <a>{{ .Pre }} {{ .Name }}</a>
+          {{ end }}
         </li>
       {{ end }}
       </ul>

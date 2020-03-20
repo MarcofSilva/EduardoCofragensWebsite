@@ -73,21 +73,24 @@ uglyURLs = "false"
     identifier = "copyright"
     name = "Copyright © 2019 CofragemSilva"
     weight = 1
-    url = "/#footer"
 
 [[menu.footer]]
     identifier = "phone_number"
     pre = "<i class='now-ui-icons tech_mobile'></i>"
     name = "962757100"
     weight = 2
-    url = "/#footer"
 
 [[menu.footer]]
     identifier = "email"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     name = "cofragemsilva@hotmail.com"
     weight = 3
-    url = "/#footer"
+
+[[menu.footer]]
+    identifier = "footerHomeButton"
+    pre = "<i class='now-ui-icons arrows-1_minimal-up'></i>"
+    weight = 4
+    url = "/"
 
 [params]
     # orange, red, yellow, blue, green
