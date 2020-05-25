@@ -8,18 +8,17 @@
     <div class="{{ .Params.wrapper | default "wrapper" }}">
         <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}"> <!--TODO filter-color="{{ .Param "tint" | default "orange" }}">-->
             <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background")  | (default "/img/headers/headerObra.jpg" | absURL) }}');"> <!--TODO Background image or not (behind video)-->
-              <div id="header-filter" style="z-index: 1; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,.65);"></div>
+              <div id="header-filter" style="z-index: 1; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,0.4);"></div>
               <video style="z-index: 0; height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
                 <source src="/video/homepageVideo.mp4" type="video/mp4">
               </video>
             </div>
             <div style="z-index: 2; position: absolute; text-align: center; left: 0; right: 0; bottom: 10%; text-shadow: 0 0 50px #000000;">
               <h1 class="title text-center homepage-header-title" style="color:white;">Cofragem Silva</h1>
-              <h5 class="homepage-header-description" style="color: white; margin-left: 15%; margin-right: 15%;">Se quisermos escrever uma frase aqui nesta parte. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!
-              </h5>
-              <div class="space-50"></div>
-              <div class="space-50"></div>
+              <h5 class="homepage-header-description" style="color: white; margin-left: 15%; margin-right: 15%;">Liderança é uma escolha não uma posição</h5>
+              <div class="space-50"></div>  <!--Spacer-->
+              <div class="space-50"></div>  <!--Spacer-->
+              <div class="space-50"></div>  <!--Spacer-->
               <a class="btn btn-primary btn-round homepage-header-description" type="" href="/#homepageBody">
                 Explora
                 <i class="now-ui-icons arrows-1_minimal-down"></i>
