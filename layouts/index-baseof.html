@@ -8,7 +8,7 @@
     <div class="{{ .Params.wrapper | default "wrapper" }}">
         <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}"> <!--TODO filter-color="{{ .Param "tint" | default "orange" }}">-->
             <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background")  | (default "/img/headers/headerObra.jpg" | absURL) }}');"> <!--TODO Background image or not (behind video)-->
-              <div id="header-filter" style="z-index: 1; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,0.4);"></div>
+              <div id="header-filter" style="z-index: 1; height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,0.5);"></div>
               <video style="z-index: 0; height: 100%; width:100%; position:absolute; object-fit:cover;" autoplay loop>
                 <source src="/video/homepageVideo.mp4" type="video/mp4">
               </video>
