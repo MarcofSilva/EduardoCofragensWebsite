@@ -75,7 +75,7 @@ uglyURLs = "false"
 # TODO perceber bem o que fazer devido a licensa
 [[menu.footer]]
     identifier = "copyright"
-    name = "Copyright © 2020 CofragemSilva"
+    name = "Copyright © 2020 Eduardo Silva"
     weight = 2
 
 [[menu.footer]]
