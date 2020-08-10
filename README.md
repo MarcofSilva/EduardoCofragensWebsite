@@ -34,7 +34,4 @@ mv CNAME docs
 
 descartar above
 
-github action to build site after every git push
-hugo -d docs
-
 CNAME contains the custom domain and is stored under static, so that after each build it will be available in /docs
