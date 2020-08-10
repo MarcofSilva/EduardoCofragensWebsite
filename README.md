@@ -26,15 +26,6 @@ index.html for homepage template
 index_baseof.html for homepage header
 baseof.html for secundarypages header
 
-script for generate static files ready for display in github page
-mv docs/CNAME .
-rm -r docs
-hugo -d docs
-mv CNAME docs
+CNAME contains the custom domain and is stored under static, so that after each build it will be available in the gh-pages branch that has the static files of the website
 
-descartar above
-
-github action to build site after every git push
-hugo -d docs
-
-CNAME contains the custom domain and is stored under static, so that after each build it will be available in /docs
+workflow hugo build & deploy generates the new static files after every push to the master branch
