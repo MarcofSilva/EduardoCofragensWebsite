@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: content
   label: Pages
@@ -28,6 +30,18 @@ sections:
   path: content/about
   label: About
   create: all
+  match: "**/*"
+- type: heading
+  label: Data
+- type: document
+  path: data/info.yml
+  label: info
+  match: "**/*"
+- type: heading
+  label: Configuration
+- type: document
+  path: config.toml
+  label: Config
   match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
