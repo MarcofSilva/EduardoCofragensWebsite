@@ -1,4 +1,4 @@
-name: github pages
+name: hugo build & deploy
 
 on:
   push:
@@ -21,11 +21,11 @@ jobs:
           # extended: true
 
       - name: Build
-        run: |
-          rm --force --recursive docs
-          hugo --minify -d docs
-      
-      - name: Persist docs folder
-        uses: nick-invision/persist-action-data@v1
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            data: ./docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./docs
