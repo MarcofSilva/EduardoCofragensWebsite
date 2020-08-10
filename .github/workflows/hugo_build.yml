@@ -23,4 +23,4 @@ jobs:
       - name: Build and Deploy
         run: |
           rm --force --recursive docs,
-          hugo --minify -d docs.
+          hugo -d docs --minify.
