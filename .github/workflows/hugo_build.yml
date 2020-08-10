@@ -20,16 +20,12 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
-      - name: Build and Deploy
+      - name: Build
         run: |
-          ls
           rm --force --recursive docs
-          ls
           hugo --minify -d docs
-          ls
       
       - name: Persist docs folder
-        uses: actions/upload-artifact@v2
+        uses: nick-invision/persist-action-data@v1
         with:
-          name: docs-folder
-          path: ./docs
+            data: ./docs
