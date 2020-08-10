@@ -1,9 +1,8 @@
-baseURL = "./"
+baseURL = "https://cofragemsilva.pt/"
 languageCode = "pt-pt"
 title = "Cofragem Silva"
 theme = "hugo-now-ui"
-relativeURLs = "true"
-uglyURLs = "false"
+
 
 
 [permalinks]
