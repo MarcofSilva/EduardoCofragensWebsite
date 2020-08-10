@@ -23,4 +23,10 @@ jobs:
       - name: Build and Deploy
         run: |
           rm --force --recursive docs,
-          hugo -d docs --minify.
+          hugo --minify -d docs.
+      
+      - name: Persist docs folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs-folder
+          path: docs/
