@@ -1,0 +1,23 @@
+{{range where .Pages "Section" "about"}}
+{{ if .Params.homepage_enable}}
+
+
+<!--Sobre Nós-->
+<!--TODO-->
+<!--<hr>
+<div class="separator separator-primary"></div>
+-->
+<div class="section" id="about">
+  <div class="container">
+      <h2 class="title text-center">{{ .Params.homepage_title }}</h2>
+      <h5 class="description">
+          {{ .Params.content }}
+          {{ if .Params.homepage_button_enable }}
+            <a href="/about/">  Saber Mais</a>
+          {{ end }}
+      </h5>
+  </div>
+</div>
+
+{{ end }}
+{{ end }}

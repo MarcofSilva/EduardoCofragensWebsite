@@ -15,8 +15,10 @@
             <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background") }}');">
             </div>
             
+
             {{ block "title" . }}
             {{ end }}
+            
             
         </div>
         <div class="{{ .Params.section | default "section"}}">

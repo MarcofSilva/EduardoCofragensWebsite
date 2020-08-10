@@ -10,7 +10,7 @@ uglyURLs = "false"
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Home"
+    name = "Página Inicial"
     url = "/"
     pre = "<i class='now-ui-icons business_bank'></i>"
     weight = 1
@@ -58,13 +58,13 @@ uglyURLs = "false"
     
 [[menu.main]]
     name = "Portefólio"
-    url = "/#carousel"
+    url = "/#portfolio"
     pre = "<i class='now-ui-icons media-1_album'></i>"
     weight = 5
 [[menu.main]]
     name = "Contactos"
     pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
-    url = "/#contacts"
+    url = "/contacts"
     weight = 6
 
 [[menu.footer]]
@@ -75,12 +75,12 @@ uglyURLs = "false"
 # TODO perceber bem o que fazer devido a licensa
 [[menu.footer]]
     identifier = "copyright"
-    name = "Copyright © 2020 Eduardo Silva"
+    name = "Copyright © 2020"
     weight = 2
 
 [[menu.footer]]
     identifier = "alvara"
-    name = "Alvará 93406 PAR"
+    name = "Alvará"
     weight = 3
 
 [[menu.footer]]
@@ -96,6 +96,7 @@ uglyURLs = "false"
     weight = 5
 
 [params]
+    name = "Eduardo Silva"
     # orange, red, yellow, blue, green
     #TODO which one to use
     tint = "orange"

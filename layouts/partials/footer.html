@@ -1,0 +1,24 @@
+<footer class="footer" data-background-color="black">
+  <div class="container">
+    <nav>
+	    <ul>
+	    {{ range .Site.Menus.footer }}
+        <li>
+          <!--Marco edit-->
+          {{ if eq .KeyName "footerHomeButton"}}
+            <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+          {{ else if eq .KeyName "alvara"}}
+            <a>{{ .Pre }} Alvará de construção: {{ site.Data.info.alvara }}</a>
+          {{ else if eq .KeyName "phone_number"}}
+            <a>{{ .Pre }}{{ range first 1 (where site.Pages "Section" "contacts") }} {{.Params.mobile}} {{ end }} </a>
+          {{ else if eq .KeyName "email"}}
+            <a>{{ .Pre }} {{ range first 1 (where site.Pages "Section" "contacts") }} {{.Params.email}} {{ end }} </a>
+          {{ else }}
+            <a>{{ .Pre }} {{ .Name }}</a>
+          {{ end }}
+        </li>
+      {{ end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

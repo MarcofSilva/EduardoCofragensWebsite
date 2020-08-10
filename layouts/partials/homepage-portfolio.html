@@ -1,0 +1,71 @@
+{{range first 1 (where .Pages "Section" "portfolio") }}
+{{ if .Params.homepage_enable }}
+
+<!--Portefólio-->
+
+<div class="section darker-orange-background" id="portfolio">
+    <div class="container text-center">
+
+        <h2 class="title text-center">
+            {{ .Params.homepage_title }}
+        </h2>
+        <!--
+        <h5 class="description text-center">
+                Conheça alguns dos nossos trabalhos
+        </h5>
+        <br>    
+        -->
+        {{ if .Params.homepage_button_enable }}
+        <a class="btn btn-primary btn-round" type="" href="/portfolio/">Ver Portefólio Completo</a>
+        {{ end }}
+        <div class="space-50"></div>
+
+        <div class="row justify-content-center text-center">
+            {{ range $obra_index, $obra := first .Params.homepage_obras_num (where .Site.RegularPages "Section" "portfolio" )}}
+                <div class="col-md-4">
+                    <!--Obra Carousel-->
+                    <div id="carouselObra_{{ $obra_index }}" class="carousel slide" data-ride="carousel">
+                        <!--
+                        <ol class="carousel-indicators">
+                            {{ range $image_index, $image := .Params.images}}
+                                {{ $active := "" }}
+                                {{if eq $image_index 0 }}
+                                    {{ $active = "active" }}
+                                {{ end }}
+                                <li data-target="#carouselObra_{{ $image_index }}" data-slide-to="{{ $obra_index }}" class="{{ $active }}"></li>
+                            {{ end }}
+                        </ol>
+                        -->
+                        <div class="carousel-inner" role="listbox">
+                            {{ range $image_index, $image := .Params.images}}
+                                {{ $active := "" }}
+                                {{if eq $image_index 0 }}
+                                    {{ $active = "active" }}
+                                {{ end }}
+                                <div class="carousel-item {{ $active }}">
+                                    <img class="d-block" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <!--<h5>text</h5>-->
+                                    </div>
+                                </div>
+                            {{ end }}
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselObra_{{ $obra_index }}" role="button" data-slide="prev">
+                            <!-- <i class="now-ui-icons arrows-1_minimal-left"></i> -->
+                        </a>
+                        <a class="carousel-control-next" href="#carouselObra_{{ $obra_index }}" role="button" data-slide="next">
+                            <!-- <i class="now-ui-icons arrows-1_minimal-right"></i> -->
+                        </a>
+                    </div>
+                    <br>
+                    <p class="category">{{ .Title }}</p>
+                    <br>
+                    <br>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}
+{{ end }}
