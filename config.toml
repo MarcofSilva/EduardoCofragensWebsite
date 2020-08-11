@@ -1,4 +1,4 @@
-baseURL = "https://cofragemsilva.pt/"
+baseURL = "https://cofragemsilva.pt"
 languageCode = "pt-pt"
 theme = "hugo-now-ui"
 title = "Cofragem Silva"
