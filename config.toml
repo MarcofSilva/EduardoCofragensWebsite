@@ -1,5 +1,4 @@
-baseURL = "https://marcofsilva.github.io/EduardoCofragensWebsite"
-#baseURL = "https://cofragemsilva.pt"
+baseURL = "https://cofragemsilva.pt"
 languageCode = "pt-pt"
 title = "Cofragem Silva"
 theme = "hugo-now-ui"
