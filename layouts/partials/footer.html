@@ -1,22 +1,26 @@
+{{ partial "footer-contacts" . }}
+
 <footer class="footer" data-background-color="black">
   <div class="container">
-    <nav>
+    
+    {{ $path := .Permalink }}
+    {{ $numItems := len .Site.Menus.footer }}
+
+    <nav style="float: none; width: 100%;">
 	    <ul>
-	    {{ range .Site.Menus.footer }}
-        <li>
-          <!--Marco edit-->
-          {{ if eq .KeyName "footerHomeButton"}}
-            <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+	    {{ range $itemIndex, $item := .Site.Menus.footer }}
+          {{ if eq .KeyName "footerHomeButton" }}
+            <li style="float: right;"> <a href="{{ $path }}{{ .URL}}" class=" btn-icon btn-round btn-primary">{{ .Pre }}</a>
           {{ else if eq .KeyName "alvara"}}
-            <a>{{ .Pre }} Alvará de construção: {{ site.Data.info.alvara }}</a>
-          {{ else if eq .KeyName "phone_number"}}
-            <a>{{ .Pre }}{{ range first 1 (where site.Pages "Section" "contacts") }} {{.Params.mobile}} {{ end }} </a>
-          {{ else if eq .KeyName "email"}}
-            <a>{{ .Pre }} {{ range first 1 (where site.Pages "Section" "contacts") }} {{.Params.email}} {{ end }} </a>
+            <li> <a>{{ .Pre }} Alvará de construção: {{ site.Data.info.alvara }}</a>
           {{ else }}
-            <a>{{ .Pre }} {{ .Name }}</a>
+            <li> <a>{{ .Pre }} {{ .Name }}</a>
           {{ end }}
         </li>
+
+        {{ if lt $itemIndex (sub $numItems 2) }}
+          |
+        {{ end }}
       {{ end }}
       </ul>
     </nav>

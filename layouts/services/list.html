@@ -1,10 +1,20 @@
----
-title: "Serviços"
-date: 2019-08-25T21:49:14+01:00
-draft: true
-class: "my-single-page"
-background: "../img/headers/header2.jpg"
----
+{{ define "title" }}
+
+<div class="container">
+    <div class="content-center">
+    <h1 class="title">{{ .Title }}</h1>
+    <!--<div class="text-center">
+        {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+    </div>-->
+    </div>
+</div>
+
+{{ end }}
+
+
+
+{{ define "body" }}
+
 <div class="container">
     <div class="row justify-content-center">
         <a class="btn btn-primary btn-simple btn-round" href="/servicos/#cofragem" type="">
@@ -110,3 +120,5 @@ background: "../img/headers/header2.jpg"
         </div>
     </div>    
 </div>
+
+{{ end }}

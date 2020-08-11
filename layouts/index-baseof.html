@@ -1,6 +1,6 @@
 <!--baseof template of the Homepage _index.html-->
 <!doctype html>
-<html id="home" lang="en, pt" style="scroll-behavior: smooth;"> <!--smooth scroll in the home page-->
+<html id="top" lang="en, pt" style="scroll-behavior: smooth;"> <!--smooth scroll in the home page-->
   {{partial "head" . }}
   
 	<body class="{{ .Params.class | default "profile-page" }} sidebar-collapse">
@@ -32,13 +32,13 @@
             {{ end }}
             
         </div>
-        <div id="homepageBody" class="{{ .Params.section | default "section"}}">
-            <div class="cntainer">
+        <div id="homepageBody" class="{{ .Params.section | default "section"}}" style="padding-bottom: 0px;">
+            
               
             {{ block "body" . }}
 	          {{ end }}
 
-            </div>
+            
         </div>
       {{ partial "footer" . }}
     </div>

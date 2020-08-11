@@ -15,6 +15,7 @@
 
 <!--{{ with .Title }}<h1>{{ . }}</h1>{{ end }}-->
 <div class="container">
+  <!--<h5> A cargo de </h5>-->
   <h1>
     {{ .Site.Params.name }}
     <small class="description">
@@ -29,13 +30,17 @@
   
   <!--Homepage-->
   
+  <div class="space-50"></div>
+
   {{ partial "homepage-about.html" . }}
+
+  <div class="space-50"></div>
 
   {{ partial "homepage-services.html" . }}
 
-  {{ partial "homepage-portfolio.html" . }}
+  <div class="space-50"></div>
 
-  {{ partial "homepage-contacts.html" . }}
+  {{ partial "homepage-portfolio.html" . }}
 
 
   {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}

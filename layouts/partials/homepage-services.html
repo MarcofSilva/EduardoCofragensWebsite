@@ -18,14 +18,17 @@
             {{ range $service_index, $service := (where site.RegularPages "Section" "services") }}
                 {{ if ne (mod $service_index 2) 1 }}
 
-                    <div class="row justify-content-center homepage-service">
+                    <div class="row justify-content-center">
                         <div class="col-md-4">
                             <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
                             <br>
                             <br>
                         </div>
-                        <div class="col-md-6 text-md-left">
-                            <h5 class="category">{{ .Title | markdownify }}</h5>
+
+                        <div class="col-md-0"></div> <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
+                        
+                        <div class="col-md-7 text-md-left">
+                            <h5 class="title">{{ .Title | markdownify }}</h5>
                             <!--<p class="category text-primary">{{ .Params.caption }}</p>-->
                             <p class="description">
                                 {{ .Params.text }}
@@ -38,9 +41,9 @@
 
                 {{ else }}
 
-                <div class="row justify-content-center homepage-service">
-                    <div class="col-md-6 text-md-right order-md-1 order-2">
-                        <h5 class="title">{{ .Title }}</h5>
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-md-right order-md-1 order-2">
+                        <h5 class="title">{{ .Title | markdownify }}</h5>
                         <!--<p class="category text-primary">{{ .Params.caption }}</p>-->
                         <p class="description">
                             {{ .Params.text }}
@@ -49,7 +52,10 @@
                             {{ end }}
                         </p>
                     </div>
-                    <div class="col-md-4 order-md-2 order-1">
+
+                    <div class="col-md-0 order-md-2"></div> <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
+
+                    <div class="col-md-4 order-md-3 order-1">
                         <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
                         <br>
                         <br>
@@ -69,145 +75,6 @@
 
             {{ if .Params.homepage_button_enable }}
                 <a class="btn btn-primary btn-round" type="" href="/services/">Saber Mais Sobre Serviços</a>
-            {{ end }}
-        </div>
-    </div>
-</div>
-
-{{ end }}
-{{ end }}
-
-
-
-
-
-
-
-
-
-
-
-{{range first 1 (where .Pages "Section" "services") }}
-{{ if .Params.homepage_enable }}
-
-<!--Servicos-->
-
-<!--TODO it should be possible to click the services and be redirected to de correspondent section e serviços page-->
-<div class="section" id="services">
-    <!--Shape services backgroun #TODO or delete-->
-    <!--<div style="position: absolute; z-index: 100; border-top: 1000px solid #555; border-left: 25px solid transparent; border-right: 25px solid transparent; height: 0; width: 50%;"></div>-->
-    <div class="container">
-        <h2 class="title text-center">{{ .Params.homepage_title }}</h2>
-        <br>
-        <div class="text-center">
-            
-            {{ $numServices := len (where .Site.RegularPages "Section" "services") }}
-            {{ if and (gt $numServices 3) (eq (mod $numServices 3) 1) }}
-                
-                <div class="row justify-content-center">
-                    {{ range first (sub $numServices 2) (where site.RegularPages "Section" "services" )}}
-                        <div class="col-md-4">
-                            <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                            <h4 class="title">{{ .Title }}</h4>
-                            <p class="category text-primary">{{ .Params.caption }}</p>
-                            <p class="description">
-                                {{ .Params.text }}
-                                {{ if .Params.homepage_link_enable }}
-                                <a href="#">Ver mais sobre isto</a>
-                                {{ end }}
-                            </p>
-                            <br>
-                        </div>
-                    {{ end }}
-                </div>
-                <div class="row justify-content-center">
-                    {{ range last 2 (where site.RegularPages "Section" "services" )}}
-                        <div class="col-md-4">
-                            <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                            <h4 class="title">{{ .Title }}</h4>
-                            <p class="category text-primary">{{ .Params.caption }}</p>
-                            <p class="description">
-                                {{ .Params.text }}
-                                {{ if .Params.homepage_link_enable }}
-                                <a href="#">Ver mais sobre isto</a>
-                                {{ end }}
-                            </p>
-                            <br>
-                        </div>
-                    {{ end }}
-                </div>
-
-            {{ else }}
-                
-            <div class="row justify-content-center">
-                {{ range (where site.RegularPages "Section" "services" )}}
-                    <div class="col-md-4">
-                        <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">{{ .Title }}</h4>
-                        <p class="category text-primary">{{ .Params.caption }}</p>
-                        <p class="description">
-                            {{ .Params.text }}
-                            {{ if .Params.homepage_link_enable }}
-                            <a href="#">Ver mais sobre isto</a>
-                            {{ end }}
-                        </p>
-                        <br>
-                    </div>
-                {{ end }}
-            </div>
-
-            {{ end }}
-
-            {{ if .Params.homepage_button_enable }}
-                <a class="btn btn-primary btn-round" type="" href="/services/">Saber Mais</a>
-            {{ end }}
-        </div>
-    </div>
-</div>
-
-{{ end }}
-{{ end }}
-
-
-
-
-
-
-
-
-{{range first 1 (where .Pages "Section" "services") }}
-{{ if .Params.homepage_enable }}
-
-<!--Servicos-->
-
-<!--TODO it should be possible to click the services and be redirected to de correspondent section e serviços page-->
-<div class="section" id="services">
-    <!--Shape services backgroun #TODO or delete-->
-    <!--<div style="position: absolute; z-index: 100; border-top: 1000px solid #555; border-left: 25px solid transparent; border-right: 25px solid transparent; height: 0; width: 50%;"></div>-->
-    <div class="container">
-        <h2 class="title text-center">{{ .Params.homepage_title }}</h2>
-        <br>
-        <div class="text-center">
-                
-            <div class="row justify-content-center">
-                {{ range (where site.RegularPages "Section" "services" )}}
-                    <div class="col-md-4">
-                        <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">{{ .Title }}</h4>
-                        <p class="category text-primary">{{ .Params.caption }}</p>
-                        <p class="description">
-                            {{ .Params.text }}
-                            {{ if .Params.homepage_link_enable }}
-                            <a href="#">Ver mais sobre isto</a>
-                            {{ end }}
-                        </p>
-                        <br>
-                    </div>
-                {{ end }}
-            </div>
-
-            {{ if .Params.homepage_button_enable }}
-                <a class="btn btn-primary btn-round" type="" href="/services/">Saber Mais</a>
             {{ end }}
         </div>
     </div>

@@ -1,31 +1,23 @@
 baseURL = "https://cofragemsilva.pt"
 languageCode = "pt-pt"
 theme = "hugo-now-ui"
-title = "Cofragem Silva"
+title = "Cofragem Silva" #titulo que vai aparecer quando se pesquisa o site
+
+relativeURLs = "true"
 
 [[menu.footer]]
-identifier = "footerHomeButton"
-pre = "<i class='now-ui-icons arrows-1_minimal-up'></i>"
-url = "/#home"
-weight = 1
-[[menu.footer]]
 identifier = "copyright"
-name = "Copyright © 2020"
-weight = 2
+name = "Copyright © 2020 Eduardo Silva."
+weight = 1
 [[menu.footer]]
 identifier = "alvara"
 name = "Alvará"
+weight = 2
+[[menu.footer]]
+identifier = "footerHomeButton"
+pre = "<i class='now-ui-icons arrows-1_minimal-up btn_round'></i>"
+url = "#top"
 weight = 3
-[[menu.footer]]
-identifier = "phone_number"
-name = "962757100"
-pre = "<i class='now-ui-icons tech_mobile'></i>"
-weight = 4
-[[menu.footer]]
-identifier = "email"
-name = "cofragemsilva@hotmail.com"
-pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-weight = 5
 
 [[menu.main]]
 name = "Página Inicial"
