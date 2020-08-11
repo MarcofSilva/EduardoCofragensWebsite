@@ -13,6 +13,6 @@ class: "my-single-page"
 background: "../img/headers/header3.jpg"
 section_title: "Conheça o Nosso Trabalho"
 
-#TODO check for the necessary info
+#TODO create forestry frontmatter templates after final decision on the info necessary for each obra<>
 draft: false
 ---

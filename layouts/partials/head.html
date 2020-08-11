@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
 
+  {{ partial "meta" . }}
+
+
   <!--Marco edit-->
   <style>
     @media screen and (max-width: 979px) {
@@ -49,11 +52,11 @@
     }
 
     .darker-background {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     }
 
     .darker-orange-background {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(233, 94, 56, 0.5);
     }
 
   </style>

@@ -1,4 +1,4 @@
-baseURL = "https://cofragemsilva.pt/"
+baseURL = "https://cofragemsilva.pt"
 languageCode = "pt-pt"
 title = "Cofragem Silva"
 theme = "hugo-now-ui"
@@ -102,6 +102,7 @@ uglyURLs = "false"
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
+    #TODO description change...and see other texts for meta descriptions... SEO
     description = "A website built through Hugo and blogdown."
 
     # options for highlight.js (version, additional languages, and theme)
