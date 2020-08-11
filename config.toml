@@ -61,14 +61,14 @@ theme = "hugo-now-ui"
 [[menu.main]]
     name = "Contactos"
     pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
-    url = "/contacts"
+    url = "/#contacts"
     weight = 6
 
 [[menu.footer]]
     identifier = "footerHomeButton"
     pre = "<i class='now-ui-icons arrows-1_minimal-up'></i>"
     weight = 1
-    url = "/"
+    url = "/#home"
 # TODO perceber bem o que fazer devido a licensa
 [[menu.footer]]
     identifier = "copyright"

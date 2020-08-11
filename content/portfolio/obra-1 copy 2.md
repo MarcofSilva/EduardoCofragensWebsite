@@ -3,7 +3,7 @@ title: "Piscina - Ferragudo"
 date: 2020-08-09T15:20:42+01:00
 
 images: 
-  - "img/cofragem.jpg"
+  - "img/aluguer.jpg"
   - "img/ferro.jpg"
   - "img/aluguer.jpg"
 
