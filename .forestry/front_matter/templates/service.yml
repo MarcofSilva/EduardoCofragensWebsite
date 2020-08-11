@@ -23,3 +23,5 @@ fields:
 - type: boolean
   name: homepage_link_enable
   label: homepage_link_enable
+pages:
+- content/services/service-2.md
