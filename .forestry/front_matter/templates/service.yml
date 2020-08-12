@@ -1,0 +1,30 @@
+---
+label: Service
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: weight
+  label: weight
+- type: text
+  name: description
+  label: description
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: caption
+  label: caption
+- type: textarea
+  name: text
+  label: text
+- type: boolean
+  name: homepage_link_enable
+  label: homepage_link_enable
+pages:
+- content/services/service-1.md
+- content/services/service-2.md
+- content/services/service-3.md
+- content/services/service-4.md
