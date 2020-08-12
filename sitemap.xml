@@ -1,1 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://cofragemsilva.pt/services/service-1/</loc></url><url><loc>https://cofragemsilva.pt/services/service-2/</loc></url><url><loc>https://cofragemsilva.pt/services/service-3/</loc></url><url><loc>https://cofragemsilva.pt/services/service-4/</loc></url><url><loc>https://cofragemsilva.pt/</loc><lastmod>2020-08-09T15:20:42+01:00</lastmod></url><url><loc>https://cofragemsilva.pt/portfolio/obra-1-copy-2/</loc><lastmod>2020-08-09T15:20:42+01:00</lastmod></url><url><loc>https://cofragemsilva.pt/portfolio/obra-1-copy/</loc><lastmod>2020-08-09T15:20:42+01:00</lastmod></url><url><loc>https://cofragemsilva.pt/portfolio/obra-1/</loc><lastmod>2020-08-09T15:20:42+01:00</lastmod></url><url><loc>https://cofragemsilva.pt/portfolio/</loc><lastmod>2020-08-09T15:20:42+01:00</lastmod></url><url><loc>https://cofragemsilva.pt/categories/</loc></url><url><loc>https://cofragemsilva.pt/contacts/</loc></url><url><loc>https://cofragemsilva.pt/about/</loc></url><url><loc>https://cofragemsilva.pt/services/</loc></url><url><loc>https://cofragemsilva.pt/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cofragemsilva.pt/services/service-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/services/service-2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/services/service-3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/services/service-4/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/</loc>
+    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/portfolio/obra-1-copy-2/</loc>
+    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/portfolio/obra-1-copy/</loc>
+    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/portfolio/obra-1/</loc>
+    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/portfolio/</loc>
+    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/contacts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/services/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cofragemsilva.pt/tags/</loc>
+  </url>
+  
+</urlset>
