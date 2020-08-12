@@ -17,115 +17,86 @@
 <div class="section">
     <div class="container">
         <div class="row justify-content-center">
-            {{ with .Params }}
-            <div class="col-lg-7 col-sm-6 mb-5">
-                <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
-                <p>{{ .content | markdownify }}</p>
+            <div class="col-lg-6 col-sm-6 mb-5">
+                {{ if .Params.content_title }}
+                <h2 class="font-weight-bold mb-4">{{ .Params.content_title | markdownify }}</h2>
+                <p>{{ .Params.content | markdownify }}</p>
+                {{ else }}
+                <h5 class="description" style="text-align:left">{{ .Params.content | markdownify }}</h5>
+                {{ end }}
             </div>
-            {{ end }}
+
+            <div class="col-lg-1"></div>
             <div class="col-lg-5 col-sm-6 mb-5">
-                {{ with .Params }}
-                <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
+                <h2 class="font-weight-bold mb-4">{{ .Params.title | markdownify }}</h2>
                 <ul class="list-unstyled">
                     <li class="mb-3">
-                        <a href="tel:{{ .mobile }}">
+                        <a href="tel:{{ .Params.mobile }}">
                             <i class="now-ui-icons tech_mobile color-orange"></i>
-                            {{ .mobile }}
+                            {{ .Params.mobile }}
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a href="mailto:{{ .email }}">
+                        <a href="mailto:{{ .Params.email }}">
                             <i class="now-ui-icons ui-1_email-85 color-orange"></i>
-                            {{ .email }}
+                            {{ .Params.email }}
                         </a>
                     </li>
                     <li class="mb-3">
                         <i class="now-ui-icons location_pin color-orange"></i>
-                        {{ .location }}
+                        {{ .Params.location }}
                     </li>
                 </ul>
-                {{ end }}
             </div>
         </div>
-    
-        <div class="row justify-content-center">
+        
+        <div class="separator separator-primary mb-5 mt-5"></div>
+        <div class="space-50"></div>
+        
+        {{ if .Params.form.form_enable }}
+        <div class="row justify-content-center ">
             <div class="col-lg-12">
-            <h2 class="font-weight-bold mb-4">{{ .Title | markdownify }}</h2>
+            <h2 class="font-weight-bold mb-4">{{ .Params.form.form_title | markdownify }}</h2>
+            <!--<p class="description"></p>-->
             <form action="{{ site.Params.contact_form_action }}" method="POST" class="row">
-                <div class="col-lg-6 mb-3">
-                <input type="text" class="form-control mb-2" id="name" name="name" placeholder='{{ i18n "your_name" }}'>
+                <div class="col-lg-6 mb-4 input-group">
+                    <span class="input-group-addon">
+                        <i class="now-ui-icons users_circle-08"></i>
+                    </span>
+                    <input type="text" class="form-control" id="name" name="name" placeholder='Nome'>
                 </div>
-                <div class="col-lg-6 mb-3">
-                <input type="email" class="form-control mb-2" id="email" name="email" placeholder='{{ i18n "your_email" }}'>
+                <div class="col-lg-6 mb-4 input-group">
+                    <span class="input-group-addon">
+                        <i class="now-ui-icons ui-1_email-85"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder='Email'>
                 </div>
-                <div class="col-12 mb-3">
-                <textarea name="message" id="message" class="form-control mb-2" placeholder='{{ i18n "your_message" }}'></textarea>
+
+                <div class="col-lg-6 mb-4 input-group">
+                    <span class="input-group-addon">
+                        <i class="now-ui-icons tech_mobile"></i>
+                    </span>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder='Telefone'>
+                </div>
+                <div class="col-lg-6 mb-4 input-group">
+                    <span class="input-group-addon">
+                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                    </span>
+                    <input class="form-control" id="subject" name="subject" data-toggle="tooltip" data-placement="left" title="(Assunto): {{ .Params.form.form_subject_tip }}" data-container="body" data-animation="true" type="text" placeholder="Assunto">
+                </div>
+
+                <div class="col-12 mb-3 input-group textarea-container">
+                    <textarea class="form-control mb-2" name="message" id="message" rows="4" cols="80" placeholder='Mensagem'></textarea>
                 </div>
                 <div class="col-12 text-right">
-                <button type="submit" value="send" class="btn btn-main btn-main-sm">{{ i18n "send" }}</button>
+                    <button type="submit" value="send" class="btn btn-primary btn-round">Enviar Mensagem</button>
                 </div>
             </form>
             </div>
         </div>
+        {{ end }}
+
     </div>
 </div>
-
-
-    <div class="row">
-        <div class="d-flex align-items-start col-md-11" style="padding-right: 10%;">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="title">Envie-nos uma mensagem</h2>
-                    <!--<p class="description"></p>-->
-                    <div class="row" id="send_us_message">
-                        <div class="col-lg-12 text-center col-md-10 ml-auto mr-auto">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group input-lg">
-                                        <span class="input-group-addon">
-                                            <i class="now-ui-icons users_circle-08"></i>
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Nome...">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group input-lg">
-                                        <span class="input-group-addon">
-                                            <i class="now-ui-icons ui-1_email-85"></i>
-                                        </span>
-                                        <input type="email" class="form-control" placeholder="E-mail...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group input-lg">
-                                        <span class="input-group-addon">
-                                            <i class="now-ui-icons tech_mobile"></i>
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Telefone...">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group input-lg">
-                                        <span class="input-group-addon">
-                                            <i class="now-ui-icons ui-1_zoom-bold"></i>
-                                        </span>
-                                        <input class="form-control" data-toggle="tooltip" data-placement="right" title="Orçamento, Aluguer de Material, etc..." data-container="body" data-animation="true" type="text" placeholder="Assunto...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="textarea-container">
-                                <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Mensagem..."></textarea>
-                            </div>
-                            <div class="send-button">
-                                <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Enviar Mensagem</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 {{ end }}
