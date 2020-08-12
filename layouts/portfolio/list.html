@@ -29,44 +29,37 @@
         <!--<div class="separator separator-primary"></div>-->
     </div>
     
-
-    <div class="section">
-        <div class="container">
-            <div class="text-center">
-                <div class="row">
-                    {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
-                        <div class="col-md-4">
-                            <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
-                                <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                                <h4 class="title">{{.Params.title}}</h4>
-                                <p class="category text-primary"> {{ .Params.date_to_show }} </p>
-                                <p class="description"> {{ .Params.text }} </p>
-                            </div>
-                            <div class="separator separator-primary"></div>
-                            <div class="space-50"></div>
-                        </div>
-                    {{ end }}
+    <div class="text-center">
+        <div class="row">
+            {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
+                <div class="col-md-4 mb-5">
+                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
+                        <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
+                        <h4 class="title">{{.Params.title}}</h4>
+                        <p class="category text-primary"> {{ .Params.date_to_show }} </p>
+                        <p class="description"> {{ .Params.text }} </p>
+                    </div>
+                    <div class="separator separator-primary"></div>
                 </div>
-            </div>
+            {{ end }}
         </div>
     </div>
-
 
     <!-- Modals for photos viewing-->
 
     {{range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
         <div class="modal fade" id="modal_{{$obra_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" style="max-width: 950px; margin-top: 100px;">
-                <div class="modal-content justify-content-center">
-                    <div class="modal-header justify-content-center">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                        </button>
+            <div class="modal-dialog modal-dialog-portfolio mt-5">
+                <div class="modal-content modal-content-portfolio justify-content-center">
+                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                        <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
+                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                        </a>
                         <!--TODO color of modal title-->
                         <h4 class="title title-up" style="color:rgb(255, 255, 255);" >{{ .Params.title }}</h4>
                     </div>
                     <div class="modal-body">
-                        <div id="carouselObra_{{$obra_index}}" class="carousel slide" data-interval="false">
+                        <div id="carouselObra_{{$obra_index}}" class="carousel slide" data-ride="carousel" data-interval="false">
                             <ol class="carousel-indicators">
                                 {{ range $image_index, $image := .Params.images}}
                                     {{ $active := "" }}
@@ -83,7 +76,7 @@
                                         {{ $active = "active" }}
                                     {{ end }}
                                     <div class="carousel-item {{ $active }}">
-                                        <img class="d-block" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                                        <img class="d-block modal-carousel-image" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
                                         <div class="carousel-caption d-none d-md-block">
                                             <!--<h5>text</h5>-->
                                         </div>

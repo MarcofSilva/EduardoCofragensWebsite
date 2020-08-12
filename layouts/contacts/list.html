@@ -17,7 +17,7 @@
 <div class="section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-6 mb-5">
+            <div class="col-lg-7 col-sm-6 mb-5">
                 {{ if .Params.content_title }}
                 <h2 class="font-weight-bold mb-4">{{ .Params.content_title | markdownify }}</h2>
                 <p>{{ .Params.content | markdownify }}</p>
@@ -26,24 +26,29 @@
                 {{ end }}
             </div>
 
-            <div class="col-lg-0" style="width: 5%;" ></div>
             <div class="col-lg-5 col-sm-6 mb-5">
                 <h2 class="font-weight-bold mb-4">{{ .Params.title | markdownify }}</h2>
                 <ul class="list-unstyled">
                     <li class="mb-3">
-                        <a href="tel:{{ .Params.mobile }}">
-                            <i class="now-ui-icons tech_mobile color-orange"></i>
-                            {{ .Params.mobile }}
-                        </a>
-                    </li>
-                    <li class="mb-3">
                         <a href="mailto:{{ .Params.email }}">
-                            <i class="now-ui-icons ui-1_email-85 color-orange"></i>
+                            <i class="now-ui-icons ui-1_email-85 color-darker-orange"></i>
                             {{ .Params.email }}
                         </a>
                     </li>
                     <li class="mb-3">
-                        <i class="now-ui-icons location_pin color-orange"></i>
+                        <a href="tel:+{{.Params.mobile_country_code }}{{ .Params.mobile }}">
+                            <i class="now-ui-icons tech_mobile color-darker-orange"></i>
+                            {{ .Params.mobile }}
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="https://wa.me/{{ .Params.mobile_country_code }}{{ .Params.mobile }}" target="_blank" onmouseover="this.style.color='#075E54'">
+                            <i class="fa fa-whatsapp" style="color: #075E54;"></i>
+                            <span style="color: #128C7E;">{{ .Params.mobile }}</span>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="now-ui-icons location_pin"></i>
                         {{ .Params.location }}
                     </li>
                 </ul>
