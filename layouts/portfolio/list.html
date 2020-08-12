@@ -66,14 +66,14 @@
                         <h4 class="title title-up" style="color:rgb(255, 255, 255);" >{{ .Params.title }}</h4>
                     </div>
                     <div class="modal-body">
-                        <div id="carouselObra" class="carousel slide" data-ride="carousel">
+                        <div id="carouselObra_{{$obra_index}}" class="carousel slide" data-interval="false">
                             <ol class="carousel-indicators">
                                 {{ range $image_index, $image := .Params.images}}
                                     {{ $active := "" }}
                                     {{if eq $image_index 0 }}
                                         {{ $active = "active" }}
                                     {{ end }}
-                                    <li data-target="#carouselObra" data-slide-to="{{ $image_index }}" class="{{ $active }}"></li>
+                                    <li data-target="#carouselObra_{{$obra_index}}" data-slide-to="{{ $image_index }}" class="{{ $active }}"></li>
                                 {{ end }}
                             </ol>
                             <div class="carousel-inner" role="listbox">
@@ -90,10 +90,10 @@
                                     </div>
                                 {{ end }}
                             </div>
-                            <a class="carousel-control-prev" href="#carouselObra" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselObra_{{$obra_index}}" role="button" data-slide="prev">
                                 <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
-                            <a class="carousel-control-next" href="#carouselObra" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselObra_{{$obra_index}}" role="button" data-slide="next">
                                 <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
