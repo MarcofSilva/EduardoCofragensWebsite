@@ -4,7 +4,6 @@ date: 2020-08-09T15:20:42+01:00
 
 images: 
   - "img/cofragem.jpg"
-  - "img/ferro.jpg"
   - "img/aluguer.jpg"
 
 date_to_show: "Junho 2019"

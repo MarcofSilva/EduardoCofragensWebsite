@@ -10,7 +10,10 @@
 	    <ul>
 	    {{ range $itemIndex, $item := .Site.Menus.footer }}
           {{ if eq .KeyName "footerHomeButton" }}
-            <li style="float: right;"> <a href="{{ $path }}{{ .URL}}" class=" btn-icon btn-round btn-primary">{{ .Pre }}</a>
+            <li style="float: right;">
+              <a href="{{ $path }}{{ .URL}}" class=" btn-icon btn-round btn-primary">
+                {{ .Pre }}
+              </a>
           {{ else if eq .KeyName "alvara"}}
             <li> <a>{{ .Pre }} Alvará de construção: {{ site.Data.info.alvara }}</a>
           {{ else }}

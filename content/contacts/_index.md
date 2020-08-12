@@ -10,6 +10,7 @@ homepage_title: "Fale conosco"
 class: "my-single-page"
 background: "../img/headers/header4.jpg"
 
+# Info
 mobile_country_code : "+351"
 mobile : "962757100"
 email : "cofragemsilva@hotmail.com"

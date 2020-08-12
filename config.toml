@@ -7,7 +7,7 @@ relativeURLs = "true"
 
 [[menu.footer]]
 identifier = "copyright"
-name = "Copyright © 2020 Eduardo Silva."
+name = "Copyright © 2020"
 weight = 1
 [[menu.footer]]
 identifier = "alvara"
@@ -27,17 +27,17 @@ weight = 1
 [[menu.main]]
 name = "Sobre"
 pre = "<i class='now-ui-icons business_badge'></i>"
-url = "/#about"
+url = "/#about_homepage"
 weight = 2
 [[menu.main]]
 name = "Serviços"
 pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-url = "/#services"
+url = "/#services_homepage"
 weight = 3
 [[menu.main]]
 name = "Portefólio"
 pre = "<i class='now-ui-icons media-1_album'></i>"
-url = "/#portfolio"
+url = "/#portfolio_homepage"
 weight = 5
 [[menu.main]]
 name = "Contactos"
@@ -60,3 +60,17 @@ name = "Eduardo Silva"
 
 [permalinks]
 post = "/:year/:month/:day/:slug/"
+
+
+[minify]
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = true     #default false
+    [minify.tdewolff.xml]
+      keepWhitespace = false
