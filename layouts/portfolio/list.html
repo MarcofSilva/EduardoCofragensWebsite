@@ -48,18 +48,25 @@
     <!-- Modals for photos viewing-->
 
     {{range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
-        <div class="modal fade" id="modal_{{$obra_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-portfolio mt-5">
+        <div class="modal fade justify-content-center" id="modal_{{$obra_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-portfolio" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate3D(-50%, -50%, 0);
+                transform: translate3D(-50%, -50%, 0);
+                -moz-transform: translate3D(-50%, -50%, 0);
+                -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                    <div class="modal-header justify-content-center mb-2">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >{{ .Params.title }}</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
                         </a>
-                        <!--TODO color of modal title-->
-                        <h4 class="title title-up" style="color:rgb(255, 255, 255);" >{{ .Params.title }}</h4>
                     </div>
-                    <div class="modal-body">
-                        <div id="carouselObra_{{$obra_index}}" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="modal-body modal-body-portfolio">
+                        <div id="carouselObra_{{$obra_index}}" class="carousel slide" data-interval="false" style="display: block;">
                             <ol class="carousel-indicators">
                                 {{ range $image_index, $image := .Params.images}}
                                     {{ $active := "" }}
@@ -84,16 +91,24 @@
                                 {{ end }}
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_{{$obra_index}}" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_{{$obra_index}}" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="modal-header justify-content-center">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >{{ .Params.title }}</h4>
+                        
                     </div>
                 </div>
             </div>
         </div>
     {{ end }}
+
+    <script type="text/javascript">
+        $( ".carousel" ).carousel({ interval: false });
+        </script>
 
 {{ end }}

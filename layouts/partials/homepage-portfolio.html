@@ -24,7 +24,7 @@
             {{ range $obra_index, $obra := first .Params.homepage_obras_num (where .Site.RegularPages "Section" "portfolio" )}}
                 <div class="col-md-4">
                     <!--Obra Carousel-->
-                    <div id="carouselObra_{{ $obra_index }}" class="carousel slide" data-ride="carousel">
+                    <div id="carouselObra_{{ $obra_index }}" class="carousel slide" data-ride="carousel" data-interval="3000">
                         <!--
                         <ol class="carousel-indicators">
                             {{ range $image_index, $image := .Params.images}}
