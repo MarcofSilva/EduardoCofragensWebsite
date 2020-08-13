@@ -77,6 +77,7 @@
     }
 
 
+     
     .modal-dialog-portfolio {
       max-width: 90vw;
       width: fit-content;
@@ -84,20 +85,30 @@
 
     .modal-content-portfolio {
       width: fit-content;
+      width: -moz-fit-content;
       margin: auto;
     }
 
-    .modal-header-portfolio {
+    .modal-portfolio-photo-title {
        
-      background:rgba(255, 255, 255, 0.5)
+       
+       
+      text-shadow: 3px 3px 20px #000000;
+    }
+
+    .modal-body-portfolio {
+      width: fit-content;
+      margin: auto;
     }
 
     .modal-carousel-image {
-      max-height: 85vh;
+      max-height: 85vh; 
+      min-width: inherit;
     }
 
+     
 
-  </style>
+    </style>
 </head>
 
   
@@ -274,18 +285,25 @@
     
 
     
-        <div class="modal fade" id="modal_0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-portfolio mt-3">
+        <div class="modal fade justify-content-center" id="modal_0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-portfolio" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate3D(-50%, -50%, 0);
+                transform: translate3D(-50%, -50%, 0);
+                -moz-transform: translate3D(-50%, -50%, 0);
+                -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                    <div class="modal-header justify-content-center mb-2">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
                         </a>
-                        
-                        <h4 class="title title-up" style="color:rgb(255, 255, 255);" >Piscina - Ferragudo</h4>
                     </div>
-                    <div class="modal-body">
-                        <div id="carouselObra_0" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="modal-body modal-body-portfolio">
+                        <div id="carouselObra_0" class="carousel slide" data-interval="false" style="display: block;">
                             <ol class="carousel-indicators">
                                 
                                     
@@ -323,29 +341,40 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_0" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_0" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="modal-header justify-content-center">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
+                        
                     </div>
                 </div>
             </div>
         </div>
     
-        <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-portfolio mt-3">
+        <div class="modal fade justify-content-center" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-portfolio" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate3D(-50%, -50%, 0);
+                transform: translate3D(-50%, -50%, 0);
+                -moz-transform: translate3D(-50%, -50%, 0);
+                -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                    <div class="modal-header justify-content-center mb-2">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
                         </a>
-                        
-                        <h4 class="title title-up" style="color:rgb(255, 255, 255);" >Piscina - Ferragudo</h4>
                     </div>
-                    <div class="modal-body">
-                        <div id="carouselObra_1" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="modal-body modal-body-portfolio">
+                        <div id="carouselObra_1" class="carousel slide" data-interval="false" style="display: block;">
                             <ol class="carousel-indicators">
                                 
                                     
@@ -383,29 +412,40 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_1" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_1" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="modal-header justify-content-center">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
+                        
                     </div>
                 </div>
             </div>
         </div>
     
-        <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-portfolio mt-3">
+        <div class="modal fade justify-content-center" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-portfolio" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate3D(-50%, -50%, 0);
+                transform: translate3D(-50%, -50%, 0);
+                -moz-transform: translate3D(-50%, -50%, 0);
+                -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                    <div class="modal-header justify-content-center mb-2">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
                         </a>
-                        
-                        <h4 class="title title-up" style="color:rgb(255, 255, 255);" >Piscina - Ferragudo</h4>
                     </div>
-                    <div class="modal-body">
-                        <div id="carouselObra_2" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="modal-body modal-body-portfolio">
+                        <div id="carouselObra_2" class="carousel slide" data-interval="false" style="display: block;">
                             <ol class="carousel-indicators">
                                 
                                     
@@ -443,29 +483,40 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_2" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_2" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="modal-header justify-content-center">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
+                        
                     </div>
                 </div>
             </div>
         </div>
     
-        <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-portfolio mt-3">
+        <div class="modal fade justify-content-center" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-portfolio" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate3D(-50%, -50%, 0);
+                transform: translate3D(-50%, -50%, 0);
+                -moz-transform: translate3D(-50%, -50%, 0);
+                -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2 modal-heaer-portfolio">
+                    <div class="modal-header justify-content-center mb-2">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="fa fa-remove" style="color: #f96332; font-size: 40px; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
                         </a>
-                        
-                        <h4 class="title title-up" style="color:rgb(255, 255, 255);" >Piscina - Ferragudo</h4>
                     </div>
-                    <div class="modal-body">
-                        <div id="carouselObra_3" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="modal-body modal-body-portfolio">
+                        <div id="carouselObra_3" class="carousel slide" data-interval="false" style="display: block;">
                             <ol class="carousel-indicators">
                                 
                                     
@@ -503,12 +554,16 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_3" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_3" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="modal-header justify-content-center">
+                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
+                        
                     </div>
                 </div>
             </div>

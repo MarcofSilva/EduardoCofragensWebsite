@@ -15,6 +15,13 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+/*
+#############################################
+    * This file is here to overwrite the original from the Now-ui-kit.
+    * It has minor but necessary changes
+    * Marco Silva
+#############################################
+*/
 
 var transparent = true;
 
@@ -75,9 +82,10 @@ $(document).ready(function() {
     }
 
     // Activate Carousel
-    $('.carousel').carousel({
+    // # This was making impossible to stop the automatic cycling through the html file with data-interval="false"
+    /*$('.carousel').carousel({
         interval: 4000
-    });
+    });*/
 
     $('.date-picker').each(function() {
         $(this).datepicker({
