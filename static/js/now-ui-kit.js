@@ -15,10 +15,10 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+
 /*
 #############################################
     * This file is here to overwrite the original from the Now-ui-kit.
-    * It has minor but necessary changes
     * Marco Silva
 #############################################
 */

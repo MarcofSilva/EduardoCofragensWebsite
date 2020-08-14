@@ -8,7 +8,7 @@ homepage_title: "Fale conosco"
 
 
 ## Section
-class: "my-single-page"
+class:
 background: "../img/headers/header4.jpg"
 #
 content_title : ""

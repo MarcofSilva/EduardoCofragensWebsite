@@ -21,6 +21,7 @@
         }
     </style>
 
+    {{ partial "contact-us-buttons" . }}
      
     <div class="container">
         <h3 class="title text-center">
@@ -31,7 +32,7 @@
     
     <div class="text-center">
         <div class="row">
-            {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
+            {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portefolio") }}
                 <div class="col-md-4 mb-5">
                     <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
                         <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
@@ -47,7 +48,7 @@
 
     <!-- Modals for photos viewing-->
 
-    {{range $obra_index, $obra := (where .Site.RegularPages "Section" "portfolio") }}
+    {{range $obra_index, $obra := (where .Site.RegularPages "Section" "portefolio") }}
         <div class="modal fade justify-content-center" id="modal_{{$obra_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-portfolio" style="
                 margin: 0;
@@ -62,7 +63,7 @@
                     <div class="modal-header justify-content-center mb-2">
                         <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >{{ .Params.title }}</h4>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 2em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">

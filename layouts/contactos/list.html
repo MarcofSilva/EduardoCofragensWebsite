@@ -1,0 +1,104 @@
+{{ define "title" }}
+
+    <div class="container">
+        <div class="content-center">
+        <h1 class="title">{{ .Title }}</h1>
+        <!--<div class="text-center">
+            {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+        </div>-->
+        </div>
+    </div>
+
+{{ end }}
+
+
+{{ define "body" }}
+
+
+<div class="row justify-content-center">
+    <div class="col-lg-7 col-sm-6 mb-5">
+        {{ if .Params.content_title }}
+        <h2 class="font-weight-bold mb-4">{{ .Params.content_title | markdownify }}</h2>
+        <p>{{ .Params.content | markdownify }}</p>
+        {{ else }}
+        <h5 class="description" style="text-align:left">{{ .Params.content | markdownify }}</h5>
+        {{ end }}
+    </div>
+
+    <div class="col-lg-5 col-sm-6 mb-5">
+        <h2 class="font-weight-bold mb-4">{{ .Params.title | markdownify }}</h2>
+        <ul class="list-unstyled">
+            <li class="mb-3">
+                <a href="mailto:{{ .Params.email }}">
+                    <i class="now-ui-icons ui-1_email-85 color-darker-orange"></i>
+                    {{ .Params.email }}
+                </a>
+            </li>
+            <li class="mb-3">
+                <a href="tel:+{{.Params.mobile_country_code }}{{ .Params.mobile }}">
+                    <i class="now-ui-icons tech_mobile color-darker-orange"></i>
+                    {{ .Params.mobile }}
+                </a>
+            </li>
+            <li class="mb-3">
+                <a href="https://wa.me/{{ .Params.mobile_country_code }}{{ .Params.mobile }}" target="_blank" onmouseover="this.style.color='#075E54'">
+                    <i class="fa fa-whatsapp" style="color: #075E54;"></i>
+                    <span style="color: #128C7E;">{{ .Params.mobile }}</span>
+                </a>
+            </li>
+            <li class="mb-3">
+                <i class="now-ui-icons location_pin"></i>
+                {{ .Params.location }}
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="separator separator-primary mb-5 mt-5"></div>
+<div class="space-50"></div>
+
+{{ if .Params.form.form_enable }}
+<div class="row justify-content-center">
+    <div class="col-lg-12">
+    <h2 class="font-weight-bold mb-5">{{ .Params.form.form_title | markdownify }}</h2>
+    <!--<p class="description"></p>-->
+    <form action="{{ site.Params.contact_form_action }}" method="POST" class="row darker-background" style="padding: 30px 15px 20px; border-radius: 30px;">
+        <div class="col-lg-6 mb-4 input-group">
+            <span class="input-group-addon">
+                <i class="now-ui-icons users_circle-08"></i>
+            </span>
+            <input type="text" class="form-control" id="name" name="name" placeholder='Nome'>
+        </div>
+        <div class="col-lg-6 mb-4 input-group">
+            <span class="input-group-addon">
+                <i class="now-ui-icons ui-1_email-85"></i>
+            </span>
+            <input type="email" class="form-control" id="email" name="email" placeholder='Email'>
+        </div>
+
+        <div class="col-lg-6 mb-4 input-group">
+            <span class="input-group-addon">
+                <i class="now-ui-icons tech_mobile"></i>
+            </span>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder='Telefone'>
+        </div>
+        <div class="col-lg-6 mb-4 input-group">
+            <span class="input-group-addon">
+                <i class="now-ui-icons ui-1_zoom-bold"></i>
+            </span>
+            <input class="form-control" id="subject" name="subject" data-toggle="tooltip" data-placement="left" title="(Assunto): {{ .Params.form.form_subject_tip }}" data-container="body" data-animation="true" type="text" placeholder="Assunto">
+        </div>
+
+        <div class="col-12 mb-3 input-group textarea-container">
+            <textarea class="form-control mb-2" name="message" id="message" rows="4" cols="80" placeholder='Mensagem'></textarea>
+        </div>
+        <div class="col-12 text-right">
+            <button type="submit" value="send" class="btn btn-primary btn-round">Enviar Mensagem</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+{{ end }}
+
+{{ end }}

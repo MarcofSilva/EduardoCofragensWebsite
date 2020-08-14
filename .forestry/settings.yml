@@ -5,32 +5,27 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Conteúdo
 - type: directory
   path: content
-  label: Pages
+  label: Páginas
   create: all
   match: "*"
 - type: directory
-  path: content/services
-  label: Services
+  path: content/servicos
+  label: Serviços
   create: documents
   match: "**/*"
   templates:
   - service
 - type: directory
-  path: content/portfolio
-  label: Portfolio
+  path: content/portefolio
+  label: Portefólio
   create: all
   match: "**/*"
 - type: directory
-  path: content/contacts
-  label: Contacts
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/about
-  label: About
+  path: content/contactos
+  label: Contactos
   create: all
   match: "**/*"
 - type: heading

@@ -1,30 +1,24 @@
 ---
-label: Service
+label: Serviço
 hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: título
 - type: text
   name: weight
-  label: weight
-- type: text
+  label: prioridade
+- type: textarea
   name: description
-  label: description
+  label: descrição
 - type: image_gallery
   name: images
-  label: images
-- type: text
-  name: caption
-  label: caption
-- type: textarea
-  name: text
-  label: text
+  label: imagens
 - type: boolean
   name: homepage_link_enable
   label: homepage_link_enable
 pages:
-- content/services/service-1.md
-- content/services/service-2.md
-- content/services/service-3.md
-- content/services/service-4.md
+- content/servicos/cofragem.md
+- content/servicos/betonagem.md
+- content/servicos/ferro.md
+- content/servicos/aluguer.md

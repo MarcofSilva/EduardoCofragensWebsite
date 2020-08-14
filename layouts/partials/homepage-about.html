@@ -1,23 +1,14 @@
-{{range where .Pages "Section" "about"}}
-{{ if .Params.homepage_enable}}
-
+{{ $about_us_data := .Site.Data.info.about_us}}
+{{ if $about_us_data.homepage_enable}}
 
 <!--Sobre Nós-->
-<!--TODO-->
-<!--<hr>
-<div class="separator separator-primary"></div>
--->
-<div class="section darker-background" id="about_homepage">
+<div class="section darker-background mt-5" id="about_homepage">
   <div class="container">
-      <h2 class="title text-center">{{ .Params.homepage_title }}</h2>
+      <h2 class="title text-center mb-5">{{ $about_us_data.homepage_title }}</h2>
       <h5 class="description">
-          {{ .Params.content }}
-          {{ if .Params.homepage_button_enable }}
-            <a href="/about/">  Saber Mais</a>
-          {{ end }}
+          {{ $about_us_data.description }}
       </h5>
   </div>
 </div>
 
-{{ end }}
 {{ end }}

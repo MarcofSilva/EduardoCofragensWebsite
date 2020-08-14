@@ -1,9 +1,19 @@
+{{ define "title" }}
+
+<div class="container">
+  <h1 class="title text-center homepage-header-title">{{ .Params.title }}</h1>
+  <h5 class="homepage-header-description" style="color: white; margin-left: 15%; margin-right: 15%;"> {{ .Params.description }} </h5>
+  <a class="btn btn-primary btn-round homepage-header-description" type="" href="/#homepageBody">
+    Explora
+    <i class="now-ui-icons arrows-1_minimal-down"></i>
+  </a>
+</div>
+
+{{ end }}
+
+
 {{ define "body" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-
-
-<!--Template of the Homepage _index.html-->
-
 
 <!-- Optional Header Image -->
 {{ if .Params.header.image }}
@@ -30,13 +40,9 @@
   
   <!--Homepage-->
   
-  <div class="space-50"></div>
-
   {{ partial "homepage-about.html" . }}
 
   {{ partial "homepage-services.html" . }}
-
-  <div class="space-50"></div>
 
   {{ partial "homepage-portfolio.html" . }}
 

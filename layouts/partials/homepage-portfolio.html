@@ -1,4 +1,4 @@
-{{range first 1 (where .Pages "Section" "portfolio") }}
+{{range first 1 (where .Pages "Section" "portefolio") }}
 {{ if .Params.homepage_enable }}
 
 <!--Portefólio-->
@@ -6,7 +6,7 @@
 <div class="section darker-background" id="portfolio_homepage">
     <div class="container text-center">
 
-        <h2 class="title text-center">
+        <h2 class="title text-center mb-5">
             {{ .Params.homepage_title }}
         </h2>
         <!--
@@ -15,16 +15,11 @@
         </h5>
         <br>    
         -->
-        {{ if .Params.homepage_button_enable }}
-        <a class="btn btn-primary btn-round" type="" href="/portfolio/">Ver Portefólio Completo</a>
-        {{ end }}
-        <div class="space-50"></div>
-
         <div class="row justify-content-center text-center">
-            {{ range $obra_index, $obra := first .Params.homepage_obras_num (where .Site.RegularPages "Section" "portfolio" )}}
+            {{ range $obra_index, $obra := first .Params.homepage_obras_num (where .Site.RegularPages "Section" "portefolio" )}}
                 <div class="col-md-4">
                     <!--Obra Carousel-->
-                    <div id="carouselObra_{{ $obra_index }}" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div id="carouselObra_{{ $obra_index }}" class="carousel slide" data-ride="carousel" data-interval="4000">
                         <!--
                         <ol class="carousel-indicators">
                             {{ range $image_index, $image := .Params.images}}
@@ -66,6 +61,10 @@
             {{ end }}
         </div>
         
+        {{ if .Params.homepage_button_enable }}
+        <a class="btn btn-primary btn-round" type="" href="/portefolio/">Ver Portefólio Completo</a>
+        {{ end }}
+
     </div>
 </div>
 

@@ -1,9 +1,9 @@
-{{range first 1 (where .Pages "Section" "services") }}
+{{range first 1 (where .Pages "Section" "servicos") }}
 {{ if .Params.homepage_enable }}
 
 <!--Servicos-->
 
-<!--TODO it should be possible to click the services and be redirected to de correspondent section e serviços page-->
+
 <div class="section" id="services_homepage">
     <!--Shape services backgroun #TODO or delete-->
     <!--<div style="position: absolute; z-index: 100; border-top: 1000px solid #555; border-left: 25px solid transparent; border-right: 25px solid transparent; height: 0; width: 50%;"></div>-->
@@ -12,8 +12,8 @@
 
         <div class="text-center">
 
-            {{ $numServices := len (where site.RegularPages "Section" "services") }}
-            {{ range $service_index, $service := (where site.RegularPages "Section" "services") }}
+            {{ $numServices := len (where site.RegularPages "Section" "servicos") }}
+            {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
             {{ if ne (mod $service_index 2) 1 }}
 
             <div class="row justify-content-center">
@@ -29,11 +29,11 @@
 
                 <div class="col-md-6 text-md-left">
                     <h5 class="title">{{ .Title | markdownify }}</h5>
-                    <!--<p class="category text-primary">{{ .Params.caption }}</p>-->
+                    <!--<p class="category text-primary"></p>-->
                     <p class="description">
-                        {{ .Params.text }}
+                        {{ .Params.description }}
                         {{ if .Params.homepage_link_enable }}
-                        <a href="#">Ver mais sobre isto</a>
+                        <a href="/servicos/#">Ver mais sobre isto</a>
                         {{ end }}
                     </p>
                 </div>
@@ -44,11 +44,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-7 text-md-right order-md-1 order-2">
                     <h5 class="title">{{ .Title | markdownify }}</h5>
-                    <!--<p class="category text-primary">{{ .Params.caption }}</p>-->
+                    <!--<p class="category text-primary"></p>-->
                     <p class="description">
-                        {{ .Params.text }}
+                        {{ .Params.description }}
                         {{ if .Params.homepage_link_enable }}
-                        <a href="#">Ver mais sobre isto</a>
+                        <a href="/servicos/#">Ver mais sobre isto</a>
                         {{ end }}
                     </p>
                 </div>
@@ -70,14 +70,13 @@
             <div class="separator separator-primary"></div>
             <div class="space-50"></div>
             {{ else }}
-            <br>
-            <br>
+            <div class="separator separator-primary"></div>
             {{ end }}
 
             {{ end }}
 
             {{ if .Params.homepage_button_enable }}
-            <a class="btn btn-primary btn-roun" type="" href="/services/">Saber Mais Sobre Serviços</a>
+            <a class="btn btn-primary btn-round" type="" href="/servicos">Saber Mais Sobre Serviços</a>
             {{ end }}
         </div>
     </div>

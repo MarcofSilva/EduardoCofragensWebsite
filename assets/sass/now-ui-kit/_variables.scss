@@ -2,6 +2,14 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
+/*
+#############################################
+    * This file is here to overwrite the original from the Now-ui-kit.
+    * Marco Silva
+#############################################
+*/
+
+
 $sans-serif-family:          'Montserrat', 'Helvetica Neue',  Arial, sans-serif;
 
 $none:                       0   !default;
@@ -22,7 +30,7 @@ $black-hr:                   #444444 !default;
 
 $light-gray:                 #E3E3E3 !default;
 $medium-gray:                #DDDDDD !default;
-$dark-gray:                  #9A9A9A !default;
+$dark-gray:                  rgb(60, 60, 60) !default;
 
 $opacity-gray-3:             rgba(222,222,222, .3) !default;
 $opacity-gray-5:             rgba(222,222,222, .5) !default;
@@ -87,6 +95,15 @@ $light-azure:                rgba($info-color, .2);
 $light-green:                rgba($success-color, .2);
 $light-orange:               rgba($warning-color, .2);
 $light-red:                  rgba($danger-color, .2);
+
+/*      WhatsApp color      */
+$whatsapp-teal-green-dark:      #075E54;
+$whatsapp-teal-green-light:     #128C7E;
+$whatsapp-light-green:          #25D366;
+$whatsapp-white:                #FFFFFF;
+$whatsapp-outgoing-chat-bubble: #DCF8C6;
+$whatsapp-checkmark-blue:       #34B7F1;
+$whatsapp-chat-backgroun:       #ECE5DD;
 
 //== Components
 //

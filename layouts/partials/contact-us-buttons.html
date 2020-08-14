@@ -1,0 +1,16 @@
+{{ range first 1 (where site.Pages "Section" "contactos") }}
+
+<div class="button-container">
+    <a href="mailto:{{ .Params.email }}" class="btn btn-default btn-round btn-icon btn-lg">
+        <i class="now-ui-icons ui-1_email-85" style="font-size: 1.4em;"></i>
+    </a>
+    <a href="tel:+{{ .Params.mobile_country_code }}{{ .Params.mobile }}" class="btn btn-default btn-round btn-icon ml-3 mr-3 btn-lg" rel="tooltip" title="Ligue agora: {{ .Params.mobile }}">
+        <i class="fa fa-phone" style="font-size: 1.4em;"></i>
+    </a>
+    <a href="https://wa.me/{{ .Params.mobile_country_code }}{{ .Params.mobile }}" class="btn btn-default btn-round btn-icon btn-lg" rel="tooltip" title="Mande-nos mensagem pelo WhatsApp" style="background-color: #25D366;">
+        <i class="fa fa-whatsapp" style="font-size: 1.5rem;"></i>
+    </a>
+    
+</div>
+
+{{ end }}

@@ -9,7 +9,7 @@ homepage_obras_num: 3
 homepage_button_enable: true
 
 # Section
-class: "my-single-page"
+class:
 background: "../img/headers/header3.jpg"
 section_title: "Conheça o Nosso Trabalho"
 

@@ -30,19 +30,44 @@ pre = "<i class='now-ui-icons business_badge'></i>"
 url = "/#about_homepage"
 weight = 2
 [[menu.main]]
-name = "Serviços"
-pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-url = "/#services_homepage"
-weight = 3
+  name = "Serviços"
+  pre = "<i class='now-ui-icons loader_gear'></i>"
+  url = "/#services_homepage"
+  weight = 3
+  identifier = "dropdown"
+[[menu.main]]
+    name = "Cofragem"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/#"
+    weight = 1
+    parent = "dropdown"
+[[menu.main]]
+    name = "Betonagem"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/#"
+    weight = 2
+    parent = "dropdown"
+[[menu.main]]
+    name = "Armação de Ferro"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/#"
+    weight = 3
+    parent = "dropdown"
+[[menu.main]]
+    name = "Aluguer de Material"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/#"
+    weight = 4
+    parent = "dropdown"
 [[menu.main]]
 name = "Portefólio"
 pre = "<i class='now-ui-icons media-1_album'></i>"
-url = "/#portfolio_homepage"
+url = "/portefolio"
 weight = 5
 [[menu.main]]
 name = "Contactos"
 pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
-url = "/contacts"
+url = "/contactos"
 weight = 6
 
 [params]
