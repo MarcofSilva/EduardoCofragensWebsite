@@ -30,21 +30,21 @@
             <h2 class="font-weight-bold mb-4">{{ .Params.title | markdownify }}</h2>
             <ul class="list-unstyled">
                 <li class="mb-3">
-                    <a href="mailto:{{ .Params.email }}">
-                        <i class="now-ui-icons ui-1_email-85 color-darker-orange"></i>
+                    <a href="mailto:{{ .Params.email }}" style="color: black;">
+                        <i class="now-ui-icons ui-1_email-85"></i>
                         {{ .Params.email }}
                     </a>
                 </li>
                 <li class="mb-3">
-                    <a href="tel:+{{.Params.mobile_country_code }}{{ .Params.mobile }}">
-                        <i class="now-ui-icons tech_mobile color-darker-orange"></i>
+                    <a href="tel:+{{.Params.mobile_country_code }}{{ .Params.mobile }}" style="color: black;">
+                        <i class="fa fa-phone"></i>
                         {{ .Params.mobile }}
                     </a>
                 </li>
                 <li class="mb-3">
-                    <a href="https://wa.me/{{ .Params.mobile_country_code }}{{ .Params.mobile }}" target="_blank" onmouseover="this.style.color='#075E54'">
-                        <i class="fa fa-whatsapp" style="color: #075E54;"></i>
-                        <span style="color: #128C7E;">{{ .Params.mobile }}</span>
+                    <a href="https://wa.me/{{ .Params.mobile_country_code }}{{ .Params.mobile }}" target="_blank" style="color: black;">
+                        <i class="fa fa-whatsapp"></i>
+                        <span>{{ .Params.mobile }}</span>
                     </a>
                 </li>
                 <li class="mb-3">
