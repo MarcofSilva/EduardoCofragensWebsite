@@ -3,19 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cofragemsilva.pt/services/service-1/</loc>
+    <loc>https://cofragemsilva.pt/servicos/servico-1/</loc>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/services/service-2/</loc>
+    <loc>https://cofragemsilva.pt/servicos/servico-2/</loc>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/services/service-3/</loc>
+    <loc>https://cofragemsilva.pt/servicos/servico-3/</loc>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/services/service-4/</loc>
+    <loc>https://cofragemsilva.pt/servicos/servico-4/</loc>
   </url>
   
   <url>
@@ -24,27 +24,17 @@
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/portfolio/obra-1-copy-2/</loc>
+    <loc>https://cofragemsilva.pt/portefolio/obra-1-copy/</loc>
     <lastmod>2020-08-09T15:20:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/portfolio/obra-1-copy-3/</loc>
+    <loc>https://cofragemsilva.pt/portefolio/obra-1/</loc>
     <lastmod>2020-08-09T15:20:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/portfolio/obra-1-copy/</loc>
-    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cofragemsilva.pt/portfolio/obra-1/</loc>
-    <lastmod>2020-08-09T15:20:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cofragemsilva.pt/portfolio/</loc>
+    <loc>https://cofragemsilva.pt/portefolio/</loc>
     <lastmod>2020-08-09T15:20:42+01:00</lastmod>
   </url>
   
@@ -53,15 +43,11 @@
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/contacts/</loc>
+    <loc>https://cofragemsilva.pt/contactos/</loc>
   </url>
   
   <url>
-    <loc>https://cofragemsilva.pt/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cofragemsilva.pt/services/</loc>
+    <loc>https://cofragemsilva.pt/servicos/</loc>
   </url>
   
   <url>
