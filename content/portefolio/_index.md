@@ -12,6 +12,7 @@ homepage_button_enable: true
 class:
 background: "../img/headers/header3.jpg"
 section_title: "Conheça o Nosso Trabalho"
+contacts_buttons_enable: false
 
 #TODO create forestry frontmatter templates after final decision on the info necessary for each obra<>
 draft: false

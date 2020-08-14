@@ -6,6 +6,8 @@ description : "this is a meta description"
 homepage_enable: true
 homepage_title: "Fale conosco"
 
+# Buttons
+contacts_buttons_enable: true
 
 ## Section
 class:

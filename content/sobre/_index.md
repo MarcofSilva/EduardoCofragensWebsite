@@ -12,6 +12,8 @@ homepage_button_enable : true
 # Section
 class:
 background: "../img/headers/header1.jpg"
+contacts_buttons_enable: false
+
 
 draft: true
 ---
