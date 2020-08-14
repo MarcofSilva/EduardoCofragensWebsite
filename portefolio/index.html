@@ -16,7 +16,7 @@
     
     
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.c1dc93c9a4c9293e173aee3d148427b7dfdb6b15089fa5e8b69057289974f5f7.css" rel="stylesheet">
+    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.b3651db15328abf46cbdea1ad2963c6c2f301e29448f89a1e92fc4aa771ca282.css" rel="stylesheet">
     <link href="../css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="https://cofragemsilva.pt/css/highlight.min.css">
@@ -48,40 +48,6 @@
     .align-li-vertically {
       align-self: center;
     }
-
-
-     
-    .modal-dialog-portfolio {
-      max-width: 90vw;
-      width: fit-content;
-      width: -moz-fit-content;
-    }
-
-    .modal-content-portfolio {
-      width: fit-content;
-      width: -moz-fit-content;
-      margin: auto;
-    }
-
-    .modal-portfolio-photo-title {
-       
-       
-       
-      text-shadow: 3px 3px 40px #000000;
-    }
-
-    .modal-body-portfolio {
-      width: fit-content;
-      margin: auto;
-    }
-
-    .modal-carousel-image {
-      max-height: 85vh; 
-      min-width: inherit;
-    }
-
-     
-
     </style>
 </head>
 
@@ -129,37 +95,14 @@
           
         
           
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center;">
-                <i class='now-ui-icons loader_gear'></i> <span>Serviços</span>
-                <span class="caret"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-header">
+            <li class="nav-item">
+              
+              
+                <a class="nav-link btn btn-link btn-neutral" href="../servicos">
+                  <i class='now-ui-icons loader_gear'></i>
                   <span>Serviços</span>
                 </a>
-                
-                  <a class="dropdown-item" href="../servicos/">
-                    <i class='now-ui-icons ui-2_settings-90'></i>
-                    <span>Cofragem</span>
-                  </a>
-                
-                  <a class="dropdown-item" href="../servicos/">
-                    <i class='now-ui-icons ui-2_settings-90'></i>
-                    <span>Betonagem</span>
-                  </a>
-                
-                  <a class="dropdown-item" href="../servicos/">
-                    <i class='now-ui-icons ui-2_settings-90'></i>
-                    <span>Armação de Ferro</span>
-                  </a>
-                
-                  <a class="dropdown-item" href="../servicos/">
-                    <i class='now-ui-icons ui-2_settings-90'></i>
-                    <span>Aluguer de Material</span>
-                  </a>
-                
-              </div>
+              
             </li>
           
         
@@ -221,6 +164,16 @@
         .Clickable {
             cursor: pointer;
         }
+
+        .Clickable:hover {
+            transition: .2s ease;
+            box-shadow: 0.1px 0.1px 30px rgba(0, 0, 0, 0.15);
+            transform: scale(1.01);
+        }
+        .Clickable:hover > img {
+            transition: .2s ease;
+            opacity: 0.9;
+        }
     </style>
 
 
@@ -238,51 +191,61 @@
         <div class="row justify-content-center">
             
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_0">
+                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_0">
                         <img src=" https://cofragemsilva.pt/img/ferro.jpeg " alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">Piscina - Ferragudo</h4>
-                        <p class="category text-primary"> Junho 2019 </p>
-                        <p class="description"> You can write here details about this work. </p>
+                        <div class="text-wrapper">
+                            <h4 class="title">Piscina - Ferragudo</h4>
+                            <p class="category text-primary"> Junho 2019 </p>
+                            <p class="description"> You can write here details about this work. </p>
+                        </div>
                     </div>
                     <div class="separator separator-primary"></div>
                 </div>
             
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_1">
+                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_1">
                         <img src=" https://cofragemsilva.pt/img/ferro.jpeg " alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">Piscina - Ferragudo</h4>
-                        <p class="category text-primary"> Junho 2019 </p>
-                        <p class="description"> You can write here details about this work. </p>
+                        <div class="text-wrapper">
+                            <h4 class="title">Piscina - Ferragudo</h4>
+                            <p class="category text-primary"> Junho 2019 </p>
+                            <p class="description"> You can write here details about this work. </p>
+                        </div>
                     </div>
                     <div class="separator separator-primary"></div>
                 </div>
             
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_2">
+                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_2">
                         <img src=" https://cofragemsilva.pt/img/ferro.jpeg " alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">Piscina - Ferragudo</h4>
-                        <p class="category text-primary"> Junho 2019 </p>
-                        <p class="description"> You can write here details about this work. </p>
+                        <div class="text-wrapper">
+                            <h4 class="title">Piscina - Ferragudo</h4>
+                            <p class="category text-primary"> Junho 2019 </p>
+                            <p class="description"> You can write here details about this work. </p>
+                        </div>
                     </div>
                     <div class="separator separator-primary"></div>
                 </div>
             
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_3">
+                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_3">
                         <img src=" https://cofragemsilva.pt/img/ferro.jpeg " alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">Piscina - Ferragudo</h4>
-                        <p class="category text-primary"> Junho 2019 </p>
-                        <p class="description"> You can write here details about this work. </p>
+                        <div class="text-wrapper">
+                            <h4 class="title">Piscina - Ferragudo</h4>
+                            <p class="category text-primary"> Junho 2019 </p>
+                            <p class="description"> You can write here details about this work. </p>
+                        </div>
                     </div>
                     <div class="separator separator-primary"></div>
                 </div>
             
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block;" data-toggle="modal" data-target="#modal_4">
+                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_4">
                         <img src=" https://cofragemsilva.pt/img/cofragem.jpeg " alt="Thumbnail Image" class="rounded img-fluid img-raised">
-                        <h4 class="title">Piscina - Ferragudo</h4>
-                        <p class="category text-primary"> Junho 2019 </p>
-                        <p class="description"> You can write here details about this work. </p>
+                        <div class="text-wrapper">
+                            <h4 class="title">Piscina - Ferragudo</h4>
+                            <p class="category text-primary"> Junho 2019 </p>
+                            <p class="description"> You can write here details about this work. </p>
+                        </div>
                     </div>
                     <div class="separator separator-primary"></div>
                 </div>
@@ -304,10 +267,10 @@
                 -moz-transform: translate3D(-50%, -50%, 0);
                 -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
+                    <div class="modal-header justify-content-center">
+                        <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >Piscina - Ferragudo</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">
@@ -349,17 +312,14 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_0" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_0" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="modal-header justify-content-center">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -375,10 +335,10 @@
                 -moz-transform: translate3D(-50%, -50%, 0);
                 -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
+                    <div class="modal-header justify-content-center">
+                        <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >Piscina - Ferragudo</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">
@@ -420,17 +380,14 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_1" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_1" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="modal-header justify-content-center">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -446,10 +403,10 @@
                 -moz-transform: translate3D(-50%, -50%, 0);
                 -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
+                    <div class="modal-header justify-content-center">
+                        <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >Piscina - Ferragudo</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">
@@ -491,17 +448,14 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_2" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_2" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="modal-header justify-content-center">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -517,10 +471,10 @@
                 -moz-transform: translate3D(-50%, -50%, 0);
                 -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
+                    <div class="modal-header justify-content-center">
+                        <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >Piscina - Ferragudo</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">
@@ -562,17 +516,14 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_3" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_3" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="modal-header justify-content-center">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -588,10 +539,10 @@
                 -moz-transform: translate3D(-50%, -50%, 0);
                 -webkit-transform: translate3D(-50%, -50%, 0);">
                 <div class="modal-content modal-content-portfolio justify-content-center">
-                    <div class="modal-header justify-content-center mb-2">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0);" >Piscina - Ferragudo</h4>
+                    <div class="modal-header justify-content-center">
+                        <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >Piscina - Ferragudo</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: #f96332; font-size: 1.5em; top: 0px;"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">
@@ -633,17 +584,14 @@
                                 
                             </div>
                             <a class="carousel-control-prev" href="#carouselObra_4" role="button" data-slide="prev">
-                                <i class="now-ui-icons arrows-1_minimal-left" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#carouselObra_4" role="button" data-slide="next">
-                                <i class="now-ui-icons arrows-1_minimal-right" style="font-size: 3em;"></i>
+                                <i class="now-ui-icons arrows-1_minimal-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="modal-header justify-content-center">
-                        <h4 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 1);" >Piscina - Ferragudo</h4>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -655,6 +603,48 @@
       </div>
       
       
+
+    
+        
+        
+
+            
+
+            <div class="footer" id="contactos">
+                <div class="container" style="text-align: center;">
+                    <nav style="float: none; width: 100%;">
+                        <ul class="row">
+                            <li class="col-md-3 align-li-vertically">
+                                <a>
+                                    <i class='now-ui-icons location_pin color-orange'></i>
+                                    Lagoa, Portugal
+                                </a>
+                            </li>
+                            <li class="col-md-4 align-li-vertically">
+                                <a href="mailto:cofragemsilva@hotmail.com">
+                                    <i class='now-ui-icons ui-1_email-85 color-orange'></i>
+                                    cofragemsilva@hotmail.com
+                                </a>
+                            </li>
+                            <li class="col-md-3 align-li-vertically">
+                                <a href="tel:+351962757100">
+                                    <i class='fa fa-phone color-orange'></i>
+                                    962757100
+                                </a>
+                            </li>
+                            <li class="col-md-2 color-orange">
+                                <a href="contactos" class="btn btn-primary btn-simple btn-round" style="margin-bottom: 0px; margin-top: 0px;">
+                                    <i class='now-ui-icons ui-2_chat-round'></i>
+                                    Contacte-nos
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
+    
+
 
 
 <footer class="footer" data-background-color="black">
