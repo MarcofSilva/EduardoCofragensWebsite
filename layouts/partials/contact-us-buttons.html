@@ -3,7 +3,7 @@
     {{ range first 1 (where site.Pages "Section" "contactos") }}
 
         <div class="button-container mb-5">
-            <a href="mailto:{{ .Params.email }}" class="btn btn-primary btn-round btn-icon btn-lg">
+            <a href="mailto:{{ .Params.email }}" class="btn btn-default btn-round btn-icon btn-lg">
                 <i class="now-ui-icons ui-1_email-85" style="font-size: 1.4em;"></i>
             </a>
             <a href="tel:+{{ .Params.mobile_country_code }}{{ .Params.mobile }}" class="btn btn-primary btn-round btn-icon ml-3 mr-3 btn-lg">
