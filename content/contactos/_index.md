@@ -2,9 +2,9 @@
 title: "Contactos"
 description : "this is a meta description"
 
-# Homepage
-homepage_enable: true
-homepage_title: "Fale conosco"
+# Footer
+footer_enable: true
+footer_title: "Fale conosco"
 
 # Buttons
 contacts_buttons_enable: true

@@ -5,6 +5,10 @@ description: You can write here details about this provided service. Lorem ipsum
 
 images:
 - img/aluguer.jpeg
+- img/cofragem.jpeg
+- img/ferro.jpeg
+- img/aluguer.jpeg
+- img/aluguer.jpeg
 
 homepage_link_enable: true
 
