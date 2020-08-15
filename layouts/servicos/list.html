@@ -17,12 +17,13 @@
     
     {{ partial "contact-us-buttons" . }}
 
-    <h3 class="title">About me</h3>
-    <h5 class="description">An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</h5>
+    {{ if $services_intro := .Params.intro }}
+        <h5 class="description">{{ $services_intro }}</h5>
+        <div class="separator separator-primary mb-5"></div>
+    {{ end }}
 
     <div class="row">
-        <div class="col-md-6 ml-auto mr-auto">
-            <h4 class="title text-center">My Portfolio</h4>
+        <div class="col-md-12 ml-auto mr-auto">
             <div class="nav-align-center">
                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
                     {{ range $service_index, $service := (where .Site.RegularPages "Section" "servicos") }}
@@ -30,10 +31,9 @@
                         {{if eq $service_index 0 }}
                             {{ $active = "active" }}
                         {{ end }}
-                        <li class="nav-item">
-                            <a class="nav-link {{ $active }}" data-toggle="tab" href="#serviceTab_{{ $service_index }}" role="tablist">
-                                <i class="now-ui-icons design_image"></i>
-                                <!--{{ .Params.title }}-->
+                        <li class="nav-item mb-3 mt-3"}}>
+                            <a class="nav-link {{ $active }} btn" data-toggle="tab" href="#serviceTab_{{ $service_index }}" role="tablist">
+                                <h5 class="title">{{.Params.section_button_name }}</h5>
                             </a>
                         </li>
                     {{ end }}
@@ -49,6 +49,8 @@
                     {{ $active = "active" }}
                 {{ end }}
                 <div class="tab-pane {{ $active }}" id="serviceTab_{{ $service_index}}" role="tabpanel">
+                    <!--<h3 class="title">{{ .Params.title }}</h3>-->
+                    <h5 class="description"> {{ .Params.description }} </h5>
                     <div class="col-md-10 ml-auto mr-auto">
                         <div class="row collections">
                             <div class="col-md-6">

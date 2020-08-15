@@ -55,10 +55,11 @@
         </div>
     </div>
 
+    {{ if .Params.form.form_enable }}
+
     <div class="separator separator-primary mt-5"></div>
     <div class="space-50"></div>
 
-    {{ if .Params.form.form_enable }}
     <div class="row justify-content-center">
         <div class="col-lg-12">
         <h2 class="font-weight-bold mb-5">{{ .Params.form.form_title | markdownify }}</h2>

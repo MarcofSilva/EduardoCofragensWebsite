@@ -8,7 +8,49 @@
 .nav-pills{
 
     .nav-item {
+
+        margin: auto;
+
         .nav-link{
+            text-align: center;
+            width: 250px;
+            height: 60px;
+            font-weight: $font-weight-normal;
+            color: $dark-gray;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: $opacity-gray-3;
+            border-radius: $btn-round-radius;
+
+            padding: $padding-btn-vertical $padding-round-horizontal;
+            //line-height: $line-height-general;
+
+            &:hover{
+                background-color: $opacity-gray-3;
+            }
+
+            &.active{
+                &,
+                &:focus,
+                &:hover{
+                    background-color: $dark-gray;
+                    color: $white-color;
+                    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            &.disabled,
+            &:disabled,
+            &[disabled]{
+                opacity: .5;
+            }
+
+            .title {
+                margin: inherit;
+            }
+        }
+        
+        .nav-link_bak{
             padding: 0 15.5px;
             text-align: center;
             height: 60px;

@@ -12,6 +12,7 @@
 
         <div class="text-center">
 
+            {{ $serviceLinkName := "Ver mais" }}
             {{ $numServices := len (where site.RegularPages "Section" "servicos") }}
             {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
             {{ if ne (mod $service_index 2) 1 }}
@@ -33,7 +34,9 @@
                     <p class="description">
                         {{ .Params.description }}
                         {{ if .Params.homepage_link_enable }}
-                        <a href="/servicos/#">Ver mais sobre isto</a>
+                        <br>
+                        <br>
+                        <a href="/servicos/#">{{ $serviceLinkName }}</a>
                         {{ end }}
                     </p>
                 </div>
@@ -48,7 +51,9 @@
                     <p class="description">
                         {{ .Params.description }}
                         {{ if .Params.homepage_link_enable }}
-                        <a href="/servicos/#">Ver mais sobre isto</a>
+                        <br>
+                        <br>
+                        <a class="mt-5" href="/servicos/#">{{ $serviceLinkName }}</a>
                         {{ end }}
                     </p>
                 </div>
@@ -76,7 +81,7 @@
             {{ end }}
 
             {{ if .Params.homepage_button_enable }}
-            <a class="btn btn-primary btn-round" type="" href="/servicos">Saber Mais Sobre Serviços</a>
+            <a class="btn btn-primary btn-round btn-lg" type="" href="/servicos">Saber Mais</a>
             {{ end }}
         </div>
     </div>

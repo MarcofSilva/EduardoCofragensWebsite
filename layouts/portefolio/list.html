@@ -16,18 +16,19 @@
 {{ define "body" }}
 
     <style>
-        .Clickable {
+        .clickable-container {
+            border-radius: .5rem;
             cursor: pointer;
         }
 
-        .Clickable:hover {
+        .clickable-container:hover {
             transition: .2s ease;
-            box-shadow: 0.1px 0.1px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
             transform: scale(1.01);
         }
-        .Clickable:hover > img {
+        .clickable-container:hover > img {
             transition: .2s ease;
-            opacity: 0.9;
+            opacity: 1;
         }
     </style>
 
@@ -46,15 +47,15 @@
         <div class="row justify-content-center">
             {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portefolio") }}
                 <div class="col-md-4 mb-5">
-                    <div class="Clickable" style="display: inline-block; border-radius: 10px;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
-                        <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
+                    <div class="clickable-container" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
+                        <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-rised">
                         <div class="text-wrapper">
                             <h4 class="title">{{.Params.title}}</h4>
                             <p class="category text-primary"> {{ .Params.date_to_show }} </p>
-                            <p class="description"> {{ .Params.text }} </p>
+                            <p class="description" style="padding: 0px 15px;"> {{ .Params.text }} </p>
                         </div>
+                        <div class="separator separator-primary mt-4"></div>
                     </div>
-                    <div class="separator separator-primary"></div>
                 </div>
             {{ end }}
         </div>

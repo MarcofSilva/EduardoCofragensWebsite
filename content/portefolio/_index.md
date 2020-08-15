@@ -10,7 +10,7 @@ homepage_button_enable: true
 
 # Section
 class:
-background: "../img/headers/header3.jpg"
+background: "../img/headers/header3.jpg"    #TODO and the other sections aswell
 section_title: "Conheça o Nosso Trabalho"
 contacts_buttons_enable: false
 

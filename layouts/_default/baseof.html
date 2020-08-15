@@ -12,7 +12,7 @@
       <div class='page-header {{ .Params.headerstyle | default "page-header-small"}}'> <!--filter-color="{{ .Param "tint" | default "orange" }}"-->
         <!--Marco modified-->
         <div id="header-secondary-filter" style="z-index: 1; height: 100%; width:100%; position:absolute; object-fit:cover; background-color: rgba(15, 2, 0, 0.7);"></div>
-        <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background") }}');"></div>
+        <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background") | default site.Params.default_header_background }}');"></div>
         
         {{ block "title" . }}
         {{ end }}
