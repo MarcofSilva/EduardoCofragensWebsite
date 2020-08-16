@@ -56,12 +56,13 @@
                         <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
 
                         <div class="col-md-6 text-md-left">
-                            <h5 class="title">{{ .Title | markdownify }}</h5>
+                            <h3 class="title">{{ .Title | markdownify }}</h3>
                             <!--<p class="category text-primary"></p>-->
-                            <p class="description"></p>
-                            {{ .Params.description }}
+                            <p class="description">
+                                {{ .Params.description }}
+                            </p>
                             {{ if .Params.homepage_link_enable }}
-                                <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                                <a class="btn btn-primary btn-round btn-lg mt-5 float-md-right" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
                             {{ end }}
                         </div>
                     </div>
@@ -70,12 +71,14 @@
 
                     <div class="row justify-content-center clickable-container darker-background" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
                         <div class="col-md-7 text-md-right order-md-1 order-2">
-                            <h5 class="title">{{ .Title | markdownify }}</h5>
+                            <h3 class="title">{{ .Title | markdownify }}</h3>
                             <!--<p class="category text-primary"></p>-->
-                            <p class="description"></p>
-                            {{ .Params.description }}
+                            <p class="description">
+                                {{ .Params.description }}
+                            </p>
+                            <div style="height: -webkit-fill-available; height:min-content;"></div>
                             {{ if .Params.homepage_link_enable }}
-                                <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                                <a class="btn btn-primary btn-round btn-lg mt-5 float-md-left" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
                             {{ end }}
                         </div>
 

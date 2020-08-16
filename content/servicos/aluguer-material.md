@@ -1,7 +1,7 @@
 ---
-title: Aluguer de Material para Cofragem
+title: Aluguer de Material
 weight: 4
-description: This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, 
+description: This is for meta description. You can write here details about this provided service.
 
 images:
 - img/servicos/aluguer/aluguer.jpeg
