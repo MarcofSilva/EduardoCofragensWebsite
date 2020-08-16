@@ -16,7 +16,7 @@
     
     
     <link href="../../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.9e2ddeec68db3adf4a305768bc7532e046ab525186003a6b1446e781ece3d9b9.css" rel="stylesheet">
+    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.30035ec95a68e0754fd2a415d5b74f343f24ce036b08c97d6103818153f40de1.css" rel="stylesheet">
     <link href="../../css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="https://cofragemsilva.pt/css/highlight.min.css">
@@ -67,11 +67,22 @@
     
 
     
-    
-<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="200">
+    <style>
+  .menu-el{
+    font-size: 1.1em;
+    font-weight: bold;
+  }  
+  .menu-single:hover{
+    transition: .1s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="1">
   <div class="container">
     <div class="navbar-translate">
-      <a style="font-family:Verdana, Geneva, Tahoma, sans-serif; font;" class="navbar-brand" href="../../" rel="tooltip" title="" data-placement="bottom" target="_self"> 
+      <a style="font-family:Verdana, Geneva, Tahoma, sans-serif;" class="navbar-brand" href="../../" rel="tooltip" title="" data-placement="bottom" target="_self"> 
         Cofragem Silva
       </a>
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,10 +95,10 @@
       <ul class="navbar-nav  ml-auto">
         
           
-            <li class="nav-item">
+            <li class="nav-item menu-single">
               
               
-                <a class="nav-link btn btn-link btn-neutral" href="../../">
+                <a class="nav-link btn btn-link btn-neutral menu-el" href="../../">
                   <i class='now-ui-icons business_bank'></i>
                   <span>Página Inicial</span>
                 </a>
@@ -96,10 +107,10 @@
           
         
           
-            <li class="nav-item">
+            <li class="nav-item menu-single">
               
               
-                <a class="nav-link btn btn-link btn-neutral" href="../../#about_homepage">
+                <a class="nav-link btn btn-link btn-neutral menu-el" href="../../#about_homepage">
                   <i class='now-ui-icons business_badge'></i>
                   <span>Sobre</span>
                 </a>
@@ -108,32 +119,32 @@
           
         
           
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center;">
+            <li class="nav-item dropdown menu-el">
+              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center; text-transform:capitalize; font-size:initial">
                 <i class='now-ui-icons loader_gear'></i> <span>Serviços</span>
                 <span class="caret"></span>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-header">
+                <a class="dropdown-header menu-el">
                   <span>Serviços</span>
                 </a>
                 
-                  <a class="dropdown-item" href="../../servicos/cofragem/#cofragem_content">
+                  <a class="dropdown-item menu-el" href="../../servicos/cofragem/#cofragem_content">
                     
                     <span>Cofragem</span>
                   </a>
                 
-                  <a class="dropdown-item" href="../../servicos/betonagem/#betonagem_content">
+                  <a class="dropdown-item menu-el" href="../../servicos/betonagem/#betonagem_content">
                     
                     <span>Betonagem</span>
                   </a>
                 
-                  <a class="dropdown-item" href="../../servicos/armacao-ferro/#ferro_content">
+                  <a class="dropdown-item menu-el" href="../../servicos/armacao-ferro/#ferro_content">
                     
                     <span>Armação de Ferro</span>
                   </a>
                 
-                  <a class="dropdown-item" href="../../servicos/aluguer-material/#aluguer_content">
+                  <a class="dropdown-item menu-el" href="../../servicos/aluguer-material/#aluguer_content">
                     
                     <span>Aluguer de Material</span>
                   </a>
@@ -143,10 +154,10 @@
           
         
           
-            <li class="nav-item">
+            <li class="nav-item menu-single">
               
               
-                <a class="nav-link btn btn-link btn-neutral" href="../../portefolio">
+                <a class="nav-link btn btn-link btn-neutral menu-el" href="../../portefolio">
                   <i class='now-ui-icons media-1_album'></i>
                   <span>Portefólio</span>
                 </a>
@@ -155,10 +166,10 @@
           
         
           
-            <li class="nav-item">
+            <li class="nav-item menu-single">
               
               
-                <a class="nav-link btn btn-link btn-neutral" href="../../contactos">
+                <a class="nav-link btn btn-link btn-neutral menu-el" href="../../contactos">
                   <i class='now-ui-icons ui-2_chat-round'></i>
                   <span>Contactos</span>
                 </a>
@@ -992,27 +1003,27 @@
             <div class="footer darker-background" id="contactos">
                 <div class="container" style="text-align: center;">
                     <nav style="float: none; width: 100%;">
-                        <ul class="row">
-                            <li class="col-md-3 align-li-vertically mb-1">
-                                <a>
+                        <ul class="row" style="font-size: 1.2em;">
+                            <li class="title col-md-3 align-li-vertically mb-1">
+                                <a >
                                     <i class='now-ui-icons location_pin color-orange'></i>
                                     Lagoa, Portugal
                                 </a>
                             </li>
-                            <li class="col-md-4 align-li-vertically mt-1 mb-1">
+                            <li class="title col-md-4 align-li-vertically mt-1 mb-1">
                                 <a href="mailto:cofragemsilva@hotmail.com">
                                     <i class='now-ui-icons ui-1_email-85 color-orange'></i>
                                     cofragemsilva@hotmail.com
                                 </a>
                             </li>
-                            <li class="col-md-2 align-li-vertically mt-1 mb-1">
-                                <a href="tel:+351962757100">
+                            <li class="title col-md-2 align-li-vertically mt-1 mb-1">
+                                <a href="tel:+351962757100" style="letter-spacing: 0.05em;">
                                     <i class='fa fa-phone color-orange'></i>
                                     962757100
                                 </a>
                             </li>
                             <li class="col-md-3 color-orange mb-1">
-                                <a href="https://cofragemsilva.pt/contactos" class="btn btn-primary btn-simple btn-round" style="margin-bottom: 0px; margin-top: 0px; background-color: white;">
+                                <a href="https://cofragemsilva.pt/contactos" class="title btn btn-primary btn-simple btn-round" style="margin-bottom: 0px; margin-top: 0px; background-color: white;">
                                     <i class='now-ui-icons ui-2_chat-round'></i>
                                     Contacte-nos
                                 </a>
