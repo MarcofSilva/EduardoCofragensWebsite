@@ -15,110 +15,116 @@
 
 {{ define "body" }}
 
-<div class="container">
-    <div class="row justify-content-center">
-        <a class="btn btn-primary btn-simple btn-round" href="/servicos/#cofragem" type="">
-            <i class="now-ui-icons ui-2_settings-90"></i>
-            Cofragem
-        </a>
 
-        <a class="btn btn-primary btn-simple btn-round" href="/servicos/#ferro" type="" style="margin-left: 10px; margin-right: 10px">
-            <i class="now-ui-icons text_align-center"></i>
-            Armação de Ferro
-        </a>
 
-        <a class="btn btn-primary btn-simple btn-round" href="/servicos/#aluguer" type="">
-            <i class="now-ui-icons shopping_tag-content"></i>
-            Aluguer de Material
-        </a>
-    </div>
-</div>
+    <style>
+        .clickable-image {
+            cursor: pointer;
+        }
 
-<div class="section-story-overview">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="image-container image-left" style="background-image: url('../img/cofragem.jpg'); margin-bottom:40px;">
-                    <!-- First image on the left side -->
+        .clickable-image:hover {
+            transition: .1s ease;
+            box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+            opacity: 0.98;
+        }
+    </style>
+    
+    {{ partial "contact-us-buttons" . }}
+
+    {{ if $services_intro := .Params.intro }}
+        <h5 class="description">{{ $services_intro }}</h5>
+        <div class="separator separator-primary mb-5"></div>
+    {{ end }}
+
+    <div class="row">
+        <div class="col-md-12 ml-auto mr-auto">
+            <div class="nav-align-center">
+                <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                    {{ range $service_index, $service := (where .Site.RegularPages "Section" "servicos") }}
+                        {{ $active := "" }}
+                        {{if eq $service_index 0 }}
+                            {{ $active = "active" }}
+                        {{ end }}
+                        <li class="nav-item mb-1 mt-3"}}>
+                            <a class="nav-link {{ $active }} btn" data-toggle="tab" href="#serviceTab_{{ $service_index }}" role="tablist" onclick="location.href='/cofragem/'">
+                                <h5 class="title">{{.Params.section_button_name }}</h5>
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content gallery" id="tab_content" style="padding-top: 20px;">
+            {{ range $service_index, $service := (where .Site.RegularPages "Section" "servicos") }}
+                {{ $active := "" }}
+                {{if eq $service_index 0 }}
+                    {{ $active = "active" }}
+                {{ end }}
+                <div class="tab-pane {{ $active }}" id="serviceTab_{{ $service_index}}" role="tabpanel">
+                    <h3 class="title mt-5">{{ .Params.title }}</h3>
+                    <h5 class="description"> {{ .Params.description }} </h5>
+                    <div class="col-md-10 ml-auto mr-auto">
+                        <div class="row collections">
+                            <div class="col-md-6">
+                                {{ range $image_index, $image := .Params.images }}
+                                    {{ if eq (mod $image_index 2) 0}}
+                                        <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service{{$service_index}}_img{{$image_index}}">
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                            <div class="col-md-6">
+                                {{ range $image_index, $image := .Params.images }}
+                                    {{ if eq (mod $image_index 2) 1}}
+                                        <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service{{$service_index}}_img{{$image_index}}">
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-10" style="margin-bottom: 50px">
-                    <h3>Grande título sim cenora</h3>
-                    <p class="description">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change.</p>
+            {{ end }}
+        </div>
+
+        <div class="col-md-12 ml-auto mr-auto" style="text-align: center;">
+            <a href="#top" class="btn btn-icon btn-primary btn-lg" style="border-radius: 15px;">
+                <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
+              </a>
+        </div>
+
+    </div>
+
+
+    <!-- Modals for photos viewing-->
+    {{range $servico_index, $servico := (where .Site.RegularPages "Section" "servicos") }}
+        {{ $serviceImages := .Params.images }}
+        {{range $image_index, $image := $serviceImages }}
+            <div class="modal fade justify-content-center" id="modal_service{{$servico_index}}_img{{$image_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-portfolio" style="
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate3D(-50%, -50%, 0);
+                    transform: translate3D(-50%, -50%, 0);
+                    -moz-transform: translate3D(-50%, -50%, 0);
+                    -webkit-transform: translate3D(-50%, -50%, 0);">
+                    <div class="modal-content modal-content-portfolio justify-content-center">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >{{ $servico.Params.title }}</h5>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
+                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <img class="d-block modal-carousel-image" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                        </div>
+                    </div>
                 </div>
-                <!-- Second image on the left side of the article -->
-                <div class="image-container" style="background-image: url('../img/ferro.jpg')"></div>
             </div>
-            <div class="col-md-5">
-                <!-- First image on the right side, above the article -->
-                <div class="image-container image-right" style="background-image: url('../img/aluguer.jpg')"></div>
-                <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
-                <p class="description">
-                    The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                </p>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<div class="separator separator-primary"></div>
-
-<div id="cofragem" class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <img src="../img/construction.png" alt="Thumbnail Image" class="rounded img-fluid imgraised">
-            </div>
-            <div class="col-md-5">
-                <h2 class="title text-center">Cofragem <a href="#" class="btn btn-primary btn-icon btn-round" type="">
-                        <i class="now-ui-icons arrows-1_minimal-up"></i>
-                    </a></h2>
-                <h5 class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                    <a href="#">links</a> for people to be able to follow them outside the site.
-                </h5>
-                <div class="space-50"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<hr>
-
-<div id="ferro" class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <h2 class="title text-center">Armação de Ferro <a href="#" class="btn btn-primary btn-icon btn-round" type="">
-                        <i class="now-ui-icons arrows-1_minimal-up"></i>
-                    </a></h2>
-                <h5 class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                    <a href="#">links</a> for people to be able to follow them outside the site.
-                </h5>
-            </div>
-            <div class="col-md-6">
-                <img src="../img/torre_ferro.jpg" alt="Thumbnail Image" class="rounded img-fluid img-rised">
-            </div>
-        </div>
-    </div>
-</div>
-
-<hr>
-
-<div id="aluguer" class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <img src="../img/material.png" alt="Thumbnail Image" class="rounded img-fluid img-rased">
-            </div>
-            <div class="col-md-5">
-                <h2 class="title text-center">Aluguer de Material <a href="#" class="btn btn-primary btn-icon btn-round" type="">
-                        <i class="now-ui-icons arrows-1_minimal-up"></i>
-                    </a></h2>
-                <h5 class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                    <a href="#">links</a> for people to be able to follow them outside the site.
-                </h5>
-            </div>
-        </div>
-    </div>    
-</div>
+        {{ end }}
+    {{ end }}
 
 {{ end }}

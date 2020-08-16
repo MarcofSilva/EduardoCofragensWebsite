@@ -14,5 +14,8 @@ images:
 homepage_link_enable: true
 
 section_button_name: Betonagem
+id: betonagem
+class: "services-page default-section-page"
+background: "../../img/headers/header2.jpg"
 
 ---

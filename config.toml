@@ -34,31 +34,31 @@ weight = 2
   pre = "<i class='now-ui-icons loader_gear'></i>"
   url = "/servicos"
   weight = 3
-#  identifier = "dropdown"
-#[[menu.main]]
-#    name = "Cofragem"
-#    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-#    url = "/servicos/#"
-#    weight = 1
-#    parent = "dropdown"
-#[[menu.main]]
-#    name = "Betonagem"
-#    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-#    url = "/servicos/#"
-#    weight = 2
-#    parent = "dropdown"
-#[[menu.main]]
-#    name = "Armação de Ferro"
-#    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-#    url = "/servicos/#"
-#    weight = 3
-#    parent = "dropdown"
-#[[menu.main]]
-#    name = "Aluguer de Material"
-#    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-#    url = "/servicos/#"
-#    weight = 4
-#    parent = "dropdown"
+  identifier = "dropdown"
+[[menu.main]]
+    name = "Cofragem"
+    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/cofragem/#cofragem_content"
+    weight = 1
+    parent = "dropdown"
+[[menu.main]]
+    name = "Betonagem"
+    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/betonagem/#betonagem_content"
+    weight = 2
+    parent = "dropdown"
+[[menu.main]]
+    name = "Armação de Ferro"
+    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/armacao-ferro/#ferro_content"
+    weight = 3
+    parent = "dropdown"
+[[menu.main]]
+    name = "Aluguer de Material"
+    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    url = "/servicos/aluguer-material/#aluguer_content"
+    weight = 4
+    parent = "dropdown"
 [[menu.main]]
 name = "Portefólio"
 pre = "<i class='now-ui-icons media-1_album'></i>"

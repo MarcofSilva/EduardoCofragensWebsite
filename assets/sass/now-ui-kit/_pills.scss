@@ -19,13 +19,17 @@
             color: $dark-gray;
             margin-left: 5px;
             margin-right: 5px;
-            background-color: $opacity-gray-3;
+            background-color: $opacity-gray-10;
             border-radius: $btn-round-radius;
 
             //padding: $padding-btn-vertical $padding-round-horizontal;
             //line-height: $line-height-general;
 
             &:hover{
+                //background-color: $opacity-gray-3;
+                transform: scale(1.01);
+            }
+            &.nav-link-highlight:hover{
                 background-color: $opacity-gray-3;
             }
 

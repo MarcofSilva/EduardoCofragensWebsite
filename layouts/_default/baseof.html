@@ -5,6 +5,21 @@
   {{partial "head" . }}
   
   <body class='{{ .Params.class | default "default-section-page" }} sidebar-collapse'>
+
+    {{ if (eq .RelPermalink "/contactos/")}}
+    <style>
+      #body_section {
+        min-height: calc(90vh - 140px - 440px - 20.800px); /*140px is the vertical padding of this section (70px top and 70px bottom), 440px is the max-height of the header, 42px is the normally the min-height of the contacts footer and 20.800px of the footer*/
+      }
+    </style>
+    {{ else }}
+    <style>
+      #body_section {
+        min-height: calc(90vh - 140px - 440px - 42px - 20.800px); /*140px is the vertical padding of this section (70px top and 70px bottom), 440px is the max-height of the header, 42px is the normally the min-height of the contacts footer and 20.800px of the footer*/
+      }
+    </style>
+    {{ end }}
+
     
     {{ partial "nav" . }}
     
@@ -19,7 +34,7 @@
       
       </div>
       
-      <div class='{{ .Params.section | default "section"}}'>
+      <div class='{{ .Params.section | default "section"}}' id="body_section"> <!--this styling is to make the footer grab the bottom of the page even with short content-->
         <div class="container">
           
           {{ block "body" . }}

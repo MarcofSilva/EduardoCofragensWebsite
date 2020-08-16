@@ -7,11 +7,11 @@
     {{ $numItems := len .Site.Menus.footer }}
 
     <nav style="float: none; width: 100%;">
-	    <ul>
+	    <ul style="position: relative;">
 	    {{ range $itemIndex, $item := .Site.Menus.footer }}
           {{ if eq .KeyName "footerHomeButton" }}
-            <li style="float: right;">
-              <a href="{{ $path }}{{ .URL}}" class=" btn-icon btn-round btn-primary">
+            <li style="position: absolute; right: 0; bottom: 0;">
+              <a href="{{ $path }}{{ .URL}}" class="btn btn-icon btn-round btn-primary btn-lg">
                 {{ .Pre }}
               </a>
           {{ else if eq .KeyName "alvara"}}

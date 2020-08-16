@@ -12,5 +12,8 @@ images:
 homepage_link_enable: true
 
 section_button_name: Aluguer de Material
+id: aluguer
+class: "services-page default-section-page"
+background: "../../img/headers/header2.jpg"
 
 ---

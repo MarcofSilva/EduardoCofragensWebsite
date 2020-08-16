@@ -1,7 +1,14 @@
 <style>
     .clickable-container {
-        border-radius: .5rem;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-color: rgba(149, 35, 0, 0.05);
+        border-radius: 1rem;
         cursor: pointer;
+    }
+
+    .clickable-container img {
+        box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
     }
 
     .clickable-container:hover {
@@ -9,7 +16,7 @@
         box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
         transform: scale(1.01);
     }
-    .clickable-container:hover > img {
+    .clickable-container:hover div > img {
         transition: .1s ease;
         opacity: 1;
     }
@@ -33,73 +40,70 @@
             {{ $serviceLinkName := "Ver mais" }}
             {{ $numServices := len (where site.RegularPages "Section" "servicos") }}
             {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
-            {{ if ne (mod $service_index 2) 1 }}
+                {{ if ne (mod $service_index 2) 1 }}
 
-            <div class="row justify-content-center clickable-container">
-                <div class="col-md-5">
-                    <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
-                        class="rounded img-fluid img-raised">
-                    <br>
-                    <br>
-                </div>
+                    <div class="row justify-content-center clickable-container" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
+                        <div class="col-md-5">
+                            <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
+                                class="rounded img-fluid img-raised">
+                            <br>
+                            <br>
+                        </div>
 
-                <div class="col-md-0"></div>
-                <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
+                        <div class="col-md-0"></div>
+                        <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
 
-                <div class="col-md-6 text-md-left">
-                    <h5 class="title">{{ .Title | markdownify }}</h5>
-                    <!--<p class="category text-primary"></p>-->
-                    <p class="description">
-                        {{ .Params.description }}
-                        {{ if .Params.homepage_link_enable }}
-                        <br>
-                        <br>
-                        <a  data-toggle="tab" href="/servicos/#serviceTab_{{ $service_index }}" role="tablist" onclick='location.href = "/servicos/#serviceTab_{{ $service_index }}"'>{{ $serviceLinkName }}</a>
-                        {{ end }}
-                    </p>
-                </div>
-            </div>
+                        <div class="col-md-6 text-md-left">
+                            <h5 class="title">{{ .Title | markdownify }}</h5>
+                            <!--<p class="category text-primary"></p>-->
+                            <p class="description">
+                                {{ .Params.description }}
+                                {{ if .Params.homepage_link_enable }}
+                                <br>
+                                <br>
+                                <a href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                                {{ end }}
+                            </p>
+                        </div>
+                    </div>
 
-            {{ else }}
+                {{ else }}
 
-            <div class="row justify-content-center">
-                <div class="col-md-7 text-md-right order-md-1 order-2">
-                    <h5 class="title">{{ .Title | markdownify }}</h5>
-                    <!--<p class="category text-primary"></p>-->
-                    <p class="description">
-                        {{ .Params.description }}
-                        {{ if .Params.homepage_link_enable }}
-                        <br>
-                        <br>
-                        <a class="mt-5" href="/servicos/#">{{ $serviceLinkName }}</a>
-                        {{ end }}
-                    </p>
-                </div>
+                    <div class="row justify-content-center clickable-container" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
+                        <div class="col-md-7 text-md-right order-md-1 order-2">
+                            <h5 class="title">{{ .Title | markdownify }}</h5>
+                            <!--<p class="category text-primary"></p>-->
+                            <p class="description">
+                                {{ .Params.description }}
+                                {{ if .Params.homepage_link_enable }}
+                                <br>
+                                <br>
+                                <a class="mt-5" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                                {{ end }}
+                            </p>
+                        </div>
 
-                <div class="col-md-0 order-md-2"></div>
-                <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
+                        <div class="col-md-0 order-md-2"></div>
+                        <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
 
-                <div class="col-md-4 order-md-3 order-1">
-                    <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
-                        class="rounded img-fluid img-raised">
-                    <br>
-                    <br>
-                </div>
-            </div>
+                        <div class="col-md-4 order-md-3 order-1">
+                            <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
+                                class="rounded img-fluid img-raised">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
 
-            {{ end }}
+                {{ end }}
 
-            {{ if lt $service_index (sub $numServices 1) }}
-            <div class="separator separator-primary"></div>
-            <div class="space-50"></div>
-            {{ else }}
-            <div class="separator separator-primary"></div>
-            {{ end }}
+                {{ if lt $service_index (sub $numServices 1) }}
+                    <div class="separator separator-primary"></div>
+                {{ end }}
 
             {{ end }}
 
             {{ if .Params.homepage_button_enable }}
-            <a class="btn btn-primary btn-round btn-lg" type="" href="/servicos">Saber Mais</a>
+            <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="/servicos">Saber Mais</a>
             {{ end }}
         </div>
     </div>
