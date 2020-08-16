@@ -22,12 +22,12 @@
         }
 
         .clickable-container:hover {
-            transition: .2s ease;
-            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
+            transition: .1s ease;
+            box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.1);
             transform: scale(1.01);
         }
         .clickable-container:hover > img {
-            transition: .2s ease;
+            transition: .1s ease;
             opacity: 1;
         }
     </style>
@@ -48,7 +48,7 @@
             {{ range $obra_index, $obra := (where .Site.RegularPages "Section" "portefolio") }}
                 <div class="col-md-4 mb-5">
                     <div class="clickable-container" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
-                        <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-rised">
+                        <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="Thumbnail Image" class="rounded img-fluid img-raised">
                         <div class="text-wrapper">
                             <h4 class="title">{{.Params.title}}</h4>
                             <p class="category text-primary"> {{ .Params.date_to_show }} </p>
@@ -61,6 +61,7 @@
         </div>
     </div>
 
+    
     <!-- Modals for photos viewing-->
 
     {{range $obra_index, $obra := (where .Site.RegularPages "Section" "portefolio") }}
@@ -78,7 +79,7 @@
                     <div class="modal-header justify-content-center">
                         <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0.8); " >{{ .Params.title }}</h5>
                         <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(172, 172, 172);"></i>
+                            <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
                         </a>
                     </div>
                     <div class="modal-body modal-body-portfolio">

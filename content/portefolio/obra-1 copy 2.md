@@ -4,7 +4,7 @@ date: 2020-08-09T15:20:42+01:00
 
 images: 
 - img/servicos/ferro/ferro.jpeg
-- img/servicos/ferro/ferro1.jpeg
+- img/servicos/ferro/ferro3.jpeg
 - img/servicos/ferro/ferro2.jpeg
 - img/servicos/ferro/ferro3.jpeg
 

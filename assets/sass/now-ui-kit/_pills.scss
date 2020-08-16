@@ -13,8 +13,8 @@
 
         .nav-link{
             text-align: center;
-            width: 250px;
-            height: 60px;
+            width: 235px;
+            height: 55px;
             font-weight: $font-weight-normal;
             color: $dark-gray;
             margin-left: 5px;
@@ -22,7 +22,7 @@
             background-color: $opacity-gray-3;
             border-radius: $btn-round-radius;
 
-            padding: $padding-btn-vertical $padding-round-horizontal;
+            //padding: $padding-btn-vertical $padding-round-horizontal;
             //line-height: $line-height-general;
 
             &:hover{
@@ -47,6 +47,7 @@
 
             .title {
                 margin: inherit;
+                font-size: 1.1rem;
             }
         }
         

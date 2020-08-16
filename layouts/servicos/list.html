@@ -14,6 +14,21 @@
 
 
 {{ define "body" }}
+
+
+
+    <style>
+        .clickable-image {
+            cursor: pointer;
+        }
+
+        .clickable-image:hover {
+            transition: .1s ease;
+            box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+            opacity: 0.98;
+        }
+    </style>
     
     {{ partial "contact-us-buttons" . }}
 
@@ -31,8 +46,8 @@
                         {{if eq $service_index 0 }}
                             {{ $active = "active" }}
                         {{ end }}
-                        <li class="nav-item mb-3 mt-3"}}>
-                            <a class="nav-link {{ $active }} btn" data-toggle="tab" href="#serviceTab_{{ $service_index }}" role="tablist">
+                        <li class="nav-item mb-1 mt-3"}}>
+                            <a class="nav-link {{ $active }} btn" data-toggle="tab" href="#serviceTab_{{ $service_index }}" role="tablist" onclick="location.href='#tab_content'">
                                 <h5 class="title">{{.Params.section_button_name }}</h5>
                             </a>
                         </li>
@@ -42,28 +57,28 @@
         </div>
 
         <!-- Tab panes -->
-        <div class="tab-content gallery">
+        <div class="tab-content gallery" id="tab_content" style="padding-top: 20px;">
             {{ range $service_index, $service := (where .Site.RegularPages "Section" "servicos") }}
                 {{ $active := "" }}
                 {{if eq $service_index 0 }}
                     {{ $active = "active" }}
                 {{ end }}
                 <div class="tab-pane {{ $active }}" id="serviceTab_{{ $service_index}}" role="tabpanel">
-                    <!--<h3 class="title">{{ .Params.title }}</h3>-->
+                    <h3 class="title mt-5">{{ .Params.title }}</h3>
                     <h5 class="description"> {{ .Params.description }} </h5>
                     <div class="col-md-10 ml-auto mr-auto">
                         <div class="row collections">
                             <div class="col-md-6">
                                 {{ range $image_index, $image := .Params.images }}
                                     {{ if eq (mod $image_index 2) 0}}
-                                        <img src="{{.|absURL}}" alt="" class="img-raised">
+                                        <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service{{$service_index}}_img{{$image_index}}">
                                     {{ end }}
                                 {{ end }}
                             </div>
                             <div class="col-md-6">
                                 {{ range $image_index, $image := .Params.images }}
                                     {{ if eq (mod $image_index 2) 1}}
-                                        <img src="{{.|absURL}}" alt="" class="img-raised">
+                                        <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service{{$service_index}}_img{{$image_index}}">
                                     {{ end }}
                                 {{ end }}
                             </div>
@@ -72,8 +87,44 @@
                 </div>
             {{ end }}
         </div>
+
+        <div class="col-md-12 ml-auto mr-auto" style="text-align: center;">
+            <a href="#top" class="btn btn-icon btn-primary btn-lg" style="border-radius: 15px;">
+                <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
+              </a>
+        </div>
+
     </div>
 
 
+    <!-- Modals for photos viewing-->
+    {{range $servico_index, $servico := (where .Site.RegularPages "Section" "servicos") }}
+        {{ $serviceImages := .Params.images }}
+        {{range $image_index, $image := $serviceImages }}
+            <div class="modal fade justify-content-center" id="modal_service{{$servico_index}}_img{{$image_index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-portfolio" style="
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate3D(-50%, -50%, 0);
+                    transform: translate3D(-50%, -50%, 0);
+                    -moz-transform: translate3D(-50%, -50%, 0);
+                    -webkit-transform: translate3D(-50%, -50%, 0);">
+                    <div class="modal-content modal-content-portfolio justify-content-center">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >{{ $servico.Params.title }}</h5>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
+                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <img class="d-block modal-carousel-image" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
 
 {{ end }}

@@ -1,3 +1,21 @@
+<style>
+    .clickable-container {
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+
+    .clickable-container:hover {
+        transition: .1s ease;
+        box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.01);
+    }
+    .clickable-container:hover > img {
+        transition: .1s ease;
+        opacity: 1;
+    }
+</style>
+
+
 {{range first 1 (where .Pages "Section" "servicos") }}
 {{ if .Params.homepage_enable }}
 
@@ -17,7 +35,7 @@
             {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
             {{ if ne (mod $service_index 2) 1 }}
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center clickable-container">
                 <div class="col-md-5">
                     <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
                         class="rounded img-fluid img-raised">
@@ -36,7 +54,7 @@
                         {{ if .Params.homepage_link_enable }}
                         <br>
                         <br>
-                        <a href="/servicos/#">{{ $serviceLinkName }}</a>
+                        <a  data-toggle="tab" href="/servicos/#serviceTab_{{ $service_index }}" role="tablist" onclick='location.href = "/servicos/#serviceTab_{{ $service_index }}"'>{{ $serviceLinkName }}</a>
                         {{ end }}
                     </p>
                 </div>
