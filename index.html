@@ -17,7 +17,7 @@
     
     
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.5eb060ebad75747584662ffc0f748e71d70a450753161f60d5db6af4a2d188dd.css" rel="stylesheet">
+    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.e54c6f627c0735499bec7a2c5fce18b9d35618b097a1c554e0d9d6469ccf474d.css" rel="stylesheet">
     <link href="./css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="https://cofragemsilva.pt/css/highlight.min.css">
@@ -206,7 +206,25 @@
 
 
 
-  
+  <style>
+    .clickable-container {
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+
+    .clickable-container:hover {
+        transition: .1s ease;
+        box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.01);
+    }
+    .clickable-container:hover > img {
+        transition: .1s ease;
+        opacity: 1;
+    }
+</style>
+
+
+
 
 
 
@@ -225,7 +243,7 @@
             
             
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center clickable-container">
                 <div class="col-md-5">
                     <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem.jpeg" alt="Thumbnail Image"
                         class="rounded img-fluid img-raised">
@@ -240,11 +258,11 @@
                     <h5 class="title">Cofragem</h5>
                     
                     <p class="description">
-                        This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
+                        This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
                         
                         <br>
                         <br>
-                        <a href="./servicos/#">Ver mais</a>
+                        <a  data-toggle="tab" href="./servicos/#serviceTab_0" role="tablist" onclick='location.href = "/servicos/#serviceTab_0"'>Ver mais</a>
                         
                     </p>
                 </div>
@@ -265,7 +283,7 @@
                     <h5 class="title">Betonagem</h5>
                     
                     <p class="description">
-                        This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
+                        This is for meta description. You can write here details about this provided service. labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
                         
                         <br>
                         <br>
@@ -295,7 +313,7 @@
             
             
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center clickable-container">
                 <div class="col-md-5">
                     <img src="https://cofragemsilva.pt/img/servicos/ferro/ferro.jpeg" alt="Thumbnail Image"
                         class="rounded img-fluid img-raised">
@@ -310,11 +328,11 @@
                     <h5 class="title">Armação de Ferro</h5>
                     
                     <p class="description">
-                        This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
+                        This is for meta description. You can write here details about this
                         
                         <br>
                         <br>
-                        <a href="./servicos/#">Ver mais</a>
+                        <a  data-toggle="tab" href="./servicos/#serviceTab_2" role="tablist" onclick='location.href = "/servicos/#serviceTab_2"'>Ver mais</a>
                         
                     </p>
                 </div>
@@ -335,7 +353,7 @@
                     <h5 class="title">Aluguer de Material para Cofragem</h5>
                     
                     <p class="description">
-                        This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
+                        This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet,
                         
                         <br>
                         <br>
@@ -407,7 +425,7 @@
                                 
                                 
                                 <div class="carousel-item ">
-                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/ferro/ferro1.jpeg" alt="Foto_1">
+                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/ferro/ferro3.jpeg" alt="Foto_1">
                                     <div class="carousel-caption d-none d-md-block">
                                         
                                     </div>
@@ -534,34 +552,7 @@
                                 
                                 
                                 <div class="carousel-item ">
-                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem2.jpeg" alt="Foto_2">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        
-                                    </div>
-                                </div>
-                            
-                                
-                                
-                                <div class="carousel-item ">
-                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem3.jpeg" alt="Foto_3">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        
-                                    </div>
-                                </div>
-                            
-                                
-                                
-                                <div class="carousel-item ">
-                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem4.jpeg" alt="Foto_4">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        
-                                    </div>
-                                </div>
-                            
-                                
-                                
-                                <div class="carousel-item ">
-                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem5.jpeg" alt="Foto_5">
+                                    <img class="d-block" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem4.jpeg" alt="Foto_2">
                                     <div class="carousel-caption d-none d-md-block">
                                         
                                     </div>
@@ -585,7 +576,7 @@
         </div>
         
         
-        <a class="btn btn-primary btn-roud btn-lg" type="" href="./portefolio/">Ver Portefólio Completo</a>
+        <a class="btn btn-primary btn-round btn-lg" type="" href="./portefolio/">Ver Portefólio Completo</a>
         
 
     </div>
@@ -636,7 +627,7 @@
                                 </a>
                             </li>
                             <li class="col-md-3 color-orange mb-1">
-                                <a href="contactos" class="btn btn-primary btn-simple btn-round" style="margin-bottom: 0px; margin-top: 0px; background-color: white;">
+                                <a href="https://cofragemsilva.pt/contactos" class="btn btn-primary btn-simple btn-round" style="margin-bottom: 0px; margin-top: 0px; background-color: white;">
                                     <i class='now-ui-icons ui-2_chat-round'></i>
                                     Contacte-nos
                                 </a>
