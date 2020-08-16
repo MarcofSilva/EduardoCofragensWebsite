@@ -11,7 +11,7 @@
     <div class='{{ .Params.wrapper | default "wrapper" }}'>
       <div class='page-header {{ .Params.headerstyle | default "page-header-small"}}'> <!--TODO filter-color="{{ .Param "tint" | default "orange" }}">-->
         <div class="page-header-image" data-parallax="true" style="background-image: url('{{ (.Param "background") | default site.Params.default_header_background }}');"> <!--TODO Background image behind video should be first frame of video-->
-          <div id="header-filter" style="z-index: 1;height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,0.5);"></div>
+          <div id="header-filter" style="z-index: 1;height: 100%; width: 100%; position: absolute; object-fit:cover; background-color:rgba(0,0,0,0.3);"></div>
           <video class="header-video" muted autoplay loop>
             <source src="/video/homepageVideo.mp4" type="video/mp4">
           </video>
