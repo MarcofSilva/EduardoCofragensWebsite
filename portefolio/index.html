@@ -16,7 +16,7 @@
     
     
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.e54c6f627c0735499bec7a2c5fce18b9d35618b097a1c554e0d9d6469ccf474d.css" rel="stylesheet">
+    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.9e2ddeec68db3adf4a305768bc7532e046ab525186003a6b1446e781ece3d9b9.css" rel="stylesheet">
     <link href="../css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="https://cofragemsilva.pt/css/highlight.min.css">
@@ -57,6 +57,15 @@
 
   
   <body class='default-section-page sidebar-collapse'>
+
+    
+    <style>
+      #body_section {
+        min-height: calc(90vh - 140px - 440px - 42px - 20.800px);  
+      }
+    </style>
+    
+
     
     
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="200">
@@ -99,14 +108,37 @@
           
         
           
-            <li class="nav-item">
-              
-              
-                <a class="nav-link btn btn-link btn-neutral" href="../servicos">
-                  <i class='now-ui-icons loader_gear'></i>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center;">
+                <i class='now-ui-icons loader_gear'></i> <span>Serviços</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-header">
                   <span>Serviços</span>
                 </a>
-              
+                
+                  <a class="dropdown-item" href="../servicos/cofragem/#cofragem_content">
+                    
+                    <span>Cofragem</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/betonagem/#betonagem_content">
+                    
+                    <span>Betonagem</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/armacao-ferro/#ferro_content">
+                    
+                    <span>Armação de Ferro</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/aluguer-material/#aluguer_content">
+                    
+                    <span>Aluguer de Material</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -159,7 +191,7 @@
       
       </div>
       
-      <div class='section'>
+      <div class='section' id="body_section"> 
         <div class="container">
           
           
@@ -845,7 +877,7 @@
     
 
     <nav style="float: none; width: 100%;">
-	    <ul>
+	    <ul style="position: relative;">
 	    
           
             <li> <a> Copyright © 2020</a>
@@ -864,8 +896,8 @@
         
       
           
-            <li style="float: right;">
-              <a href="https://cofragemsilva.pt/portefolio/#top" class=" btn-icon btn-round btn-primary">
+            <li style="position: absolute; right: 0; bottom: 0;">
+              <a href="https://cofragemsilva.pt/portefolio/#top" class="btn btn-icon btn-round btn-primary btn-lg">
                 <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
               </a>
           

@@ -16,7 +16,7 @@
     
     
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.e54c6f627c0735499bec7a2c5fce18b9d35618b097a1c554e0d9d6469ccf474d.css" rel="stylesheet">
+    <link href="https://cofragemsilva.pt/sass/now-ui-kit.min.9e2ddeec68db3adf4a305768bc7532e046ab525186003a6b1446e781ece3d9b9.css" rel="stylesheet">
     <link href="../css/demo.css" rel="stylesheet" />
     
   <link rel="stylesheet" href="https://cofragemsilva.pt/css/highlight.min.css">
@@ -57,6 +57,15 @@
 
   
   <body class='services-page default-section-page sidebar-collapse'>
+
+    
+    <style>
+      #body_section {
+        min-height: calc(90vh - 140px - 440px - 42px - 20.800px);  
+      }
+    </style>
+    
+
     
     
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="200">
@@ -99,14 +108,37 @@
           
         
           
-            <li class="nav-item">
-              
-              
-                <a class="nav-link btn btn-link btn-neutral" href="../servicos">
-                  <i class='now-ui-icons loader_gear'></i>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center;">
+                <i class='now-ui-icons loader_gear'></i> <span>Serviços</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-header">
                   <span>Serviços</span>
                 </a>
-              
+                
+                  <a class="dropdown-item" href="../servicos/cofragem/#cofragem_content">
+                    
+                    <span>Cofragem</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/betonagem/#betonagem_content">
+                    
+                    <span>Betonagem</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/armacao-ferro/#ferro_content">
+                    
+                    <span>Armação de Ferro</span>
+                  </a>
+                
+                  <a class="dropdown-item" href="../servicos/aluguer-material/#aluguer_content">
+                    
+                    <span>Aluguer de Material</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -159,923 +191,55 @@
       
       </div>
       
-      <div class='section'>
+      <div class='section' id="body_section"> 
         <div class="container">
           
           
 
-
-
-    <style>
-        .clickable-image {
-            cursor: pointer;
-        }
-
-        .clickable-image:hover {
-            transition: .1s ease;
-            box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.3);
-            transform: scale(1.02);
-            opacity: 0.98;
-        }
-    </style>
-    
-    
-
-    
-        <h5 class="description">Intro sobre os serviços no geral. Se não se quiser simplesmente deixar o campo da intro vazio.</h5>
-        <div class="separator separator-primary mb-5"></div>
-    
-
-    <div class="row">
-        <div class="col-md-12 ml-auto mr-auto">
-            <div class="nav-align-center">
-                <ul class="nav nav-pills nav-pills-primary" role="tablist">
+    <div class="col-md-12 ml-auto mr-auto button-container-services">
+        <div class="nav-align-center">
+            <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                
+                
                     
-                        
-                        
-                            
-                        
-                        <li class="nav-item mb-1 mt-3"}}>
-                            <a class="nav-link active btn" data-toggle="tab" href="#serviceTab_0" role="tablist" onclick="location.href='#tab_content'">
-                                <h5 class="title">Cofragem</h5>
-                            </a>
-                        </li>
                     
-                        
-                        
-                        <li class="nav-item mb-1 mt-3"}}>
-                            <a class="nav-link  btn" data-toggle="tab" href="#serviceTab_1" role="tablist" onclick="location.href='#tab_content'">
-                                <h5 class="title">Betonagem</h5>
-                            </a>
-                        </li>
+                    <li class="nav-item mb-1 mt-3"}}>
+                        <a class="nav-link  btn" href="https://cofragemsilva.pt/servicos/cofragem/">
+                            <h5 class="title">Cofragem</h5>
+                        </a>
+                    </li>
+                
                     
-                        
-                        
-                        <li class="nav-item mb-1 mt-3"}}>
-                            <a class="nav-link  btn" data-toggle="tab" href="#serviceTab_2" role="tablist" onclick="location.href='#tab_content'">
-                                <h5 class="title">Armação de Ferro</h5>
-                            </a>
-                        </li>
                     
-                        
-                        
-                        <li class="nav-item mb-1 mt-3"}}>
-                            <a class="nav-link  btn" data-toggle="tab" href="#serviceTab_3" role="tablist" onclick="location.href='#tab_content'">
-                                <h5 class="title">Aluguer de Material</h5>
-                            </a>
-                        </li>
+                    <li class="nav-item mb-1 mt-3"}}>
+                        <a class="nav-link  btn" href="https://cofragemsilva.pt/servicos/betonagem/">
+                            <h5 class="title">Betonagem</h5>
+                        </a>
+                    </li>
+                
                     
-                </ul>
-            </div>
+                    
+                    <li class="nav-item mb-1 mt-3"}}>
+                        <a class="nav-link  btn" href="https://cofragemsilva.pt/servicos/armacao-ferro/">
+                            <h5 class="title">Armação de Ferro</h5>
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item mb-1 mt-3"}}>
+                        <a class="nav-link  btn" href="https://cofragemsilva.pt/servicos/aluguer-material/">
+                            <h5 class="title">Aluguer de Material</h5>
+                        </a>
+                    </li>
+                
+            </ul>
         </div>
-
-        
-        <div class="tab-content gallery" id="tab_content" style="padding-top: 20px;">
-            
-                
-                
-                    
-                
-                <div class="tab-pane active" id="serviceTab_0" role="tabpanel">
-                    <h3 class="title mt-5">Cofragem</h3>
-                    <h5 class="description"> This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil! </h5>
-                    <div class="col-md-10 ml-auto mr-auto">
-                        <div class="row collections">
-                            <div class="col-md-6">
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img0">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem2.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img2">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem4.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img4">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem6.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img6">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem8.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img8">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem10.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img10">
-                                    
-                                
-                            </div>
-                            <div class="col-md-6">
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem1.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img1">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem3.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img3">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem5.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img5">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem7.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img7">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem9.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service0_img9">
-                                    
-                                
-                                    
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                
-                
-                <div class="tab-pane " id="serviceTab_1" role="tabpanel">
-                    <h3 class="title mt-5">Betonagem</h3>
-                    <h5 class="description"> This is for meta description. You can write here details about this provided service. labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil! </h5>
-                    <div class="col-md-10 ml-auto mr-auto">
-                        <div class="row collections">
-                            <div class="col-md-6">
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img0">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem2.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img2">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem4.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img4">
-                                    
-                                
-                                    
-                                
-                            </div>
-                            <div class="col-md-6">
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem1.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img1">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem3.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img3">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem5.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service1_img5">
-                                    
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                
-                
-                <div class="tab-pane " id="serviceTab_2" role="tabpanel">
-                    <h3 class="title mt-5">Armação de Ferro</h3>
-                    <h5 class="description"> This is for meta description. You can write here details about this </h5>
-                    <div class="col-md-10 ml-auto mr-auto">
-                        <div class="row collections">
-                            <div class="col-md-6">
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/ferro/ferro.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service2_img0">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/ferro/ferro2.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service2_img2">
-                                    
-                                
-                                    
-                                
-                            </div>
-                            <div class="col-md-6">
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/ferro/ferro1.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service2_img1">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/ferro/ferro3.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service2_img3">
-                                    
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                
-                
-                <div class="tab-pane " id="serviceTab_3" role="tabpanel">
-                    <h3 class="title mt-5">Aluguer de Material para Cofragem</h3>
-                    <h5 class="description"> This is for meta description. You can write here details about this provided service. Lorem ipsum dolor sit amet, </h5>
-                    <div class="col-md-10 ml-auto mr-auto">
-                        <div class="row collections">
-                            <div class="col-md-6">
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service3_img0">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer2.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service3_img2">
-                                    
-                                
-                                    
-                                
-                            </div>
-                            <div class="col-md-6">
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer1.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service3_img1">
-                                    
-                                
-                                    
-                                
-                                    
-                                        <img src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer3.jpeg" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_service3_img3">
-                                    
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-
-        <div class="col-md-12 ml-auto mr-auto" style="text-align: center;">
-            <a href="#top" class="btn btn-icon btn-primary btn-lg" style="border-radius: 15px;">
-                <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
-              </a>
-        </div>
-
     </div>
 
-
     
-    
-        
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem.jpeg" alt="Foto_0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem1.jpeg" alt="Foto_1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem2.jpeg" alt="Foto_2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem3.jpeg" alt="Foto_3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem4.jpeg" alt="Foto_4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem5.jpeg" alt="Foto_5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem6.jpeg" alt="Foto_6">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem7.jpeg" alt="Foto_7">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem8.jpeg" alt="Foto_8">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem9.jpeg" alt="Foto_9">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service0_img10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/cofragem/cofragem10.jpeg" alt="Foto_10">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    
-        
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem.jpeg" alt="Foto_0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem1.jpeg" alt="Foto_1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem2.jpeg" alt="Foto_2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem3.jpeg" alt="Foto_3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem4.jpeg" alt="Foto_4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service1_img5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Betonagem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/betonagem/betonagem5.jpeg" alt="Foto_5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    
-        
-        
-            <div class="modal fade justify-content-center" id="modal_service2_img0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Armação de Ferro</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/ferro/ferro.jpeg" alt="Foto_0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service2_img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Armação de Ferro</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/ferro/ferro1.jpeg" alt="Foto_1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service2_img2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Armação de Ferro</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/ferro/ferro2.jpeg" alt="Foto_2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service2_img3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Armação de Ferro</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/ferro/ferro3.jpeg" alt="Foto_3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    
-        
-        
-            <div class="modal fade justify-content-center" id="modal_service3_img0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Aluguer de Material para Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer.jpeg" alt="Foto_0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service3_img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Aluguer de Material para Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer1.jpeg" alt="Foto_1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service3_img2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Aluguer de Material para Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer2.jpeg" alt="Foto_2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade justify-content-center" id="modal_service3_img3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-portfolio" style="
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -ms-transform: translate3D(-50%, -50%, 0);
-                    transform: translate3D(-50%, -50%, 0);
-                    -moz-transform: translate3D(-50%, -50%, 0);
-                    -webkit-transform: translate3D(-50%, -50%, 0);">
-                    <div class="modal-content modal-content-portfolio justify-content-center">
-                        <div class="modal-header justify-content-center">
-                            <h5 class="title title-up modal-portfolio-photo-title" style="color:rgba(255, 255, 255, 0); " >Aluguer de Material para Cofragem</h5>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" onmouseover="this.style.cursor='pointer'" style="position: absolute; right: 0;">
-                                <i class="now-ui-icons ui-1_simple-remove" style="color: rgb(225, 225, 225);"></i>
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="https://cofragemsilva.pt/img/servicos/aluguer/aluguer3.jpeg" alt="Foto_3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
+        <h1 class="title mt-5">Serviços</h1>
+        <h5 class="description">Intro sobre os serviços no geral. Se não se quiser simplesmente deixar o campo da intro vazio.</h5>
     
 
 
@@ -1138,7 +302,7 @@
     
 
     <nav style="float: none; width: 100%;">
-	    <ul>
+	    <ul style="position: relative;">
 	    
           
             <li> <a> Copyright © 2020</a>
@@ -1157,8 +321,8 @@
         
       
           
-            <li style="float: right;">
-              <a href="https://cofragemsilva.pt/servicos/#top" class=" btn-icon btn-round btn-primary">
+            <li style="position: absolute; right: 0; bottom: 0;">
+              <a href="https://cofragemsilva.pt/servicos/#top" class="btn btn-icon btn-round btn-primary btn-lg">
                 <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
               </a>
           
