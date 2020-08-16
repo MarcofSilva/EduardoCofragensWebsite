@@ -2,8 +2,10 @@
     .clickable-container {
         padding-top: 40px;
         padding-bottom: 20px;
-        background-color: rgba(149, 35, 0, 0.05);
-        border-radius: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*border: 8px solid #f96432c2;*/
+        border-radius: 0.5rem;
         cursor: pointer;
     }
 
@@ -42,7 +44,7 @@
             {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
                 {{ if ne (mod $service_index 2) 1 }}
 
-                    <div class="row justify-content-center clickable-container" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
+                    <div class="row justify-content-center clickable-container darker-background" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
                         <div class="col-md-5">
                             <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
                                 class="rounded img-fluid img-raised">
@@ -56,31 +58,25 @@
                         <div class="col-md-6 text-md-left">
                             <h5 class="title">{{ .Title | markdownify }}</h5>
                             <!--<p class="category text-primary"></p>-->
-                            <p class="description">
-                                {{ .Params.description }}
-                                {{ if .Params.homepage_link_enable }}
-                                <br>
-                                <br>
-                                <a href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
-                                {{ end }}
-                            </p>
+                            <p class="description"></p>
+                            {{ .Params.description }}
+                            {{ if .Params.homepage_link_enable }}
+                                <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                            {{ end }}
                         </div>
                     </div>
 
                 {{ else }}
 
-                    <div class="row justify-content-center clickable-container" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
+                    <div class="row justify-content-center clickable-container darker-background" onclick="location.href='{{.RelPermalink}}/#{{.Params.id}}_content'">
                         <div class="col-md-7 text-md-right order-md-1 order-2">
                             <h5 class="title">{{ .Title | markdownify }}</h5>
                             <!--<p class="category text-primary"></p>-->
-                            <p class="description">
-                                {{ .Params.description }}
-                                {{ if .Params.homepage_link_enable }}
-                                <br>
-                                <br>
-                                <a class="mt-5" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
-                                {{ end }}
-                            </p>
+                            <p class="description"></p>
+                            {{ .Params.description }}
+                            {{ if .Params.homepage_link_enable }}
+                                <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="{{.RelPermalink}}/#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                            {{ end }}
                         </div>
 
                         <div class="col-md-0 order-md-2"></div>
@@ -102,9 +98,6 @@
 
             {{ end }}
 
-            {{ if .Params.homepage_button_enable }}
-            <a class="btn btn-primary btn-round btn-lg mt-5" type="" href="/servicos">Saber Mais</a>
-            {{ end }}
         </div>
     </div>
 </div>
