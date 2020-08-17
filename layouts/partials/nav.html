@@ -1,6 +1,6 @@
 <style>
   .menu-el{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 400;
   }  
   .menu-single:hover{
@@ -28,7 +28,7 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown menu-el">
-              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center; text-transform:capitalize; font-size:initial">
+              <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" style="text-align: center; text-transform:capitalize; font-size:1em">
                 {{ .Pre }} <span>{{ .Name }}</span>
                 <span class="caret"></span>
               </a>
