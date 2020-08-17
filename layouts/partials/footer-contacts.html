@@ -14,21 +14,21 @@
             <div class="footer {{$darkerBackgroundClass}}" id="contactos">
                 <div class="container" style="text-align: center;">
                     <nav style="float: none; width: 100%;">
-                        <ul class="row" style="font-size: 1.2em;">
-                            <li class="title col-md-3 align-li-vertically mb-1">
+                        <ul class="row" style="font-size: 1.1em; font-weight: 500;">
+                            <li class="col-md-3 align-li-vertically mb-1">
                                 <a >
                                     <i class='now-ui-icons location_pin color-orange'></i>
                                     {{ .Params.location }}
                                 </a>
                             </li>
-                            <li class="title col-md-4 align-li-vertically mt-1 mb-1">
+                            <li class="col-md-4 align-li-vertically mt-1 mb-1">
                                 <a href="mailto:{{ .Params.email }}">
                                     <i class='now-ui-icons ui-1_email-85 color-orange'></i>
                                     {{ .Params.email }}
                                 </a>
                             </li>
-                            <li class="title col-md-2 align-li-vertically mt-1 mb-1">
-                                <a href="tel:+{{ .Params.mobile_country_code }}{{ .Params.mobile }}" style="letter-spacing: 0.05em;">
+                            <li class="col-md-2 align-li-vertically mt-1 mb-1">
+                                <a href="tel:+{{ .Params.mobile_country_code }}{{ .Params.mobile }}" style="letter-spacing: 0.03em;">
                                     <i class='fa fa-phone color-orange'></i>
                                     {{ .Params.mobile }}
                                 </a>

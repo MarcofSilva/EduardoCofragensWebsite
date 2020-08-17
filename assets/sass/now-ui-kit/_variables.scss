@@ -115,6 +115,9 @@ $padding-input-horizontal:      19px !default;
 $padding-btn-vertical:         11px !default;
 $padding-btn-horizontal:       22px !default;
 
+$padding-pill-vertical:         7px !default;
+$padding-pill-horizontal:       22px !default;
+
 $padding-base-vertical:        .5rem !default;
 $padding-base-horizontal:      .7rem !default;
 
@@ -141,7 +144,7 @@ $margin-base-vertical:         15px !default;
 $margin-base-horizontal:       15px !default;
 
 $margin-bottom:                 10px        !default;
-$border:                        1.5px solid   !default;
+$border:                        1.6px solid   !default;
 $border-radius-extra-small:     0.125rem    !default;
 $border-radius-small:           0.1875rem   !default;
 $border-radius-large:           0.25rem     !default;
@@ -162,11 +165,18 @@ $btn-icon-size-small:           1.875rem     !default;
 $btn-icon-font-size-lg:         1.325rem     !default;
 $btn-icon-size-lg:              3.6rem         !default;
 
-$font-size-h1:                 3.5em        !default; // ~ 49px
+/*$font-size-h1:                 3.5em        !default; // ~ 49px
 $font-size-h2:                 2.5em        !default; // ~ 35px
 $font-size-h3:                 2em          !default; // ~ 28px
 $font-size-h4:                 1.714em      !default; // ~ 24px
-$font-size-h5:                 1.57em       !default; // ~ 22px
+//$font-size-h5:                 1.57em       !default; // ~ 22px
+$font-size-h5:                 1.35em       !default;
+$font-size-h6:                 1em          !default; // ~ 14px*/
+$font-size-h1:                 3.4em        !default; // ~ 49px
+$font-size-h2:                 2.4em        !default; // ~ 35px
+$font-size-h3:                 2em          !default; // ~ 28px
+$font-size-h4:                 1.5em      !default; // ~ 24px
+$font-size-h5:                 1.35em       !default;
 $font-size-h6:                 1em          !default; // ~ 14px
 
 $font-paragraph:               1em          !default;

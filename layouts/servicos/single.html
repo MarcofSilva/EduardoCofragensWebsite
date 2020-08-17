@@ -40,7 +40,7 @@
                         {{ $active = "active" }}
                     {{ end }}
                     <li class="nav-item mb-1 mt-3"}}>
-                        <a class="nav-link {{ $active }} btn" href="{{ .Permalink }}#{{ .Params.id }}_content">
+                        <a class="nav-link {{ $active }}" href="{{ .Permalink }}#{{ .Params.id }}_content">
                             <h5 class="title">{{.Params.section_button_name }}</h5>
                         </a>
                     </li>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="separator separator-primary"></div>
-    <div class="col-md-12 ml-auto mr-auto">
+    <div class="col-md-12 ml-auto mr-auto mt-5">
         <div class="nav-align-center">
             <ul class="nav nav-pills nav-pills-primary" role="tablist">
                 {{ $currentSectionTitle := .Title }}
@@ -95,7 +95,7 @@
                         {{ $active = "active" }}
                     {{ end }}
                     <li class="nav-item mb-1 mt-3"}}>
-                        <a class="nav-link nav-link-highlight {{ $active }} btn" href="{{ .Permalink }}#{{ .Params.id }}_content">
+                        <a class="nav-link nav-link-highlight {{ $active }}" href="{{ .Permalink }}#{{ .Params.id }}_content">
                             <h5 class="title">{{.Params.section_button_name }}</h5>
                         </a>
                     </li>
