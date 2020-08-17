@@ -32,7 +32,6 @@
 
 
 <div class="section" id="services_homepage">
-    <!--Shape services backgroun #TODO or delete-->
     <!--<div style="position: absolute; z-index: 100; border-top: 1000px solid #555; border-left: 25px solid transparent; border-right: 25px solid transparent; height: 0; width: 50%;"></div>-->
     <div class="container">
         <h2 class="title text-center mb-5">{{ .Params.homepage_title }}</h2>
@@ -55,14 +54,14 @@
                         <div class="col-md-0"></div>
                         <!--use columns from the bootstrap grid of 12, if want to add space between image and text (col-md-1 instead of col-md-0) -->
 
-                        <div class="col-md-6 text-md-left">
+                        <div class="col-md-6 text-justify pb-5">
                             <h3 class="title">{{ .Title | markdownify }}</h3>
                             <!--<p class="category text-primary"></p>-->
                             <p class="description">
                                 {{ .Params.description }}
                             </p>
                             {{ if .Params.homepage_link_enable }}
-                                <a class="btn btn-primary btn-round btn-lg mt-5 float-md-right" type="" href="{{.RelPermalink}}#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                                <a class="btn btn-primary btn-round btn-lg" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);" type="" href="{{.RelPermalink}}#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
                             {{ end }}
                         </div>
                     </div>
@@ -70,15 +69,14 @@
                 {{ else }}
 
                     <div class="row justify-content-center clickable-container darker-background" >
-                        <div class="col-md-7 text-md-right order-md-1 order-2">
+                        <div class="col-md-7 text-justify order-md-1 order-2 pb-5">
                             <h3 class="title">{{ .Title | markdownify }}</h3>
                             <!--<p class="category text-primary"></p>-->
                             <p class="description">
                                 {{ .Params.description }}
                             </p>
-                            <div style="height: -webkit-fill-available; height:min-content;"></div>
                             {{ if .Params.homepage_link_enable }}
-                                <a class="btn btn-primary btn-round btn-lg mt-5 float-md-left" type="" href="{{.RelPermalink}}#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
+                            <a class="btn btn-primary btn-round btn-lg" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);" type="" href="{{.RelPermalink}}#{{.Params.id}}_content">{{ $serviceLinkName }}</a>
                             {{ end }}
                         </div>
 

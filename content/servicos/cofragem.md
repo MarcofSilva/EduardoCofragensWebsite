@@ -1,7 +1,7 @@
 ---
 title: Cofragem
 weight: 1
-description: This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!
+description: This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!This is for meta description. You can write here details about this prot labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 images:
 - img/servicos/cofragem/cofragem.jpeg

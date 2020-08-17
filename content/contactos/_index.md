@@ -22,7 +22,7 @@ email : "cofragemsilva@hotmail.com"
 location : "Lagoa, Portugal"
 # Form
 form:
-    form_enable: false   #TODO dont show the form in a initial fase
+    form_enable: false
     form_title: Envie-nos uma mensagem
     form_subject_tip: "Orçamento, Aluguer de Material, etc..."
 

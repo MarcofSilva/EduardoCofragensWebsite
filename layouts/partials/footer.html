@@ -10,8 +10,8 @@
 	    <ul style="position: relative;">
 	    {{ range $itemIndex, $item := .Site.Menus.footer }}
           {{ if eq .KeyName "footerHomeButton" }}
-            <li style="position: absolute; right: 0; bottom: 0;">
-              <a href="{{ $path }}{{ .URL}}" class="btn btn-icon btn-round btn-primary">
+            <li style="float: right;">
+              <a href="{{ $path }}{{ .URL}}" class="btn-icon btn-round btn-primary">
                 {{ .Pre }}
               </a>
           {{ else if eq .KeyName "alvara"}}
