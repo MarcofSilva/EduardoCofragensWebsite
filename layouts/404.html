@@ -1,7 +1,21 @@
+{{ define "title" }}
+
+<div class="container">
+    <div class="content-center">
+    <h1 class="title">404 Error</h1>
+    <!--<div class="text-center">
+        {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+    </div>-->
+    </div>
+</div>
+
+{{ end }}
+
 {{ define "body"}}
     <main id="body">
-      <div>
-       <h1 id="title"><a href='{{ "/" | relURL }}'>Go Home</a></h1>
+      <div class="text-center">
+       <h1 id="title">Página não encontrada</h1>
+       <h2 id="title"><a href='{{ "/" | relURL }}'>Voltar à Página Inicial</a></h2>
       </div>
     </main>
 {{ end }}
