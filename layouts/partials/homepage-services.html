@@ -6,7 +6,7 @@
         padding-right: 20px;
         /*border: 8px solid #f96432c2;*/
         border-radius: 0.5rem;
-        cursor: pointer;
+        /*cursor: pointer;*/
     }
 
     /*.clickable-container img {
@@ -44,7 +44,7 @@
             {{ range $service_index, $service := (where site.RegularPages "Section" "servicos") }}
                 {{ if ne (mod $service_index 2) 1 }}
 
-                    <div class="row justify-content-center clickable-container darker-background" onclick="location.href='{{.RelPermalink}}#{{.Params.id}}_content'">
+                    <div class="row justify-content-center clickable-container darker-background">
                         <div class="col-md-5">
                             <img src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="Thumbnail Image"
                                 class="rounded img-fluid img-raised">
@@ -69,7 +69,7 @@
 
                 {{ else }}
 
-                    <div class="row justify-content-center clickable-container darker-background" onclick="location.href='{{.RelPermalink}}#{{.Params.id}}_content'">
+                    <div class="row justify-content-center clickable-container darker-background" >
                         <div class="col-md-7 text-md-right order-md-1 order-2">
                             <h3 class="title">{{ .Title | markdownify }}</h3>
                             <!--<p class="category text-primary"></p>-->
