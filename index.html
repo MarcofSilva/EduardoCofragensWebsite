@@ -54,6 +54,12 @@
       align-self: center;
     }
     </style>
+
+    <script>
+      function scrollToId(id) {
+        document.getElementById(id).scrollIntoView(true);
+      };
+    </script>
 </head>
 
   
@@ -94,18 +100,6 @@
                 <a class="nav-link btn btn-link btn-neutral menu-el" href="./" data-target="/">
                   <i class='now-ui-icons business_bank'></i>
                   <span>Página Inicial</span>
-                </a>
-              
-            </li>
-          
-        
-          
-            <li class="nav-item menu-single">
-              
-              
-                <a class="nav-link btn btn-link btn-neutral menu-el" href="./#about_homepage" data-target="/#about_homepage">
-                  <i class='now-ui-icons business_badge'></i>
-                  <span>Sobre</span>
                 </a>
               
             </li>
@@ -189,7 +183,7 @@
 <div class="container">
   <h1 class="title text-center homepage-header-title mt-4">Cofragem Silva</h1>
   <h5 class="description" style="color: white; margin-left: 15%; margin-right: 15%;"> This is for meta description. Liderança é uma escolha não uma posição </h5>
-  <a class="btn btn-primary btn-round homepage-header-description btn-lg mt-3 mb-5" type="" href="./#homepageBody">
+  <a class="btn btn-primary btn-round homepage-header-description btn-lg mt-3 mb-5" type="" onclick='scrollToId("homepageBody")'>
     Explora
     <i class="now-ui-icons arrows-1_minimal-down"></i>
   </a>
@@ -591,7 +585,7 @@
         </div>
         
         
-        <a class="btn btn-primary btn-round btn-lg" type="" href="./portefolio/">Ver Portefólio Completo</a>
+        <a class="btn btn-primary btn-round btn-lg" type="" href="portefolio">Ver Portefólio Completo</a>
         
 
     </div>
@@ -682,8 +676,8 @@
         
       
           
-            <li style="float: right;">
-              <a href="https://cofragemsilva.pt/#top" class="btn-icon btn-round btn-primary">
+            <li style="float: right; cursor: pointer;">
+              <a class="btn-icon btn-round btn-primary" onclick='window.scrollTo(0, 0);'>
                 <i class='now-ui-icons arrows-1_minimal-up btn_round'></i>
               </a>
           
