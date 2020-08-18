@@ -18,7 +18,5 @@ fields:
   name: homepage_link_enable
   label: homepage_link_enable
 pages:
-- content/servicos/cofragem.md
 - content/servicos/betonagem.md
-- content/servicos/ferro.md
-- content/servicos/aluguer.md
+- content/servicos/cofragem.md
