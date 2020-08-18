@@ -10,8 +10,8 @@
 	    <ul style="position: relative;">
 	    {{ range $itemIndex, $item := .Site.Menus.footer }}
           {{ if eq .KeyName "footerHomeButton" }}
-            <li style="float: right;">
-              <a href="{{ $path }}{{ .URL}}" class="btn-icon btn-round btn-primary">
+            <li style="float: right; cursor: pointer;">
+              <a class="btn-icon btn-round btn-primary" onclick='window.scrollTo(0, 0);'>
                 {{ .Pre }}
               </a>
           {{ else if eq .KeyName "alvara"}}

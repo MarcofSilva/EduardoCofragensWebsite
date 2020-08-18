@@ -24,11 +24,11 @@ name = "Página Inicial"
 pre = "<i class='now-ui-icons business_bank'></i>"
 url = "/"
 weight = 1
-[[menu.main]]
-name = "Sobre"
-pre = "<i class='now-ui-icons business_badge'></i>"
-url = "/#about_homepage"
-weight = 2
+#[[menu.main]]
+#name = "Sobre"
+#pre = "<i class='now-ui-icons business_badge'></i>"
+#url = "/#about_homepage"
+#weight = 2
 [[menu.main]]
   name = "Serviços"
   pre = "<i class='now-ui-icons loader_gear'></i>"
