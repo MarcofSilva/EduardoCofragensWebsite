@@ -16,15 +16,11 @@ sections:
   label: Serviços
   create: documents
   match: "**/*"
-  templates:
-  - service
 - type: directory
   path: content/portefolio
   label: Portefólio
   create: documents
   match: "**/*"
-  templates:
-  - obra
 - type: directory
   path: content/contactos
   label: Contactos
