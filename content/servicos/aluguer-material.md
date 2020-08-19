@@ -1,7 +1,7 @@
 ---
 title: Aluguer de Material
 weight: 4
-description: This is for meta description. You can write here details about this provided service.
+description: This is for meta description. You can write here details about this provided service. #TODO
 
 images:
 - media/servicos/aluguer/aluguer.jpeg

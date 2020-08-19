@@ -1,6 +1,6 @@
 ---
 title: "Portefólio"
-description : "this is a meta description"
+description : "this is a meta description" #TODO
 
 # Homepage
 homepage_enable: true

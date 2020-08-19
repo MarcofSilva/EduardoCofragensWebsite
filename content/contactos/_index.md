@@ -1,6 +1,6 @@
 ---
 title: "Contactos"
-description : "this is a meta description"
+description : "this is a meta description" #TODO
 
 # Footer
 footer_enable: true

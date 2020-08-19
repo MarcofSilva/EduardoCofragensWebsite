@@ -1,16 +1,16 @@
 ---
 title: "Serviços"
-description : "this is a meta description"
+description : "this is a meta description" #TODO
 
 # Homepage
 homepage_enable: true
 homepage_title: "Que Serviços Fornecemos"
-homepage_button_enable : true
+homepage_button_enable : false
 
 # Section
 class: "services-page default-section-page"
 background: "../media/headers/header2.jpg"
-intro: Intro sobre os serviços no geral. Se não se quiser simplesmente deixar o campo da intro vazio.    #if not nedded just leave this field blank
+intro:  #if not nedded just leave this field blank
 
 
 draft: false
