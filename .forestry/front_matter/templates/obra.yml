@@ -53,3 +53,5 @@ fields:
       format: markdown
   label: Meta Descrição
   hidden: true
+pages:
+- content/portefolio/moradia.md
