@@ -23,6 +23,8 @@ sections:
   label: Portefólio
   create: documents
   match: "**/*"
+  templates:
+  - obra
 - type: directory
   path: content/contactos
   label: Contactos

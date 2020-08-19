@@ -53,3 +53,5 @@ fields:
   name: contacts_buttons_enable
   label: Botões de Contacto
   description: Mostrar/esconder botões de contacto que aparecem no inferior do cabeçalho
+pages:
+- content/portefolio/_index.md
