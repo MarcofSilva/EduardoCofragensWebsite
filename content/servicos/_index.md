@@ -6,7 +6,6 @@ homepage_title: Que Serviços Fornecemos
 homepage_button_enable: true
 class: services-page default-section-page
 background: "../media/headers/header2.jpg"
-intro: Intro sobre os serviços no geral. Se não se quiser simplesmente deixar o campo
-  da intro vazio.
+intro: ''
 
 ---
