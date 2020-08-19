@@ -7,6 +7,13 @@ fields:
   label: Título
   config:
     required: true
+- name: id
+  type: text
+  config:
+    required: true
+    max: 15
+  description: Apenas uma palavra que identifique o serviço.
+  label: Id
 - type: text
   name: weight
   label: Prioridade
@@ -34,13 +41,6 @@ fields:
   description: Texto do botão de navegação dentro das páginas de serviço, que referencia
     este serviço (permite ter um nome mais curto pois o título pode ser demasiado
     grande)
-- name: id
-  type: text
-  config:
-    required: true
-    max: 15
-  description: Apenas uma palavra que identifique o serviço.
-  label: Id
 - name: class
   type: text
   config:
