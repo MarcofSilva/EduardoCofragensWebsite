@@ -25,10 +25,10 @@ fields:
   hidden: false
   default: now
   config:
-    display_utc: true
-    export_format: YYYY-MM-DDTh:mm:ssZ
+    display_utc: false
+    export_format: YYYY-MM-DDTh:mm:ssAZ
     date_format: DD/MM/YYYY
-    time_format: h:mm A Z
+    time_format: h:mm:ssAZ
   description: Data de criação desta obra no portefólio.
 - type: image_gallery
   name: images
