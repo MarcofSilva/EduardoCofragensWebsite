@@ -53,5 +53,3 @@ fields:
       format: markdown
   label: Meta Descrição
   hidden: true
-pages:
-- content/portefolio/obra-1 copy 2.md

@@ -12,7 +12,7 @@ fields:
   name: description
   label: Meta Descrição
   config:
-    required: true
+    required: false
   default: Galeria de fotos de várias obras feitas.
 - type: boolean
   name: homepage_enable
