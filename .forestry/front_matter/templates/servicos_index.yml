@@ -30,11 +30,6 @@ fields:
   label: Botão/Link na Página Inicial
   description: Botão na página inicial que redireciona para a página /servicos/
   hidden: true
-- type: text
-  name: class
-  label: Class
-  default: services-page default-section-page
-  hidden: true
 - type: file
   name: background
   label: Imagem de Cabeçalho
@@ -44,5 +39,10 @@ fields:
   name: intro
   label: Intro
   description: Opcional
+- type: text
+  name: class
+  label: Class
+  default: services-page default-section-page
+  hidden: true
 pages:
 - content/servicos/_index.md
