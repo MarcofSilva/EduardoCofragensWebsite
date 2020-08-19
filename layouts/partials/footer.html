@@ -16,6 +16,8 @@
               </a>
           {{ else if eq .KeyName "alvara"}}
             <li> <a>{{ .Pre }} Alvará de construção: {{ site.Data.info.alvara }}</a>
+          {{ else if eq .KeyName "copyright"}}
+              <li> <a>{{ .Pre }} {{ replace .Name "{now_year}" now.Year }}</a></li>
           {{ else }}
             <li> <a>{{ .Pre }} {{ .Name }}</a>
           {{ end }}

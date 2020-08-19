@@ -7,7 +7,7 @@ relativeURLs = "true"
 
 [[menu.footer]]
 identifier = "copyright"
-name = "Copyright © 2020"
+name = "Copyright © {now_year}"
 weight = 1
 [[menu.footer]]
 identifier = "alvara"
@@ -24,11 +24,11 @@ name = "Página Inicial"
 pre = "<i class='now-ui-icons business_bank'></i>"
 url = "/"
 weight = 1
-#[[menu.main]]
-#name = "Sobre"
-#pre = "<i class='now-ui-icons business_badge'></i>"
-#url = "/#about_homepage"
-#weight = 2
+[[menu.main]]
+name = "Sobre"
+pre = "<i class='now-ui-icons business_badge'></i>"
+url = "/#about_homepage"
+weight = 2
 [[menu.main]]
   name = "Serviços"
   pre = "<i class='now-ui-icons loader_gear'></i>"
@@ -79,10 +79,12 @@ highlightjsLang = ["r", "yaml"]
 highlightjsTheme = "github"
 highlightjsVersion = "9.10.0"
 tint = "orange"
-default_header_background = "../media/headers/headerObra.jpg"
+default_header_background = "/media/headers/headerDefault.jpg"
 #Main name in the website
 name = "Eduardo Silva"
-description = ""  #TODO #default meta description
+about_us_homepage_enable = true
+about_us_homepage_title = "Sobre Nós"
+description = "Eduardo Silva, Empresário de Construção Civil, e a sua equipa de profissionais, desenvolve a sua actividade principal nos sectores da Cofragem e Armação de Ferro para estruturas em betão, em edifícios residenciais e não residenciais." #default meta description and about us
 
 #post does not even exist, but if this is helpfull create the permalink format for what this site uses
 [permalinks]

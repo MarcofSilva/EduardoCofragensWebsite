@@ -51,7 +51,8 @@
 
     <div class="row pt-5"id="{{ .Params.id}}_content">
         <div>
-            <h3 class="title mt-5">{{ .Params.title }}</h3>
+            {{ $currentSectionTitle := .Params.title}}
+            <h3 class="title mt-5">{{ $currentSectionTitle }}</h3>
             <h5 class="description"> {{ .Params.description }} </h5>
 
             <div class="separator separator-primary"></div>
@@ -61,14 +62,14 @@
                     <div class="col-md-6">
                         {{ range $image_index, $image := .Params.images }}
                             {{ if eq (mod $image_index 2) 0}}
-                                <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_img{{$image_index}}">
+                                <img src="{{.|absURL}}" alt="Serviço de {{ $currentSectionTitle }} {{ $image_index }}" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_img{{$image_index}}">
                             {{ end }}
                         {{ end }}
                     </div>
                     <div class="col-md-6">
                         {{ range $image_index, $image := .Params.images }}
                             {{ if eq (mod $image_index 2) 1}}
-                                <img src="{{.|absURL}}" alt="" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_img{{$image_index}}">
+                                <img src="{{.|absURL}}" alt="Serviço de {{ $currentSectionTitle }} {{ $image_index }}" class="img-raised clickable-image" data-toggle="modal" data-target="#modal_img{{$image_index}}">
                             {{ end }}
                         {{ end }}
                     </div>
@@ -127,7 +128,7 @@
                             </a>
                         </div>
                         <div class="modal-body">
-                            <img class="d-block modal-carousel-image" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                            <img class="d-block modal-carousel-image" src="{{.|absURL}}" alt="Serviço de {{ $currentSectionTitle }} {{ $image_index }}">
                         </div>
                     </div>
                 </div>

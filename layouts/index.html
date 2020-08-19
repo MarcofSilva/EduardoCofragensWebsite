@@ -1,7 +1,7 @@
 {{ define "title" }}
 <div class="container">
   <h1 class="title text-center homepage-header-title mt-4">{{ .Params.title }}</h1>
-  <h5 class="description" style="color: white; margin-left: 15%; margin-right: 15%;"> {{ .Params.description }} </h5>
+  <h5 class="description" style="color: white; margin-left: 15%; margin-right: 15%;"> {{ .Params.subtitle }} </h5>
   <a class="btn btn-primary btn-round homepage-header-description btn-lg mt-3 mb-5" type="" onclick='scrollToId("homepageBody")'>
     Explora
     <i class="now-ui-icons arrows-1_minimal-down"></i>
@@ -13,14 +13,6 @@
 
 {{ define "body" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-
-<!-- Optional Header Image -->
-{{ if .Params.header.image }}
-<div class="article-header">
-  <img src="{{ .Params.header.image | absURL }}" class="article-banner" itemprop="image">
-  {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
-</div>
-{{end}}
 
 <!--{{ with .Title }}<h1>{{ . }}</h1>{{ end }}-->
 <div class="container">

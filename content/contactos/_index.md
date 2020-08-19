@@ -1,6 +1,6 @@
 ---
 title: "Contactos"
-description : "this is a meta description" #TODO
+description : 
 
 # Footer
 footer_enable: true
@@ -11,7 +11,7 @@ contacts_buttons_enable: true
 
 ## Section
 class:
-background: "../media/headers/header4.jpg"
+background: 
 #
 content_title : ""
 content : "Nós somos bué fixes e tal, não hesitem em falar conosco que respondemos logo e se pagarem justo nós trabalhamos justo e cenas assim e tal."

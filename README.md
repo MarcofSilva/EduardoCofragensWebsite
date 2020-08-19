@@ -29,3 +29,6 @@ baseof.html for secundarypages header
 CNAME contains the custom domain and is stored under static, so that after each build it will be available in the gh-pages branch that has the static files of the website
 
 workflow hugo build & deploy generates the new static files after every push to the master branch
+
+video https://convert-video-online.com/pt/
+optimize images (1000x750) https://resizeimage.net/

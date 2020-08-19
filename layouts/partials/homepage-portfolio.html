@@ -38,7 +38,7 @@
                                     {{ $active = "active" }}
                                 {{ end }}
                                 <div class="carousel-item {{ $active }}">
-                                    <img class="d-block" src="{{.|absURL}}" alt="Foto_{{ $image_index }}">
+                                    <img class="d-block" src="{{.|absURL}}" alt="{{ $obra.Params.title }} em {{ $obra.Params.location}} {{ $image_index }}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <!--<h5>text</h5>-->
                                     </div>
@@ -53,7 +53,7 @@
                         </a>
                     </div>
                     <br>
-                    <h5 class="category">{{ .Title }}</h5>
+                    <h5 class="category">{{ .Title }} - {{ .Params.location }} </h5>
                     <p class="category text-primary"> {{ .Params.date_to_show }} </p>
                     <br>
                     <br>

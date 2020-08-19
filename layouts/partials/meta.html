@@ -1,28 +1,9 @@
    <!-- Canonical SEO -->
     <link rel="canonical" href="{{ site.BaseURL }}" />
     <!--  Social tags      #TODO add this texted through the config file or data-->
-    <meta name="keywords" content="cofragem, cofragens, betonagem, armação de ferro, algarve"> <!--bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, now ui, now ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit -->
-    <meta name="description" content="{{.Description}}"> <!--Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free. -->
-    
-    <!--{{.Description | default .Site.Params.SiteDescription}}
-    #TODO
-    {{ $description := "" }}
-    {{ if .IsPage }}
-    {{ if .Params.Description }}
-        {{ $description = .Params.Description }}
-    {{ else }}
-        {{ $description = .Summary }}
-    {{ end }}
-
-    {{ else if .Params.Description }}
-    {{ $description = .Params.Description }}
-
-    {{ else }}
-    {{ $description = site.Params.Description }}
-
-    {{ end }}-->
-    
-    
+    <meta name="keywords" content="cofragem, cofragens, betonagem, betão, armação de ferro, aluguer, aluguel, material de cofragem, carvoeiro, portimão, lagoa, alvor, armação de pêra, lagos, ferragudo, algarve">
+    <meta name="description" content="{{.Description | default site.Params.description}}">
+        
     <!-- Schema.org markup for Google+ -->
 <!--
     <meta itemprop="name" content="Now UI Kit by Creative Tim">

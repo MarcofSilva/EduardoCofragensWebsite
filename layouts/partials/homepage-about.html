@@ -1,12 +1,11 @@
-{{ $about_us_data := .Site.Data.info.about_us}}
-{{ if $about_us_data.homepage_enable}}
+{{ if .Site.Params.about_us_homepage_enable}}
 
 <!--Sobre Nós-->
 <div class="section darker-background mt-5" id="about_homepage">
   <div class="container">
-      <h2 class="title text-center mb-5">{{ $about_us_data.homepage_title }}</h2>
+      <h2 class="title text-center mb-5">{{ .Site.Params.about_us_homepage_title }}</h2>
       <h5 class="description">
-          {{ $about_us_data.description }}
+          {{ .Site.Params.description }}
       </h5>
   </div>
 </div>
