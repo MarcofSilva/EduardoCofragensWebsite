@@ -5,10 +5,14 @@ fields:
 - type: text
   name: title
   label: Título
-  description: "&lt;Tipo de trabalho&gt; - &lt;Localização&gt;  (uma hipótese de formato
-    para o título)"
+  description: Tipo de trabalho
   config:
     required: true
+- name: location
+  type: text
+  config:
+    required: true
+  label: Localização
 - type: text
   name: date_to_show
   label: Data da Obra
