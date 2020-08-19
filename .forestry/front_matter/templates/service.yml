@@ -5,20 +5,53 @@ fields:
 - type: text
   name: title
   label: título
+  config:
+    required: true
 - type: text
   name: weight
   label: prioridade
 - type: textarea
   name: description
   label: descrição
+  config:
+    required: true
+  default: ''
 - type: image_gallery
   name: images
   label: imagens
 - type: boolean
   name: homepage_link_enable
   label: homepage_link_enable
+  default: true
+  description: Mostra/esconde o botão na página inicial que leva à página específica
+    do serviço
+- name: section_button_name
+  type: text
+  config:
+    required: true
+  label: nome no botão
+  description: Texto do botão de navegação dentro das páginas de serviço, que referencia
+    este serviço (permite ter um nome mais curto pois o título pode ser demasiado
+    grande)
+- name: id
+  type: text
+  config:
+    required: true
+    max: 15
+  label: id
+  description: Apenas uma palavra que identifique o serviço.
+- name: class
+  type: text
+  config:
+    required: false
+  label: class
+  hidden: true
+  default: services-page default-section-page
+- name: background
+  type: file
+  config:
+    maxSize: 1
+  label: imagem do cabeçalho
 pages:
-- content/servicos/cofragem.md
 - content/servicos/betonagem.md
-- content/servicos/ferro.md
-- content/servicos/aluguer.md
+- content/servicos/cofragem.md
