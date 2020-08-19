@@ -16,6 +16,7 @@ fields:
   config:
     required: true
   default: ''
+  description: Descrição visível, mas tbm usada com meta descrição.
 - type: image_gallery
   name: images
   label: imagens
