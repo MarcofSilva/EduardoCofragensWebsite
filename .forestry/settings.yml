@@ -21,7 +21,7 @@ sections:
 - type: directory
   path: content/portefolio
   label: Portefólio
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: content/contactos

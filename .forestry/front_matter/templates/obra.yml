@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: título
+  label: Título
   description: "&lt;Tipo de trabalho&gt; - &lt;Localização&gt;  (uma hipótese de formato
     para o título)"
   config:
@@ -17,25 +17,26 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: meta descrição
+  label: Meta Descrição
   hidden: true
 - type: datetime
   name: date
-  label: date
+  label: Data
   hidden: false
   default: now
   config:
     display_utc: false
     export_format: YYYY-MM-DDTh:mm:ssAZ
     date_format: DD/MM/YYYY
-    time_format: h:mm:ssAZ
-  description: Data de criação desta obra no portefólio.
+    time_format: h:mm:ss A Z
+  description: Data de criação desta obra no portefólio. Determina a ordem de apresentação
+    das obras. (NÃO ALTERAR)
 - type: image_gallery
   name: images
-  label: imagens
+  label: Imagens
 - type: text
   name: date_to_show
-  label: data da obra
+  label: Data da Obra
   description: Texto referente à data que é apresentado junto da respetiva obra. (Mês
     Ano) é um possível formato.
 - name: texto
