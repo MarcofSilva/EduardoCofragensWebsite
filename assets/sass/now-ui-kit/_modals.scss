@@ -188,11 +188,15 @@
     max-width: 90vw;
     width: fit-content;
     width: -moz-fit-content;
+    width: -o-fit-content;
+    width: -ms-fit-content;
   }
 
   .modal-content-portfolio {
     width: fit-content;
     width: -moz-fit-content;
+    width: -o-fit-content;
+    width: -ms-fit-content;
     margin: auto;
   }
 

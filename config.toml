@@ -79,7 +79,7 @@ highlightjsLang = ["r", "yaml"]
 highlightjsTheme = "github"
 highlightjsVersion = "9.10.0"
 tint = "orange"
-default_header_background = "../img/headers/headerObra.jpg"
+default_header_background = "../media/headers/headerObra.jpg"
 #Main name in the website
 name = "Eduardo Silva"
 description = ""  #TODO #default meta description

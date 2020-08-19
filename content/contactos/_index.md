@@ -11,7 +11,7 @@ contacts_buttons_enable: true
 
 ## Section
 class:
-background: "../img/headers/header4.jpg"
+background: "../media/headers/header4.jpg"
 #
 content_title : ""
 content : "Nós somos bué fixes e tal, não hesitem em falar conosco que respondemos logo e se pagarem justo nós trabalhamos justo e cenas assim e tal."
