@@ -43,3 +43,5 @@ fields:
   name: intro
   label: Intro
   description: Opcional
+pages:
+- content/servicos/_index.md
