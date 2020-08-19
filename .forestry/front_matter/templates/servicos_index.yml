@@ -29,6 +29,7 @@ fields:
   name: homepage_button_enable
   label: Botão/Link na Página Inicial
   description: Botão na página inicial que redireciona para a página /servicos/
+  hidden: true
 - type: text
   name: class
   label: Class

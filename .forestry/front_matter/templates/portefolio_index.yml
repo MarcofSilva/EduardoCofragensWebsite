@@ -1,0 +1,34 @@
+---
+label: Portefólio_index
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: homepage_enable
+  label: homepage_enable
+- type: text
+  name: homepage_title
+  label: homepage_title
+- type: number
+  name: homepage_obras_num
+  label: homepage_obras_num
+- type: boolean
+  name: homepage_button_enable
+  label: homepage_button_enable
+- type: text
+  name: class
+  label: class
+- type: file
+  name: background
+  label: background
+- type: text
+  name: section_title
+  label: section_title
+- type: boolean
+  name: contacts_buttons_enable
+  label: contacts_buttons_enable
