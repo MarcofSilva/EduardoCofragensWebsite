@@ -1,0 +1,57 @@
+---
+label: Portefólio_index
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Título
+  config:
+    required: true
+  default: Portefólio
+- type: text
+  name: description
+  label: Meta Descrição
+  config:
+    required: true
+  default: Galeria de fotos de várias obras feitas.
+- type: boolean
+  name: homepage_enable
+  label: Secção na Página Inicial
+  default: true
+- type: text
+  name: homepage_title
+  label: Título na Secção na Página Inicial
+  config:
+    required: true
+- type: number
+  name: homepage_obras_num
+  label: Número de Obras na Página Inicial
+  default: 3
+  config:
+    required: true
+    min: 
+- type: boolean
+  name: homepage_button_enable
+  label: Botão/Link na Página Inicial
+  description: Botão na página inicial que redireciona para a página /portefolio/
+  default: true
+- type: text
+  name: section_title
+  label: Titulo da Página Própria
+  config:
+    required: true
+- type: file
+  name: background
+  label: Imagem de Cabeçalho
+  config:
+    maxSize: 1
+- type: boolean
+  name: contacts_buttons_enable
+  label: Botões de Contacto
+  description: Mostrar/esconder botões de contacto que aparecem no inferior do cabeçalho
+- type: text
+  name: class
+  label: Class
+  hidden: true
+pages:
+- content/portefolio/_index.md

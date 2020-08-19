@@ -4,24 +4,32 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: título
+  label: Título
   config:
     required: true
+- name: id
+  type: text
+  config:
+    required: true
+    max: 15
+  description: Apenas uma palavra que identifique o serviço.
+  label: Id
 - type: text
   name: weight
-  label: prioridade
+  label: Prioridade
 - type: textarea
   name: description
-  label: descrição
+  label: Descrição
   config:
     required: true
   default: ''
+  description: Descrição visível, mas tbm usada com meta descrição.
 - type: image_gallery
   name: images
-  label: imagens
+  label: Imagens
 - type: boolean
   name: homepage_link_enable
-  label: homepage_link_enable
+  label: Botão/Link na Página Inicial
   default: true
   description: Mostra/esconde o botão na página inicial que leva à página específica
     do serviço
@@ -29,29 +37,19 @@ fields:
   type: text
   config:
     required: true
-  label: nome no botão
+  label: Texto de Botão em Serviços
   description: Texto do botão de navegação dentro das páginas de serviço, que referencia
     este serviço (permite ter um nome mais curto pois o título pode ser demasiado
     grande)
-- name: id
-  type: text
-  config:
-    required: true
-    max: 15
-  label: id
-  description: Apenas uma palavra que identifique o serviço.
 - name: class
   type: text
   config:
     required: false
-  label: class
+  label: Class
   hidden: true
   default: services-page default-section-page
 - name: background
   type: file
   config:
     maxSize: 1
-  label: imagem do cabeçalho
-pages:
-- content/servicos/betonagem.md
-- content/servicos/cofragem.md
+  label: Imagem de Cabeçalho

@@ -1,0 +1,53 @@
+---
+label: Obra
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Título
+  description: "&lt;Tipo de trabalho&gt; - &lt;Localização&gt;  (uma hipótese de formato
+    para o título)"
+  config:
+    required: true
+- type: text
+  name: date_to_show
+  label: Data da Obra
+  description: Texto referente à data que é apresentado junto da respetiva obra. (Mês
+    Ano) é um possível formato.
+- name: texto
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Texto
+  description: Alguma descrição sobre a obra se pretendido. (Opcional)
+- type: image_gallery
+  name: images
+  label: Imagens
+- type: datetime
+  name: date
+  label: Data
+  hidden: false
+  default: now
+  config:
+    display_utc: false
+    export_format: YYYY-MM-DDTh:mm:ssAZ
+    date_format: DD/MM/YYYY
+    time_format: h:mm:ss A Z
+  description: Data de criação desta obra no portefólio. Determina a ordem de apresentação
+    das obras. (NÃO ALTERAR)
+- name: description
+  type: textarea
+  default: Galeria de fotos do trabalho feito na obra.
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Meta Descrição
+  hidden: true
+pages:
+- content/portefolio/obra-1 copy 2.md
