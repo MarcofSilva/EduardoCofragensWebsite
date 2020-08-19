@@ -1,0 +1,19 @@
+---
+label: Obra
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: date_to_show
+  label: date_to_show
+- type: text
+  name: text
+  label: text
