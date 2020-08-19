@@ -9,6 +9,16 @@ fields:
     para o título)"
   config:
     required: true
+- name: description
+  type: textarea
+  default: Galeria de fotos do trabalho feito na obra.
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: meta descrição
+  hidden: true
 - type: datetime
   name: date
   label: date
@@ -25,7 +35,7 @@ fields:
   label: imagens
 - type: text
   name: date_to_show
-  label: Data da Obra
+  label: data da obra
   description: Texto referente à data que é apresentado junto da respetiva obra. (Mês
     Ano) é um possível formato.
 - name: texto
