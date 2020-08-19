@@ -49,3 +49,5 @@ fields:
       format: markdown
   label: Texto
   description: Alguma descrição sobre a obra se pretendido. (Opcional)
+pages:
+- content/portefolio/obra-1 copy 2.md
