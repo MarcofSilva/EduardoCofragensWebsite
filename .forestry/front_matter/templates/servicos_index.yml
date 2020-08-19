@@ -1,0 +1,28 @@
+---
+label: Serviços_index
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: homepage_enable
+  label: homepage_enable
+- type: text
+  name: homepage_title
+  label: homepage_title
+- type: boolean
+  name: homepage_button_enable
+  label: homepage_button_enable
+- type: text
+  name: class
+  label: class
+- type: file
+  name: background
+  label: background
+- type: text
+  name: intro
+  label: intro
