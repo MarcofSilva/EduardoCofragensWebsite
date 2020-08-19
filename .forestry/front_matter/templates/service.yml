@@ -53,6 +53,3 @@ fields:
   config:
     maxSize: 1
   label: imagem do cabeçalho
-pages:
-- content/servicos/betonagem.md
-- content/servicos/cofragem.md
