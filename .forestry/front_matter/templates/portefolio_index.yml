@@ -36,22 +36,22 @@ fields:
   description: Botão na página inicial que redireciona para a página /portefolio/
   default: true
 - type: text
-  name: class
-  label: Class
-  hidden: true
+  name: section_title
+  label: Titulo da Página Própria
+  config:
+    required: true
 - type: file
   name: background
   label: Imagem de Cabeçalho
   config:
     maxSize: 1
-- type: text
-  name: section_title
-  label: Titulo da Página Própria
-  config:
-    required: true
 - type: boolean
   name: contacts_buttons_enable
   label: Botões de Contacto
   description: Mostrar/esconder botões de contacto que aparecem no inferior do cabeçalho
+- type: text
+  name: class
+  label: Class
+  hidden: true
 pages:
 - content/portefolio/_index.md
