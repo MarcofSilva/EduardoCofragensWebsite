@@ -15,19 +15,25 @@
 {{ define "body" }}
 
     {{ partial "contact-us-buttons" . }}
-
+    
     <div class="row justify-content-center">
+        {{ if .Params.content }}
         <div class="col-lg-7 col-sm-6 mb-5">
             {{ if .Params.content_title }}
-            <h2 class="font-weight-bold mb-4">{{ .Params.content_title | markdownify }}</h2>
-            <p>{{ .Params.content | markdownify }}</p>
+                <h2 class="font-weight-bold mb-4">{{ .Params.content_title | markdownify }}</h2>
+                <p>{{ .Params.content | markdownify }}</p>
             {{ else }}
-            <h5 class="description" style="text-align:left">{{ .Params.content | markdownify }}</h5>
+                <h5 class="description" style="text-align:left">{{ .Params.content | markdownify }}</h5>
             {{ end }}
-        </div>
+        {{ end }}
 
+        </div>
+        {{ if .Params.content }}
         <div class="col-lg-5 col-sm-6 mb-5">
-            <h2 class="font-weight-bold mb-4">{{ .Params.title | markdownify }}</h2>
+        {{ else }}
+        <div class="col-lg-12 col-sm-12 mb-5" style="text-align: center;">
+        {{ end }}
+            
             <ul class="list-unstyled" style="font-size: 1.1em;">
                 <li class="mb-3">
                     <a href="mailto:{{ .Params.email }}" style="color: #2c2c2c;">

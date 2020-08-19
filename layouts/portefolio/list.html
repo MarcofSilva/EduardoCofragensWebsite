@@ -60,7 +60,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="clickable-container" style="display: inline-block;" data-toggle="modal" data-target="#modal_{{ $obra_index }}">
                         <div style="position: relative;">
-                            <img src="{{range first 1 .Params.images }} {{ .|absURL }} {{end}}" alt="{{ $obra.Params.title }} em {{ $obra.Params.location}}" class="rounded img-fluid img-raised">
+                            <img src="{{range last 1 .Params.images }} {{ .|absURL }} {{end}}" alt="{{ $obra.Params.title }} em {{ $obra.Params.location}}" class="rounded img-fluid img-raised">
                             <i class="now-ui-icons gestures_tap-01 icon-over-image"></i>
                         </div>
                         <div class="text-wrapper">
