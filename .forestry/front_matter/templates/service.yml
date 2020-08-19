@@ -48,10 +48,10 @@ fields:
   hidden: true
   default: services-page default-section-page
 - name: background
-  type: text
+  type: file
   config:
-    required: false
-  label: imagem  do cabeçalho
+    maxSize: 1
+  label: imagem do cabeçalho
 pages:
 - content/servicos/betonagem.md
 - content/servicos/cofragem.md
