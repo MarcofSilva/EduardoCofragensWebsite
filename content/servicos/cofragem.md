@@ -1,8 +1,7 @@
 ---
 title: Cofragem
-weight: 1
-description: 
-
+weight: "1"
+description: TODO
 images:
 - media/servicos/cofragem/cofragem.jpg
 - media/servicos/cofragem/cofragem1.jpg
@@ -15,12 +14,10 @@ images:
 - media/servicos/cofragem/cofragem8.jpg
 - media/servicos/cofragem/cofragem9.jpg
 - media/servicos/cofragem/cofragem10.jpg
-
 homepage_link_enable: true
-
 section_button_name: Cofragem
 id: cofragem
-class: "services-page default-section-page"
+class: services-page default-section-page
 background: 
 
 ---
