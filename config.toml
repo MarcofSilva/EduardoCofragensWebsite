@@ -1,7 +1,7 @@
 baseURL = "https://cofragemsilva.pt"
 languageCode = "pt-pt"
 theme = "hugo-now-ui"
-title = "Cofragem Silva" #titulo que vai aparecer quando se pesquisa o site
+title = "Cofragens & Armação de Ferro - Eduardo Silva"
 
 relativeURLs = "true"
 
@@ -71,6 +71,7 @@ url = "/contactos"
 weight = 6
 
 [params]
+authorName = "Marco Silva"
 custom_css = ["css/highlight.min.css"]
 custom_js = []
 date_format = "Mon, Jan 2, 2006"
@@ -84,7 +85,8 @@ default_header_background = "/media/headers/headerDefault.jpg"
 name = "Eduardo Silva"
 about_us_homepage_enable = true
 about_us_homepage_title = "Sobre Nós"
-description = "Eduardo Silva, Empresário de Construção Civil, e a sua equipa de profissionais, desenvolve a sua actividade principal nos sectores da Cofragem e Armação de Ferro para estruturas em betão, em edifícios residenciais e não residenciais." #default meta description and about us
+description = "Eduardo Silva, Empresário de Construção Civil, com a minha equipa de profissionais, desenvolvo a minha actividade principal nos sectores da Cofragem e Armação de Ferro para estruturas de Betão armado, em edifícios residenciais e não residenciais." #default meta description and about us
+keywords = "cofragem, cofragens, betonagem, betão, armação de ferro, aluguer, aluguel, material de cofragem, carvoeiro, portimão, lagoa, alvor, armação de pêra, lagos, ferragudo, algarve"
 
 #post does not even exist, but if this is helpfull create the permalink format for what this site uses
 [permalinks]

@@ -1,8 +1,8 @@
 {{ define "title" }}
-<div class="container" style="padding-top: 15vh;">
+<div class="container" style="padding-top: 15vh; padding-left: 0; padding-right: 0;">
   <h1 class="title text-center homepage-header-title mt-4">{{ .Params.title }}</h1>
-  <h5 class="description" style="color: white; margin-left: 15%; margin-right: 15%;"> {{ .Params.subtitle }} </h5>
-  <a class="btn btn-primary btn-round homepage-header-description btn-lg mt-3 mb-5" type="" onclick='scrollToId("homepageBody")'>
+  <h5 class="description homepage-header-description" style="color: white; margin-left: 15%; margin-right: 15%;"> {{ .Params.subtitle }} <b>{{site.Params.name}}</b> </h5>
+  <a class="btn btn-primary btn-round btn-lg homepage-header-button mt-3 mb-5" type="" onclick='scrollToId("homepageBody")'>
     Explora
     <i class="now-ui-icons arrows-1_minimal-down"></i>
   </a>

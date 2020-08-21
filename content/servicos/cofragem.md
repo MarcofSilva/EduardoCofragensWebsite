@@ -1,7 +1,7 @@
 ---
 title: Cofragem
 weight: "1"
-description: TODO
+description: #Soluções e equipamentos para diversos tipos de cofragem
 images:
 - media/servicos/cofragem/cofragem.jpg
 - media/servicos/cofragem/cofragem1.jpg

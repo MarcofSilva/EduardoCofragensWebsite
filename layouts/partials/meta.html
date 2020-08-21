@@ -1,21 +1,28 @@
-   <!-- Canonical SEO -->
-    <link rel="canonical" href="{{ site.BaseURL }}" />
-    <!--  Social tags      #TODO add this texted through the config file or data-->
-    <meta name="keywords" content="cofragem, cofragens, betonagem, betão, armação de ferro, aluguer, aluguel, material de cofragem, carvoeiro, portimão, lagoa, alvor, armação de pêra, lagos, ferragudo, algarve">
-    <meta name="description" content="{{.Description | default site.Params.description}}">
-        
-    <!-- Schema.org markup for Google+ -->
+<!-- Canonical SEO -->
+<link rel="canonical" href="{{ site.BaseURL }}" />
+<!--  Social tags      #TODO add this texted through the config file or data-->
+<title>{{.Title}} - {{site.Params.name}}</title>
+<meta name="keywords" content="{{ site.Params.keywords }}">
+<meta name="description" content="{{.Description | default site.Params.description}}">
+<meta name="language" content="pt-pt">
+<meta http-equiv="content-language" content="pt">
+<meta name="author" content="{{ site.Params.authorName }}">
+<meta name="robots" content="index, follow">
+<!--<meta name="abstract" content="">-->
+<!--<meta name="revisit-after" content="5 days">-->
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ .Title }} - {{ site.Params.name }}">
+<meta itemprop="description" content="{{ .Description | default site.Params.description}}">
+<!--<meta itemprop="image" content="{{ site.BaseURL }}/media/headers/headerDefault.jpg">--> <!--TODO take snapshot-->
+
+    
+    <!-- Open Graph data - Facebook -->
 <!--
-    <meta itemprop="name" content="Now UI Kit by Creative Tim">
-    <meta itemprop="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
-    <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg">
-    <!-- Open Graph data -->
-<!--
-    <meta property="fb:app_id" content="655968634437471">
-    <meta property="og:title" content="Now UI Kit by Creative Tim" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://demos.creative-tim.com/now-ui-kit/index.html" />
-    <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg" />
-    <meta property="og:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free." />
-    <meta property="og:site_name" content="Creative Tim" />
--->
+    <meta property="fb:app_id" content="">-->
+    <meta property="og:title" content="{{.Title}} - {{ site.Params.name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.BaseURL }}" />
+    <!--<meta property="og:image" content="{{ site.BaseURL }}/media/headers/headerDefault.jpg" />--> <!--TODO take snapshot-->
+    <meta property="og:description" content="{{.Description | default site.Params.description}}" />
+    <meta property="og:site_name" content="{{site.Title}}" />

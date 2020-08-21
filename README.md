@@ -31,4 +31,4 @@ CNAME contains the custom domain and is stored under static, so that after each 
 workflow hugo build & deploy generates the new static files after every push to the master branch
 
 video https://convert-video-online.com/pt/
-optimize images (1000x750) https://resizeimage.net/
+optimize images (1000x562) https://resizeimage.net/

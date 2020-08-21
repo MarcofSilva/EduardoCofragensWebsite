@@ -1,7 +1,7 @@
 ---
 title: Aluguer de Material
 weight: "4"
-description: TODO
+description: 
 images:
 - media/servicos/aluguer/aluguer.jpg
 - media/servicos/aluguer/aluguer1.jpg
