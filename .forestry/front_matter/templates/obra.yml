@@ -35,6 +35,11 @@ fields:
     min: 
     max: 
   label: Imagens
+  description: 'Primeiro fazer upload das imagens em "Media" e de seguida adicionar
+    o caminho para cada imagem de forma ordenada. <br>/media/&lt;nome da imagem&gt;<br>Se
+    por exemplo, as imagens de uma obra tiverem os nomes obra1-x.jpg, onde o x representa
+    um numero incrementado de forma sequencial para cada imagem da obra, então cada
+    campo deverá conter: /media/obra1-x.jpg'
 - type: datetime
   name: date
   label: Data
