@@ -3,7 +3,7 @@ disableKinds = ["taxonomy", "term"]
 languageCode = "pt-pt"
 relativeURLs = "true"
 theme = "hugo-now-ui"
-title = "Cofragens & Armação de Ferro - Eduardo Silva"
+title = "Cofragens e Armação de Ferro - Eduardo Silva"
 [[menu.footer]]
 identifier = "copyright"
 name = "Copyright © {now_year}"
