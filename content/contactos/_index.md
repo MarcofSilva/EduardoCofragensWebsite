@@ -1,6 +1,6 @@
 ---
 title: Contactos
-description: 
+description: Informações de contacto
 footer_enable: true
 footer_title: Fale conosco
 contacts_buttons_enable: true
