@@ -39,7 +39,8 @@ fields:
     o caminho para cada imagem de forma ordenada. <br>/media/&lt;nome da imagem&gt;<br>Se
     por exemplo, as imagens de uma obra tiverem os nomes obra1-x.jpg, onde o x representa
     um numero incrementado de forma sequencial para cada imagem da obra, então cada
-    campo deverá conter: /media/obra1-x.jpg'
+    campo deverá conter: /media/obra1-x.jpg (/media/obra1-1.jpg, /media/obra1-2.jpg
+    e assim sucessivamente)'
 - type: datetime
   name: date
   label: Data
