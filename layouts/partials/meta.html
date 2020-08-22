@@ -4,8 +4,8 @@
 <title>{{.Title}} - {{site.Params.name}}</title>
 <meta name="keywords" content="{{ site.Params.keywords }}">
 <meta name="description" content="{{.Description | default site.Params.description}}">
-<meta name="language" content="pt-pt">
-<meta http-equiv="content-language" content="pt">
+<meta name="language" content="{{site.LanguageCode}}">
+<meta http-equiv="content-language" content="{{site.LanguageCode}}">
 <meta name="author" content="{{ site.Params.authorName }}">
 <meta name="robots" content="index, follow">
 <!--<meta name="abstract" content="">-->
