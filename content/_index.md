@@ -1,8 +1,7 @@
 ---
 title: Cofragens e Armação de Ferro
-description: Eduardo Silva e a minha equipa de profissionais, somos especialistas
-  nos sectores da Cofragem e Armação de Ferro para estruturas de betão armado, no
-  Algarve.
+description: Eduardo Silva, desenvolve a sua actividade principal nos sectores da
+  cofragem e armação de ferro para estruturas de betão armado, na zona do Algarve.
 subtitle: a cargo de
 class: landing-page
 background: "/media/headers/headerDefault.jpg"
