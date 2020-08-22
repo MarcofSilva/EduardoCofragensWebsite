@@ -9,60 +9,60 @@ identifier = "copyright"
 name = "Copyright © {now_year}"
 weight = 1
 [[menu.footer]]
-identifier = "alvara"
-name = "Alvará"
-weight = 2
-[[menu.footer]]
 identifier = "footerHomeButton"
 pre = "<i class='now-ui-icons arrows-1_minimal-up btn_round'></i>"
 url = "#top"
 weight = 3
-[[menu.main]]
-name = "Página Inicial"
-pre = "<i class='now-ui-icons business_bank'></i>"
-url = "/"
-weight = 1
+[[menu.footer]]
+identifier = "alvara"
+name = "Alvará"
+weight = 2
 [[menu.main]]
 name = "Sobre"
 pre = "<i class='now-ui-icons business_badge'></i>"
 url = "/#about_homepage"
-weight = 2
-[[menu.main]]
-identifier = "dropdown"
-name = "Serviços"
-pre = "<i class='now-ui-icons loader_gear'></i>"
-url = "/servicos"
 weight = 3
+[[menu.main]]
+name = "Aluguer de Material"
+parent = "dropdown"
+url = "/servicos/aluguer-material/#aluguer_content"
+weight = 7
+[[menu.main]]
+name = "Armação de Ferro"
+parent = "dropdown"
+url = "/servicos/armacao-ferro/#ferro_content"
+weight = 5
+[[menu.main]]
+name = "Betonagem"
+parent = "dropdown"
+url = "/servicos/betonagem/#betonagem_content"
+weight = 4
 [[menu.main]]
 name = "Cofragem"
 parent = "dropdown"
 url = "/servicos/cofragem/#cofragem_content"
 weight = 1
 [[menu.main]]
-name = "Betonagem"
-parent = "dropdown"
-url = "/servicos/betonagem/#betonagem_content"
-weight = 2
-[[menu.main]]
-name = "Armação de Ferro"
-parent = "dropdown"
-url = "/servicos/armacao-ferro/#ferro_content"
-weight = 3
-[[menu.main]]
-name = "Aluguer de Material"
-parent = "dropdown"
-url = "/servicos/aluguer-material/#aluguer_content"
-weight = 4
-[[menu.main]]
-name = "Portefólio"
-pre = "<i class='now-ui-icons media-1_album'></i>"
-url = "/portefolio"
-weight = 5
+identifier = "dropdown"
+name = "Serviços"
+pre = "<i class='now-ui-icons loader_gear'></i>"
+url = "/servicos"
+weight = 6
 [[menu.main]]
 name = "Contactos"
 pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
 url = "/contactos"
-weight = 6
+weight = 9
+[[menu.main]]
+name = "Portfólio"
+pre = "<i class='now-ui-icons media-1_album'></i>"
+url = "/portefolio"
+weight = 8
+[[menu.main]]
+name = "Página Inicial"
+pre = "<i class='now-ui-icons business_bank'></i>"
+url = "/"
+weight = 2
 [minify]
 minifyOutput = false
 [minify.tdewolff.html]
