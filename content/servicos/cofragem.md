@@ -2,7 +2,7 @@
 title: Cofragem
 weight: "1"
 description: Fornecimento de material e mão-de-obra para a realização de diversos
-  tipos de Cofragem.
+  tipos de cofragem.
 images:
 - media/servicos/cofragem/cofragem.jpg
 - media/servicos/cofragem/cofragem1.jpg
