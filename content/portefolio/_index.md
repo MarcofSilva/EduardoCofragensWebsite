@@ -1,6 +1,7 @@
 ---
 title: Portfólio
-description: ''
+description: Portfólio com alguns dos nossos trabalhos na área da cofragem e armação
+  de ferro
 homepage_enable: true
 homepage_title: Portfólio - Destaques
 homepage_obras_num: 3
