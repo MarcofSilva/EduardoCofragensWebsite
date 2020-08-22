@@ -1,7 +1,8 @@
 ---
 title: Cofragem
 weight: "1"
-description: #Soluções e equipamentos para diversos tipos de cofragem
+description: Fornecimento de material e mão-de-obra para a realização de diversos
+  tipos de Cofragem.
 images:
 - media/servicos/cofragem/cofragem.jpg
 - media/servicos/cofragem/cofragem1.jpg
