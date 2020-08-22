@@ -28,8 +28,12 @@ fields:
       format: markdown
   label: Texto
   description: Alguma descrição sobre a obra se pretendido. (Opcional)
-- type: image_gallery
-  name: images
+- name: images
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
   label: Imagens
 - type: datetime
   name: date
