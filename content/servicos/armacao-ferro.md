@@ -1,7 +1,7 @@
 ---
 title: Armação de Ferro
 weight: "3"
-description: #Corte, moldagem e aplicação de ferro 
+description: Corte, moldagem e aplicação de Ferro.
 images:
 - media/servicos/ferro/ferro.jpg
 - media/servicos/ferro/ferro1.jpg
