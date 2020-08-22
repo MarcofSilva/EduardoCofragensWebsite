@@ -1,11 +1,9 @@
 baseURL = "https://cofragemsilva.pt"
+disableKinds = ["taxonomy", "term"]
 languageCode = "pt-pt"
+relativeURLs = "true"
 theme = "hugo-now-ui"
 title = "Cofragens & Armação de Ferro - Eduardo Silva"
-
-relativeURLs = "true"
-disableKinds = ["taxonomy", "term"] #disable default taxonomies, the categories and tads pages
-
 [[menu.footer]]
 identifier = "copyright"
 name = "Copyright © {now_year}"
@@ -19,7 +17,6 @@ identifier = "footerHomeButton"
 pre = "<i class='now-ui-icons arrows-1_minimal-up btn_round'></i>"
 url = "#top"
 weight = 3
-
 [[menu.main]]
 name = "Página Inicial"
 pre = "<i class='now-ui-icons business_bank'></i>"
@@ -31,35 +28,31 @@ pre = "<i class='now-ui-icons business_badge'></i>"
 url = "/#about_homepage"
 weight = 2
 [[menu.main]]
-  name = "Serviços"
-  pre = "<i class='now-ui-icons loader_gear'></i>"
-  url = "/servicos"
-  weight = 3
-  identifier = "dropdown"
+identifier = "dropdown"
+name = "Serviços"
+pre = "<i class='now-ui-icons loader_gear'></i>"
+url = "/servicos"
+weight = 3
 [[menu.main]]
-    name = "Cofragem"
-    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-    url = "/servicos/cofragem/#cofragem_content"
-    weight = 1
-    parent = "dropdown"
+name = "Cofragem"
+parent = "dropdown"
+url = "/servicos/cofragem/#cofragem_content"
+weight = 1
 [[menu.main]]
-    name = "Betonagem"
-    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-    url = "/servicos/betonagem/#betonagem_content"
-    weight = 2
-    parent = "dropdown"
+name = "Betonagem"
+parent = "dropdown"
+url = "/servicos/betonagem/#betonagem_content"
+weight = 2
 [[menu.main]]
-    name = "Armação de Ferro"
-    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-    url = "/servicos/armacao-ferro/#ferro_content"
-    weight = 3
-    parent = "dropdown"
+name = "Armação de Ferro"
+parent = "dropdown"
+url = "/servicos/armacao-ferro/#ferro_content"
+weight = 3
 [[menu.main]]
-    name = "Aluguer de Material"
-    #pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
-    url = "/servicos/aluguer-material/#aluguer_content"
-    weight = 4
-    parent = "dropdown"
+name = "Aluguer de Material"
+parent = "dropdown"
+url = "/servicos/aluguer-material/#aluguer_content"
+weight = 4
 [[menu.main]]
 name = "Portefólio"
 pre = "<i class='now-ui-icons media-1_album'></i>"
@@ -70,39 +63,32 @@ name = "Contactos"
 pre = "<i class='now-ui-icons ui-2_chat-round'></i>"
 url = "/contactos"
 weight = 6
-
+[minify]
+minifyOutput = false
+[minify.tdewolff.html]
+keepConditionalComments = true
+keepDefaultAttrVals = true
+keepDocumentTags = true
+keepEndTags = true
+keepQuotes = false
+keepWhitespace = true
+[minify.tdewolff.xml]
+keepWhitespace = false
 [params]
+about_us_homepage_enable = true
+about_us_homepage_title = "Sobre"
 authorName = "Marco Silva"
 custom_css = ["css/highlight.min.css"]
 custom_js = []
 date_format = "Mon, Jan 2, 2006"
+default_header_background = "/media/headers/headerDefault.jpg"
+description = "Eduardo Silva, Empresário de Construção Civil, desenvolve a sua actividade principal nos sectores da Cofragem e Armação de Ferro para estruturas de Betão armado, em edifícios residenciais e não residenciais, na zona do Algarve."
 highlightCDN = "//cdn.bootcss.com"
 highlightjsLang = ["r", "yaml"]
 highlightjsTheme = "github"
 highlightjsVersion = "9.10.0"
-tint = "orange"
-default_header_background = "/media/headers/headerDefault.jpg"
-#Main name in the website
-name = "Eduardo Silva"
-about_us_homepage_enable = true
-about_us_homepage_title = "Sobre Nós"
-description = "Eduardo Silva, Empresário de Construção Civil, com a minha equipa de profissionais, desenvolvo a minha actividade principal nos sectores da Cofragem e Armação de Ferro para estruturas de Betão armado, em edifícios residenciais e não residenciais." #default meta description and about us
 keywords = "construção civil, cofragem, cofragens, betonagem, betão, armação de ferro, aluguer, aluguel, material de cofragem, carvoeiro, portimão, lagoa, alvor, armação de pêra, lagos, ferragudo, algarve"
-
-#post does not even exist, but if this is helpfull create the permalink format for what this site uses
+name = "Eduardo Silva"
+tint = "orange"
 [permalinks]
 post = "/:year/:month/:day/:slug/"
-
-
-[minify]
-  minifyOutput = false
-  [minify.tdewolff]
-    [minify.tdewolff.html]
-      keepConditionalComments = true
-      keepDefaultAttrVals = true
-      keepDocumentTags = true
-      keepEndTags = true
-      keepQuotes = false
-      keepWhitespace = true     #default false
-    [minify.tdewolff.xml]
-      keepWhitespace = false
