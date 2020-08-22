@@ -11,7 +11,7 @@ content: ''
 mobile_country_code: "351"
 mobile: "962757100"
 email: cofragemsilva@hotmail.com
-location: Lagoa, Portugal
+location: Lagoa, Algarve, Portugal
 form:
   form_enable: false
   form_title: Envie-nos uma mensagem
