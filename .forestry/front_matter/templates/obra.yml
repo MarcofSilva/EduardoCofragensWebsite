@@ -28,9 +28,19 @@ fields:
       format: markdown
   label: Texto
   description: Alguma descrição sobre a obra se pretendido. (Opcional)
-- type: image_gallery
-  name: images
+- name: images
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
   label: Imagens
+  description: 'Primeiro fazer upload das imagens em "Media" e de seguida adicionar
+    o caminho para cada imagem de forma ordenada. <br>/media/&lt;nome da imagem&gt;<br>Se
+    por exemplo, as imagens de uma obra tiverem os nomes obra1-x.jpg, onde o x representa
+    um numero incrementado de forma sequencial para cada imagem da obra, então cada
+    campo deverá conter: /media/obra1-x.jpg (/media/obra1-1.jpg, /media/obra1-2.jpg
+    e assim sucessivamente)'
 - type: datetime
   name: date
   label: Data
