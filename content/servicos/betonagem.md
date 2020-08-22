@@ -1,7 +1,7 @@
 ---
 title: Betonagem
 weight: "2"
-description: #Aplicação de betão
+description: Aplicação de betão
 images:
 - media/servicos/betonagem/betonagem.jpg
 - media/servicos/betonagem/betonagem1.jpg
