@@ -4,12 +4,8 @@ Hugo theme [Now UI](https://github.com/cboettig/hugo-now-ui/) was used as templa
 
 # TODO deixar tudo em ordem em relação a licensas copyrights e critério ao autor do template usado
 # TODO mini icon change
-# TODO meta tags do site (<head>)
-# TODO SEO
-# TODO explicar: estruta de pastas para fotos de portefolio, como e onde adicionar snippets de codigo para expandir o portefolio (incluir aqui os pedaços de codigo a alterar e acrescentar)
 
 # TODO cenas em content apenas se forem seccoes mesmo...se por exemplo contactor e assim nao forem ter uma pagina proprio por essas informacoes em data
-# TODO see the information that pai quer ter por obbra no portofolio para a receber a toda no .md e formatar sempre da mesma forma (neste momento é escrever no title como vai aparecer)
 
 .Sites.Pages section
 .Sites.RegularPages items in section
