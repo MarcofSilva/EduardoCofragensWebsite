@@ -64,6 +64,6 @@ fields:
   label: Meta Descrição
   hidden: true
 pages:
-- content/portefolio/moradia.md
-- content/portefolio/piscina.md
-- content/portefolio/predio.md
+- content/portfolio/moradia.md
+- content/portfolio/piscina.md
+- content/portfolio/predio.md

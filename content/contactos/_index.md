@@ -2,7 +2,7 @@
 title: Contactos
 description: Informações de contacto
 footer_enable: true
-footer_title: Fale conosco
+footer_title: Fale connosco
 contacts_buttons_enable: true
 class: 
 background: 

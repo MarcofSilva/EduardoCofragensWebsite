@@ -56,7 +56,7 @@ weight = 9
 [[menu.main]]
 name = "Portfólio"
 pre = "<i class='now-ui-icons media-1_album'></i>"
-url = "/portefolio"
+url = "/portfolio"
 weight = 8
 [[menu.main]]
 name = "Página Inicial"

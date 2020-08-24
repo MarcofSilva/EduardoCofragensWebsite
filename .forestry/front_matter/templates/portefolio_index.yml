@@ -33,7 +33,7 @@ fields:
 - type: boolean
   name: homepage_button_enable
   label: Botão/Link na Página Inicial
-  description: Botão na página inicial que redireciona para a página /portefolio/
+  description: Botão na página inicial que redireciona para a página /portfolio/
   default: true
 - type: text
   name: section_title
@@ -54,4 +54,4 @@ fields:
   label: Class
   hidden: true
 pages:
-- content/portefolio/_index.md
+- content/portfolio/_index.md

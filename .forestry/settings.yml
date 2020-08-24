@@ -19,8 +19,8 @@ sections:
   templates:
   - service
 - type: directory
-  path: content/portefolio
-  label: Portefólio
+  path: content/portfolio
+  label: Portfólio
   create: documents
   match: "**/*"
   templates:
