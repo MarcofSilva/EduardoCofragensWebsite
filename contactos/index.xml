@@ -5,10 +5,6 @@
     <link>https://cofragemsilva.pt/contactos/</link>
     <description>Recent content in Contactos on Cofragem e Armação de Ferro - Eduardo Silva</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-pt</language>
-    
-	<atom:link href="https://cofragemsilva.pt/contactos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>pt-pt</language><atom:link href="https://cofragemsilva.pt/contactos/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
