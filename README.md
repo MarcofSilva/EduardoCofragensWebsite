@@ -2,7 +2,7 @@
 
 Hugo theme [Now UI](https://github.com/cboettig/hugo-now-ui/) was used as template.
 
-# Directory Structure
+## Directory Structure
 - Create folder in /Content only if we are talking about a real section. For non-sections information, e.g. Alvara number which has not a page of their own, then put that info in Data.
 
 - .Sites.Pages section
@@ -17,11 +17,11 @@ Hugo theme [Now UI](https://github.com/cboettig/hugo-now-ui/) was used as templa
 - index_baseof.html for homepage header
 - baseof.html for secundarypages header
 
-# Homepage Video Compression
+## Homepage Video Compression
 https://convert-video-online.com/pt/
 
-# Portfolio Images
+## Portfolio Images
 Resize portfolio images to 1000x562 and make progressive compression in https://resizeimage.net/.
 
-# TODO
+## TODO
 Favicon mini icon
