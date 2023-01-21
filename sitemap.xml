@@ -1,54 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://cofragemsilva.pt/servicos/cofragem/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/servicos/betonagem/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/servicos/armacao-ferro/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/servicos/aluguer-material/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/</loc>
     <lastmod>2020-08-19T23:18:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/portfolio/</loc>
     <lastmod>2020-08-19T23:18:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/portfolio/predio/</loc>
     <lastmod>2020-08-19T23:18:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/portfolio/piscina/</loc>
     <lastmod>2020-08-19T22:38:13+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/portfolio/moradia/</loc>
     <lastmod>2020-08-19T20:49:12+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/contactos/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cofragemsilva.pt/servicos/</loc>
   </url>
-  
 </urlset>
